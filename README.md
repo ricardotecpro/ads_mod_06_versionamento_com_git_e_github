@@ -6,9 +6,9 @@ Bem-vindo ao módulo de Git, GitHub e Markdown do curso de computação\! Este m
 
 Aqui você encontrará os links para as aulas e materiais de apoio:
 
-* [01 - Introdução ao Git e GitHub](https://www.google.com/search?q=./01_introducao_ao_git_e_github.md)
-* [02 - Resolvendo Problemas Comuns com Git](https://www.google.com/search?q=./02_resolvendo_problemas_comuns.md)
-* [03 - Branches e Trabalho em Equipe com Git e GitHub](https://www.google.com/search?q=./03_branches_e_trabalho_em_equipe.md)
+* [01 - Introdução ao Git e GitHub](01_introducao_ao_git_e_github.md)
+* [02 - Resolvendo Problemas Comuns com Git](02_resolvendo_problemas_comuns.md)
+* [03 - Branches e Trabalho em Equipe com Git e GitHub](03_branches_e_trabalho_em_equipe.md)
 
 -----
 
@@ -16,7 +16,7 @@ Aqui você encontrará os links para as aulas e materiais de apoio:
 
 Esta seção é dedicada ao aprendizado e utilização do Markdown.
 
-* **Recurso Principal da Aula:** [ricardotecpro.github.io/modulo\_02\_git\_github](https://www.google.com/search?q=https://ricardotecpro.github.io/modulo_02_git_github)
+* **Recurso Principal da Aula:** [https://ricardotecpro.github.io/modulo_02_git_github/](https://ricardotecpro.github.io/modulo_02_git_github)
 
 ### Objetivo da Aula 🎯
 
