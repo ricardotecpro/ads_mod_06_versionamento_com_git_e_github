@@ -7,8 +7,8 @@ Bem-vindo ao módulo de Git, GitHub e Markdown do curso de computação\! Este m
 Aqui você encontrará os links para as aulas e materiais de apoio:
 
 * [01 - Introdução ao Git e GitHub](01_introducao_ao_git_e_github.md)
-* [02 - Resolvendo Problemas Comuns com Git](02_resolvendo_problemas_comuns.md)
-* [03 - Branches e Trabalho em Equipe com Git e GitHub](03_branches_e_trabalho_em_equipe.md)
+* [02 - Problemas Comuns](02_resolvendo_problemas_comuns.md)
+* [03 - Branches](03_branches.md)
 
 -----
 
