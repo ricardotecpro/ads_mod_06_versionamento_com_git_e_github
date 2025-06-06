@@ -188,7 +188,7 @@ Se o projeto já existe no Github e você quer baixá-lo e contribuir (assumindo
     * **O que faz:** Baixa ("clona") um repositório remoto para o seu computador, criando uma cópia local. Use a URL SSH do repositório.
     ```bash
     # Exemplo:
-    # git clone git@github.com:devsuperior/dsmovie.git
+    # git clone git@github.com:username/userproject.git
     ```
     * Isso cria uma pasta com o nome do repositório, já configurada para interagir com o `origin`.
 
