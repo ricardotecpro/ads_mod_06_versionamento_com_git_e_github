@@ -49,3 +49,5 @@ No campo da Análise de Sistemas, a comunicação clara e a documentação preci
 * [Markdown Cheatsheet (Folha de Dicas Rápida)](https://www.markdownguide.org/cheat-sheet/)
 * [Exemplo de Documentação Técnica no GitHub](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
 * [Temas para GitHub Pages](https://pages.github.com/themes/)
+
+-----
