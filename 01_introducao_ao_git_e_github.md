@@ -1,4 +1,3 @@
-### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
 # 🚀 Introdução ao Git e Github
 
 Este guia oferece uma introdução abrangente ao Git e GitHub, ferramentas essenciais para o desenvolvimento de software moderno. Abordaremos desde a instalação e configuração até os fluxos de trabalho básicos e comandos úteis.
@@ -397,3 +396,7 @@ Este guia deve fornecer uma base sólida para começar a usar Git e Github. A pr
 * [GitHub Desktop](https://desktop.github.com/) - Uma aplicação desktop para gerenciar repositórios Git de forma gráfica, ideal para quem prefere uma interface amigável.
 * [GitKraken](https://www.gitkraken.com/) - Uma ferramenta gráfica poderosa para gerenciar repositórios Git, com uma interface intuitiva e recursos avançados.
 * [Atlassian Git Tutorials](https://www.atlassian.com/git/tutorials) - Uma série de tutoriais abrangentes sobre Git, cobrindo desde o básico até tópicos avançados.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

@@ -137,3 +137,7 @@ Dominar o Markdown é uma habilidade valiosa para qualquer Analista de Sistemas.
 * Quais cenários específicos do dia a dia de um analista de sistemas vocês veem o Markdown sendo mais útil?
 
 ---
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

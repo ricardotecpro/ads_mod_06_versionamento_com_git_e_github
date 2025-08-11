@@ -99,3 +99,7 @@ Aqui está o passo a passo para habilitar o GitHub Pages nas configurações do 
   * **Domínio Personalizado (Opcional Avançado):** Se desejar, você pode configurar um domínio personalizado (por exemplo, `meumaterialjava.com`) para o seu site do GitHub Pages, mas isso envolve configurações de DNS adicionais.
 
 Seguindo esses passos, seu material de estudo estará online e acessível através do GitHub Pages\!
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

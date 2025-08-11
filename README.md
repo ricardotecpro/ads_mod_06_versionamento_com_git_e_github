@@ -1,7 +1,4 @@
-### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
 # Módulo Git, GitHub e Markdown 📚💻
-
-
 
 Bem-vindo ao módulo de Git, GitHub e Markdown do curso de computação\! Este material foi preparado para auxiliar os alunos de Análise de Sistemas a dominar ferramentas essenciais para o desenvolvimento de software, documentação e trabalho em equipe.
 
@@ -12,6 +9,9 @@ Aqui você encontrará os links para as aulas e materiais de apoio:
 * [01 - Introdução ao Git e GitHub](01_introducao_ao_git_e_github.md)
 * [02 - Problemas Comuns](02_resolvendo_problemas_comuns.md)
 * [03 - Branches](03_branches.md)
+* [04 - Markdown](./markdown/markdown.md]
+* [05 -]
+* 
 
 -----
 
@@ -50,4 +50,6 @@ No campo da Análise de Sistemas, a comunicação clara e a documentação preci
 * [Exemplo de Documentação Técnica no GitHub](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
 * [Temas para GitHub Pages](https://pages.github.com/themes/)
 
------
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

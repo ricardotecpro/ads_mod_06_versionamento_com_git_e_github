@@ -61,3 +61,7 @@ Você também pode adotar uma abordagem híbrida:
 * Usar um repositório central para imagens verdadeiramente globais e compartilhadas.
 
 Ao decidir, pense em quem vai usar o repositório, como ele será acessado e qual a importância da portabilidade e do versionamento integrado das imagens com o restante do conteúdo. Para a maioria dos READMEs e documentações de projetos no GitHub, a pasta local é a vencedora pela simplicidade e confiabilidade.
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

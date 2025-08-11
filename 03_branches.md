@@ -1,5 +1,3 @@
-### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
-
 # 🌳 Branches e Trabalho em Equipe com Git e GitHub
 
 Este guia aborda o uso de branches no Git para desenvolvimento colaborativo e gerenciamento de projetos, além de fluxos de trabalho comuns utilizando o GitHub.
@@ -391,3 +389,7 @@ Este é o ciclo fundamental de contribuição em muitos projetos de software col
 - [GitHub Community Forum](https://github.community/) - Fórum para discutir e obter ajuda sobre GitHub
 - [GitHub Learning Lab](https://lab.github.com/) - Cursos interativos para aprender Git e GitHub
 - [GitHub Education](https://education.github.com/) - Recursos educacionais e programas para estudantes e professores
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

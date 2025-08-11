@@ -1,4 +1,3 @@
-### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
 # Git e Github: Resolvendo Problemas Comuns 🛠️
 
 Este guia aborda soluções para problemas comuns encontrados ao usar Git e GitHub, com base nos slides fornecidos.
@@ -425,3 +424,7 @@ git remote add <nome_para_o_novo_remoto> <url_do_novo_remoto>
 Agora, você pode usar `<nome_para_o_novo_remoto>` para referenciar esse novo repositório remoto em comandos como `git fetch`, `git pull`, ou `git push`.
 ## Conclusão
 Este guia cobre algumas das situações mais comuns que você pode encontrar ao usar Git e GitHub, desde remover arquivos da área de *stage* até resolver conflitos de *merge*. Lembre-se sempre de fazer backup do seu trabalho antes de executar comandos destrutivos como `git reset --hard` ou `git push --force`, e de comunicar-se com sua equipe ao fazer alterações significativas no histórico do repositório. Boa sorte com seus projetos! 🚀
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
