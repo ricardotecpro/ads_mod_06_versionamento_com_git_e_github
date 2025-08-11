@@ -12,19 +12,17 @@ Aqui você encontrará os links para as aulas e materiais de apoio:
 
 -----
 
+## Aula de Markdown ✨
+
+Esta seção é dedicada ao aprendizado e utilização do Markdown.
+
+-----
+
 * [04 - Markdown](./markdown/markdown.md)
 * [05 - Messages](./markdown/messagens.md)
 * [06 - GitHub Pages](./markdown/githubpages.md)
 * [07 - Overview](./markdown/overview.md)
 * [08 - Assets](./markdown/assets.md)
-
------
-
-## Aula de Markdown ✨
-
-Esta seção é dedicada ao aprendizado e utilização do Markdown.
-
-* **Recurso Principal da Aula:** [https://ricardotecpro.github.io/modulo_02_git_github_markdown](https://ricardotecpro.github.io/modulo_02_git_github_markdown/)
 
 ### Objetivo da Aula 🎯
 
