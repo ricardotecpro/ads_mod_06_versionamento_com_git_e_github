@@ -9,9 +9,14 @@ Aqui você encontrará os links para as aulas e materiais de apoio:
 * [01 - Introdução ao Git e GitHub](01_introducao_ao_git_e_github.md)
 * [02 - Problemas Comuns](02_resolvendo_problemas_comuns.md)
 * [03 - Branches](03_branches.md)
-* [04 - Markdown](./markdown/markdown.md]
-* [05 -]
-* 
+
+-----
+
+* [04 - Markdown](./markdown/markdown.md)
+* [05 - Messages](./markdown/messagens.md)
+* [06 - GitHub Pages](./markdown/githubpages.md)
+* [07 - Overview](./markdown/overview.md)
+* [08 - Assets](./markdown/assets.md)
 
 -----
 
