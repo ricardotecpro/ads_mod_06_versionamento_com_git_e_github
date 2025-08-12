@@ -1,4 +1,5 @@
-### O Que é Markdown?
+# 📄 O Que é Markdown?
+
 Markdown é uma **linguagem de marcação leve** que permite formatar texto simples de forma fácil e legível. Ele é convertido para HTML (ou outros formatos) para visualização. Sua simplicidade e portabilidade o tornam ideal para diversas aplicações, especialmente em ambientes de desenvolvimento e análise.
 
 ### Conceitos Básicos e Sintaxe
@@ -136,7 +137,20 @@ Dominar o Markdown é uma habilidade valiosa para qualquer Analista de Sistemas.
 * Quais outras ferramentas de documentação vocês já utilizaram e como o Markdown se compara a elas?
 * Quais cenários específicos do dia a dia de um analista de sistemas vocês veem o Markdown sendo mais útil?
 
----
+
+
+## Links Úteis 🔗
+
+### Recursos Internos (Markdown)
+
+* [Conceitos de Markdown](https://www.google.com/search?q=./markdown.md)
+
+
+### Recursos Externos (Markdown)
+
+* [Markdown Guide (Guia Completo)](https://www.markdownguide.org/)
+* [Markdown Cheatsheet (Folha de Dicas Rápida)](https://www.markdownguide.org/cheat-sheet/)
+* [Exemplo de Documentação Técnica no GitHub](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github)
 
 ---
 

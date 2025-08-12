@@ -1,4 +1,4 @@
-# Git e Github: Resolvendo Problemas Comuns 🛠️
+#  🛠️ Git e Github: Resolvendo Problemas Comuns
 
 Este guia aborda soluções para problemas comuns encontrados ao usar Git e GitHub, com base nos slides fornecidos.
 

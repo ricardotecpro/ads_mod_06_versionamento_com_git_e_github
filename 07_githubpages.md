@@ -1,3 +1,5 @@
+# ✅ GitHub Pages
+
 Para habilitar o GitHub Pages nas configurações do seu repositório e transformar seus arquivos Markdown (ou outro conteúdo web estático) em um site, siga estes passos:
 
 1.  **Acesse seu Repositório no GitHub:**
@@ -99,6 +101,9 @@ Aqui está o passo a passo para habilitar o GitHub Pages nas configurações do 
   * **Domínio Personalizado (Opcional Avançado):** Se desejar, você pode configurar um domínio personalizado (por exemplo, `meumaterialjava.com`) para o seu site do GitHub Pages, mas isso envolve configurações de DNS adicionais.
 
 Seguindo esses passos, seu material de estudo estará online e acessível através do GitHub Pages\!
+
+* [GitHub Pages](https://www.google.com/search?q=./githubpages.md)
+* [Temas para GitHub Pages](https://pages.github.com/themes/) 
 
 ---
 

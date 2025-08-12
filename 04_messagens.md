@@ -1,4 +1,4 @@
-## ✅ **Boas práticas para mensagens de commit**
+# ✅ Boas práticas para mensagens de commit
 
 ### 1. **Use o tempo verbal imperativo**
 
@@ -78,8 +78,6 @@ feat: Cria componente de card de tarefa
 Este componente será usado tanto na lista de tarefas pendentes quanto 
 na de tarefas concluídas. Ele inclui botões de editar e deletar.
 ```
-
----
 
 ---
 

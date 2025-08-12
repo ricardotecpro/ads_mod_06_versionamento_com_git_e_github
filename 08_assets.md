@@ -1,3 +1,5 @@
+# ✅ Assets
+
 Ambas as abordagens têm suas vantagens e desvantagens, e a "melhor" forma depende do seu caso de uso específico e das suas prioridades. Vamos analisar cada uma:
 
 **1. Criar uma Pasta `assets` (ou `images`, `media`, etc.) para Cada Repositório**
