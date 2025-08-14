@@ -1,4 +1,4 @@
-# Módulo Git SCM, GitHub e Markdown 📚💻
+# Git SCM, GitHub e Markdown 📚💻
 
 Bem-vindo ao módulo de Git, GitHub e Markdown do curso de computação\! Este material foi preparado para auxiliar os alunos de Análise de Sistemas a dominar ferramentas essenciais para o desenvolvimento de software, documentação e trabalho em equipe.
 
