@@ -1,3 +1,5 @@
+# Gitignore
+
 Arquivo `.gitignore` abrangente, organizado por seções, para todos os tipos de aplicações que você listou. Você pode copiar o conteúdo inteiro para um arquivo chamado `.gitignore` na raiz do seu repositório ou apenas usar as seções relevantes para seu projeto.
 
 Um arquivo **`.gitignore`** especifica arquivos e pastas que o Git deve ignorar e não rastrear. Isso é útil para evitar que arquivos de compilação, dependências, arquivos de configuração local e outros artefatos gerados automaticamente sejam enviados para o repositório.

@@ -1,8 +1,9 @@
+## **1. Comparativo de Plugins**
+
 Comparação direta dos principais formatos e plugins para criar diagramas UML e outros diagramas **direto em Markdown**, levando em conta **suporte no GitHub**, **facilidade de edição** e **capacidade de gerar diagramas como código**.
 
 ---
 
-## **1. Comparativo de Ferramentas**
 
 | Ferramenta                  | Tipo                                   | Suporte direto no GitHub Markdown                                          | Sintaxe/Modo de edição                          | Prós                                                                                                               | Contras                                                                                   |
 | --------------------------- | -------------------------------------- | -------------------------------------------------------------------------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
@@ -317,3 +318,74 @@ Admin --> UC2
 * **Mermaid** → perfeito para diagramas rápidos **direto no GitHub**.
 * **PlantUML** → ideal para diagramas UML **complexos e customizados**, mas precisa converter antes.
 
+
+
+O erro de "Parse error" acontece porque o Mermaid usa caracteres como parênteses `( )`, pontos `.` e vírgulas `,` para definir a sua própria sintaxe. Quando você os usa diretamente no texto de um nó, ele não consegue interpretar o código corretamente.
+
+Para resolver isso, basta colocar o texto que contém esses caracteres especiais entre **aspas duplas** (`"`).
+
+-----
+
+Objeto Aluno
+
+
+
+```mermaid
+
+flowchart TD
+
+A[Start] --> B[Criar objeto Aluno]
+
+B --> C[Capturar nome, idade, matrícula]
+
+C --> D[Chamar aluno.cadastrarDados()]
+
+D --> E[Capturar média]
+
+E --> F[Chamar aluno.cadastrarMediaNotas()]
+
+F --> G[Chamar aluno.exibirInformacoes()]
+
+G --> H[End]
+
+```
+
+
+### Código Corrigido
+
+Aqui estão os dois exemplos de fluxograma com a sintaxe corrigida.
+
+#### Correção 1: Passando Dados como Argumentos
+
+```mermaid
+flowchart TD
+    A[Início] --> B[Capturar nome, idade, matrícula]
+    B --> C[Criar objeto Aluno]
+    C --> D["Chamar aluno.cadastrarDados(nome, idade, matrícula)"]
+    D --> E[Capturar média]
+    E --> F["Chamar aluno.cadastrarMediaNotas(media)"]
+    F --> G["Chamar aluno.exibirInformacoes()"]
+    G --> H[Fim]
+```
+
+-----
+
+#### Correção 2: Usando um Construtor
+
+```mermaid
+flowchart TD
+    A[Início] --> B[Capturar nome, idade, matrícula]
+    B --> C["Criar objeto Aluno(nome, idade, matrícula)"]
+    C --> D[Capturar média]
+    D --> E["Chamar aluno.cadastrarMediaNotas(media)"]
+    E --> F["Chamar aluno.exibirInformacoes()"]
+    F --> G[Fim]
+```
+
+A simples adição de aspas duplas nos nós que continham `()` e `.` resolve o problema de interpretação do código. 
+
+👍
+
+---
+
+### [ricardotecpro.github.io](https://ricardotecpro.github.io/)

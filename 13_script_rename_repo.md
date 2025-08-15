@@ -1,4 +1,4 @@
-# Automatizar esse processo 
+# Automatizar esse processo de Rename
 
 pode economizar tempo e evitar erros, especialmente se você faz isso com frequência. Abaixo está um **script em PowerShell** que:
 

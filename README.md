@@ -29,6 +29,13 @@ Esta seção é dedicada ao aprendizado e utilização do Markdown.
 -----
 
 * [09 - Markdown](09_markdown.md)
+* [10 - Plugins](10_plugins.md)
+* [11 - Gist](11_gist.md)
+* [12 - Rename Repo](12_rename_repo.md)
+* [13 - Script Rename Repo](13_script_rename_repo.md)
+* [14 - Gitignore Remover Arquivos Commitados](14_gitignore_remover_arquivos_commitados.md)
+* [15 - Gitignore Geral](15_gitignore_geral.md)
+* [16 - Git Exemplo](16_git_exemplo.md)
 
 -----
 
