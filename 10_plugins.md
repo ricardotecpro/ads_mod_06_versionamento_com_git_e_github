@@ -620,9 +620,4 @@ main {
 
 ---
 
-Se quiser, posso já **te entregar um `.zip` pronto** com esse **template Jekyll + Mermaid + Kroki** configurado para você só colocar no GitHub Pages e usar.
-Quer que eu gere esse `.zip` pra você agora?
-
----
-
 ### 👍 [ricardotecpro.github.io](https://ricardotecpro.github.io/)
