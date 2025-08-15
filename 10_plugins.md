@@ -384,8 +384,245 @@ flowchart TD
 
 A simples adição de aspas duplas nos nós que continham `()` e `.` resolve o problema de interpretação do código. 
 
-👍
+
+---
+**Quais dessas ferramentas para diagramas (Mermaid, PlantUML, etc.) funcionam diretamente no GitHub Pages com HTML gerado pelo Jekyll**, e quais precisam de conversão prévia.
+
+O funcionamento muda porque o **GitHub Pages com Jekyll** não processa todos os tipos de código da mesma forma que o **renderizador nativo do README**.
 
 ---
 
-### [ricardotecpro.github.io](https://ricardotecpro.github.io/)
+## **1️⃣ Suporte no README do GitHub x GitHub Pages (Jekyll)**
+
+| Ferramenta         | Suporte direto no README do repositório | Suporte direto no **GitHub Pages / Jekyll**             | Observações                                                                                                                  |
+| ------------------ | --------------------------------------- | ------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| **Mermaid**        | ✅ Sim (renderização nativa desde 2022)  | ❌ Não direto (o Jekyll padrão não renderiza Mermaid)    | Precisa incluir JS do Mermaid no layout HTML (`mermaid.min.js`) e inicializar com `<script>mermaid.initialize(...)</script>` |
+| **PlantUML**       | ❌ Não nativo                            | ❌ Não direto                                            | Precisa gerar PNG/SVG antes **ou** usar [Kroki.io](https://kroki.io) / servidor PlantUML e embutir imagem                    |
+| **Draw\.io**       | ❌ Não nativo                            | ❌ Não direto                                            | Sempre precisa exportar para imagem/SVG                                                                                      |
+| **Excalidraw**     | ❌ Não nativo                            | ❌ Não direto                                            | Mesmo caso do Draw\.io                                                                                                       |
+| **Graphviz / DOT** | ❌ Não nativo                            | ❌ Não direto                                            | Precisa gerar imagem antes ou usar Kroki                                                                                     |
+| **Kroki.io**       | ❌ Não nativo                            | ✅ Sim (com HTML `<img>` apontando para URL Kroki)       | Funciona sem build local, gera diagrama dinamicamente                                                                        |
+| **Markmap**        | ❌ Não nativo                            | ✅ Sim (precisa incluir `markmap.min.js` no tema Jekyll) | Permite mapas mentais no browser                                                                                             |
+
+---
+
+## **2️⃣ Como usar no GitHub Pages / Jekyll**
+
+### **Mermaid no Jekyll**
+
+Você precisa **injetar o script JS** no seu tema `_layouts/default.html` ou equivalente:
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+<script>
+  mermaid.initialize({ startOnLoad: true });
+</script>
+```
+
+E no Markdown/HTML do Jekyll:
+
+````markdown
+```mermaid
+classDiagram
+    A <|-- B
+```
+````
+
+---
+
+### **PlantUML no Jekyll**
+
+Opções:
+
+1. **Pré-renderizar** com `plantuml.jar` → exporta PNG/SVG para a pasta do site.
+2. Usar **Kroki.io**:
+
+```markdown
+![Diagrama UML](https://kroki.io/plantuml/svg/eNp...)
+```
+
+---
+
+### **Kroki.io no Jekyll**
+
+Permite incluir **Mermaid, PlantUML, Graphviz, BPMN** e outros via URL de imagem.
+Exemplo:
+
+```markdown
+![Mermaid via Kroki](https://kroki.io/mermaid/svg/eNq...)
+```
+
+---
+
+## **3️⃣ Resumo prático**
+
+* **Se quer usar GitHub Pages sem conversão manual** → **Kroki.io** é a opção mais universal (funciona para Mermaid, PlantUML, Graphviz, etc.).
+* **Se quer manter tudo local no HTML do Jekyll** → usar **Mermaid** com script JS.
+* **PlantUML direto** só se usar Kroki ou pré-gerar as imagens.
+
+---
+
+Montar um **template Jekyll pronto** para **GitHub Pages** que suporta:
+
+* **Mermaid.js** → renderização de diagramas direto no navegador.
+* **Kroki.io** → renderização de **PlantUML, Graphviz, ERD** e vários outros sem precisar instalar nada localmente.
+
+---
+
+## **📂 Estrutura do Template**
+
+```
+📦 meu-site-jekyll
+ ┣ 📂 _layouts
+ ┃ ┗ 📜 default.html
+ ┣ 📂 assets
+ ┃ ┗ 📜 style.css
+ ┣ 📜 _config.yml
+ ┣ 📜 index.md
+ ┗ 📜 README.md
+```
+
+---
+
+## **1️⃣ Arquivo `_layouts/default.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Mermaid.js -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: "default",
+      securityLevel: 'loose'
+    });
+  </script>
+</body>
+</html>
+```
+
+---
+
+## **2️⃣ Arquivo `_config.yml`**
+
+```yaml
+title: "Meu Site com Mermaid e Kroki"
+description: "Exemplo de integração de diagramas no GitHub Pages"
+theme: minima
+markdown: kramdown
+plugins:
+  - jekyll-feed
+```
+
+---
+
+## **3️⃣ Arquivo `index.md`**
+
+````markdown
+---
+layout: default
+title: "Exemplo de Diagramas"
+---
+
+# 🖼 Exemplos
+
+## 1. Mermaid - Diagrama de Classes
+```mermaid
+classDiagram
+    class Usuario {
+        -nome: String
+        -email: String
+        +login(): boolean
+        +logout(): void
+    }
+
+    class Admin {
+        +gerenciarUsuarios(): void
+    }
+
+    Usuario <|-- Admin
+```
+
+---
+
+## 2. Kroki + PlantUML (embed via imagem SVG)
+![Diagrama PlantUML via Kroki](https://kroki.io/plantuml/svg/eNpLzkksLlZIzcnJVyjPL8pJAQAJxwXS)
+
+> O link acima foi gerado com um diagrama simples no [Kroki.io](https://kroki.io)
+````
+
+---
+
+## **4️⃣ Arquivo `assets/style.css`**
+
+```css
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background-color: #f9f9f9;
+}
+
+main {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+```
+
+---
+
+## **5️⃣ Como configurar no GitHub Pages**
+
+1. Crie um novo repositório no GitHub: **`meu-site-jekyll`**.
+2. Clone para sua máquina e copie os arquivos acima.
+3. Faça commit e push para o branch `main`.
+4. No GitHub, vá em **Settings → Pages**.
+5. Em **Source**, escolha:
+
+   * **Deploy from a branch**
+   * Branch: `main`
+   * Pasta: `/ (root)`
+6. Salve.
+7. Aguarde o GitHub Pages publicar (leva 1-2 minutos).
+8. Acesse seu site: `https://seuusuario.github.io/meu-site-jekyll/`.
+
+---
+
+## **6️⃣ Como gerar links Kroki para PlantUML**
+
+1. Vá até [https://kroki.io](https://kroki.io).
+2. Escolha **PlantUML** no menu.
+3. Cole seu diagrama, por exemplo:
+
+   ```
+   @startuml
+   Alice -> Bob: Olá!
+   @enduml
+   ```
+4. Clique em **GET URL** → copie o link gerado (formato PNG ou SVG).
+5. No Markdown, insira como:
+
+   ```markdown
+   ![Meu Diagrama](URL-GERADO-PELO-KROKI)
+   ```
+
+---
+
+Se quiser, posso já **te entregar um `.zip` pronto** com esse **template Jekyll + Mermaid + Kroki** configurado para você só colocar no GitHub Pages e usar.
+Quer que eu gere esse `.zip` pra você agora?
+
+---
+
+### 👍 [ricardotecpro.github.io](https://ricardotecpro.github.io/)
