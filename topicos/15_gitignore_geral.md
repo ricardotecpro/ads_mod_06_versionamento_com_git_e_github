@@ -30,7 +30,7 @@ Desktop.ini
 *.tmp
 
 # Arquivos de IDEs e Editores
-.idea/
+../.idea/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json

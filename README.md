@@ -7,35 +7,27 @@ Bem-vindo ao módulo de Git, GitHub e Markdown do curso de computação\! Este m
 Aqui você encontrará os links para as aulas e materiais de apoio:
 
 ## Aula de Git SCM ✨
-* [01 - Introdução ao Git](01_introducao_ao_git.md)
-* [02 - Problemas Comuns](02_problemas_comuns.md)
-* [03 - Branches](03_branches.md)
-* [04 - Messages](04_messagens.md)
+* [01 - Introdução ao Git](topicos/01_introducao_ao_git.md)
+* [02 - Problemas Comuns](topicos/02_problemas_comuns.md)
+* [03 - Branches](topicos/03_branches.md)
+* [04 - Messages](topicos/04_messagens.md)
 
 -----
 ## Aula de GitHub ✨
 
-* [05 - Introdução ao GitHub](05_introducao_ao_github.md)
-* [06 - Overview](06_overview.md)
-* [07 - GitHub Pages](07_githubpages.md)
-* [08 - Assets](08_assets.md)
+* [05 - Introdução ao GitHub](topicos/05_introducao_ao_github.md)
+* [06 - Overview](topicos/06_overview.md)
+* [07 - GitHub Pages](topicos/07_githubpages.md)
+* [08 - Assets](topicos/08_assets.md)
 
 -----
 
-## Aula de Markdown ✨
-
-Esta seção é dedicada ao aprendizado e utilização do Markdown.
-
------
-
-* [09 - Markdown](09_markdown.md)
-* [10 - Plugins](10_plugins.md)
-* [11 - Gist](11_gist.md)
-* [12 - Rename Repo](12_rename_repo.md)
-* [13 - Script Rename Repo](13_script_rename_repo.md)
-* [14 - Gitignore Remover Arquivos Commitados](14_gitignore_remover_arquivos_commitados.md)
-* [15 - Gitignore Geral](15_gitignore_geral.md)
-* [16 - Git Exemplo](16_git_exemplo.md)
+* [11 - Gist](topicos/11_gist.md)
+* [12 - Rename Repo](topicos/12_rename_repo.md)
+* [13 - Script Rename Repo](topicos/13_script_rename_repo.md)
+* [14 - Remover Arquivos Commitados](topicos/14_remover_arquivos_commitados.md)
+* [15 - Gitignore Geral](topicos/15_gitignore_geral.md)
+* [16 - Git Exemplo](topicos/16_git_exemplo.md)
 
 -----
 
