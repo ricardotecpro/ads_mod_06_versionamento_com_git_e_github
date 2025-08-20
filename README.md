@@ -28,6 +28,8 @@ Aqui você encontrará os links para as aulas e materiais de apoio:
 * [14 - Remover Arquivos Commitados](topicos/14_remover_arquivos_commitados.md)
 * [15 - Gitignore Geral](topicos/15_gitignore_geral.md)
 * [16 - Git Exemplo](topicos/16_git_exemplo.md)
+* 
+* Github CLI
 
 -----
 
