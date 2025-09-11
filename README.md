@@ -4,6 +4,12 @@ Git é um sistema de controle de versão distribuído, gratuito e de código abe
 
 Sua principal função é rastrear mudanças no código-fonte ao longo do tempo. Ele permite que múltiplos desenvolvedores trabalhem juntos no mesmo projeto de forma assíncrona, sem sobrescrever o trabalho um do outro, mantendo um histórico detalhado de todas as alterações. Hoje, é a ferramenta padrão para controle de versão no mundo do desenvolvimento de software.
 
+---
+
+## 🔗 Tópicos
+
+* **[Tópicos](/topicos.md)**: Trilhas de Aprendizagem.
+
 -----
 
 ## 🤔 Por que Usar um Controle de Versão?
@@ -51,8 +57,8 @@ O ciclo de comandos mais comum para salvar seu trabalho e sincronizá-lo com um 
 ```mermaid
 graph TD;
     A[Working Directory] -- `git add <arquivo>` --> B(Staging Area);
-    B -- `git commit -m "mensagem"` --> C((Repositório Local));
-    C -- `git push` --> D[🌐 Repositório Remoto (ex: GitHub)];
+    B -- `git commit -m &quotMensagem&quot` --> C((Repositório Local));
+    C -- `git push` --> D["🌐 Repositório Remoto (ex: GitHub)"];
     D -- `git pull` --> C;
 
     style A fill:#fff,stroke:#333,stroke-width:2px
@@ -78,6 +84,32 @@ graph TD;
   - `git merge [nome-do-branch]`: Junta as alterações do branch especificado no seu branch atual.
   - `git pull`: Baixa as últimas alterações do repositório remoto e faz o merge no seu branch local.
   - `git push`: Envia seus commits locais para o repositório remoto.
+
+
+O nome padrão da branch inicial pode ser configurado globalmente.
+Basta rodar este comando **uma vez** no terminal (Prompt,  ou ):
+
+```bash
+git config --global init.defaultBranch main
+```
+
+---
+
+### 📝 O que isso faz
+
+* Define que, quando você executar `git init` em qualquer novo repositório, a branch inicial criada será chamada `main` em vez de `master`.
+
+---
+
+### ⚙️ Verificar se funcionou
+
+Depois, confirme com:
+
+```bash
+git config --global init.defaultBranch
+```
+
+Se aparecer `main`, está tudo certo.
 
 ### GitHub, GitLab e Bitbucket
 
@@ -168,18 +200,18 @@ O GitHub evoluiu de um simples host de código para uma plataforma de desenvolvi
 
 ```mermaid
 graph TD;
-    A[👨‍💻 Desenvolvedor local] -- git push --> B(🐙 Repositório no GitHub);
+    A["👨‍💻 Desenvolvedor local"] -- git push --> B("🐙 Repositório no GitHub");
     B -- Push em um branch --> C{Abre um Pull Request};
     
     subgraph "Automação e Colaboração"
-        C -- Aciona --> D[🤖 GitHub Actions (CI)];
+        C -- Aciona --> D["🤖 GitHub Actions (CI)"];
         D -- Roda Testes e Verificações --> D;
-        D -- Sucesso --> E[🧐 Revisão de Código pela Equipe];
+        D -- Sucesso --> E["🧐 Revisão de Código pela Equipe"];
     end
 
-    E -- Aprovação e Merge --> F[🌿 Branch 'main'];
-    F -- Merge aciona --> G[🤖 GitHub Actions (CD)];
-    G -- Faz o Deploy --> H[🚀 Servidor de Produção];
+    E -- Aprovação e Merge --> F["🌿 Branch 'main'"];
+    F -- Merge aciona --> G["🤖 GitHub Actions (CD)"];
+    G -- Faz o Deploy --> H["🚀 Servidor de Produção"];
 
     I(📝 Issues) -- Gera trabalho para --> A;
 ```
@@ -288,20 +320,20 @@ O GitLab foi projetado para que todo o ciclo, desde a ideia até a produção, a
 
 ```mermaid
 graph TD;
-    A[💡 Planejamento<br/>(GitLab Issues & Epics)] --> B[⌨️ Codificação<br/>(Repositório Git)];
+    A["💡 Planejamento<br/>(GitLab Issues & Epics)"] --> B["⌨️ Codificação<br/>(Repositório Git)"];
     B -- git push --> C{Merge Request};
     
     subgraph "🔄 Pipeline de CI/CD"
         C -- Aciona --> D[Build];
         D --> E[Testes Unitários e de Integração];
-        E --> F[🛡️ Análise de Segurança (SAST, DAST)];
-        F --> G[🚀 Deploy para Ambiente de Testes];
+        E --> F["🛡️ Análise de Segurança (SAST, DAST)"];
+        F --> G["🚀 Deploy para Ambiente de Testes"];
     end
 
-    G --> H[🧐 Revisão de Código no MR];
-    H -- Aprovação e Merge --> I[🌿 Branch 'main'];
-    I -- Aciona Pipeline de CD --> J[🚀 Deploy para Produção];
-    J --> K[📊 Monitoramento<br/>(GitLab Monitoring)];
+    G --> H["🧐 Revisão de Código no MR"];
+    H -- Aprovação e Merge --> I["🌿 Branch 'main'"];
+    I -- Aciona Pipeline de CD --> J["🚀 Deploy para Produção"];
+    J --> K["📊 Monitoramento<br/>(GitLab Monitoring)"];
 ```
 
 *Este diagrama mostra como uma tarefa (Issue) passa por codificação, automação de CI/CD, segurança e revisão dentro da mesma plataforma, culminando no deploy e monitoramento.*
@@ -318,3 +350,7 @@ Equipes e empresas optam pelo GitLab por várias razões estratégicas:
   - **Transparência e Open Source**: A edição Community do GitLab é de código aberto, o que permite auditoria, customização e contribuições da comunidade. A empresa também é conhecida por sua transparência, com um manual público que detalha todos os seus processos internos.
 
 Em resumo, enquanto o GitHub brilha como um ecossistema social e colaborativo, o GitLab se destaca como uma robusta e completa "fábrica de software" unificada.
+
+---
+
+### 🔗 [ricardotecpro.github.io](https://ricardotecpro.github.io/)
