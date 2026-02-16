@@ -1,122 +1,51 @@
-# Aula 03
-## Operadores
-
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+# Roteiro de Slides - Aula 03
 
 ---
 
-## 🎯 Objetivos
+## O Fluxo de Trabalho do Git
 
-- Operadores Aritméticos (Revisão e Aprofundamento)
-- Operadores Relacionais (Comparação)
-- Operadores Lógicos (`and`, `or`, `not`)
-- Atribuição Simplificada (`+=`)
-
----
-
-## 🧮 Aritméticos: Os Detalhes
-
-Além do básico (`+`, `-`, `*`, `/`):
-
-- **Divisão Inteira (`//`):** Corta a parte decimal.
-  ```python
-  7 // 2 # Resultado: 3 (e não 3.5)
-  ```
-- **Módulo (`%`):** O resto da divisão.
-  ```python
-  7 % 2 # Resultado: 1 (7 dividido por 2 dá 3 e sobra 1)
-  ```
-- **Potenciação (`**`):**
-  ```python
-  2 ** 3 # Resultado: 8 (2 ao cubo)
-  ```
+- O Git não salva tudo automaticamente (como o Google Drive).
+- Você precisa ser **Intencional**.
+- Existem 3 "lugares" onde seu arquivo pode estar.
 
 ---
 
-## ⚖️ Operadores Relacionais
+## As 3 Áreas Mágicas
 
-Comparam dois valores e retornam `True` ou `False`.
-
-| Op | Significado | Exemplo |
-| :--: | :--- | :--- |
-| `==` | Igual | `5 == 5` (True) |
-| `!=` | Diferente | `5 != 3` (True) |
-| `>` | Maior | `10 > 2` (True) |
-| `<` | Menor | `1 < 5` (True) |
-| `>=` | Maior/Igual | `5 >= 5` (True) |
-| `<=` | Menor/Igual | `4 <= 3` (False) |
+1. **Working Directory**: Onde você trabalha. (Seus arquivos na pasta).
+2. **Staging Area**: Onde você prepara. (O palco antes do show).
+3. **Repository**: Onde você grava. (O álbum de fotos definitivo).
 
 ---
 
-## 🧠 Operadores Lógicos
+## Comandos: init e status
 
-Para tomar decisões complexas.
-
-1. **`and` (E):** Tudo tem que ser verdade.
-   - `True and True` ➡ `True`
-   - `True and False` ➡ `False`
-
-2. **`or` (OU):** Basta um ser verdade.
-   - `True or False` ➡ `True`
-   - `False or False` ➡ `False`
-
-3. **`not` (NÃO):** Inverte.
-   - `not True` ➡ `False`
+- `git init`: "Git, comece a olhar para esta pasta agora."
+- `git status`: "Git, como estão as coisas?"
+  - Vermelho: Modificado/Novo (não preparado).
+  - Verde: Preparado (pronto para commit).
 
 ---
 
-## ⚡ Atribuição Simplificada
+## Comandos: add e commit
 
-Preguiça produtiva!
-
-```python
-x = 10
-
-x += 5  # Igual a: x = x + 5 (x agora é 15)
-x -= 2  # Igual a: x = x - 2 (x agora é 13)
-x *= 2  # Igual a: x = x * 2 (x agora é 26)
-```
+- `git add arquivo.txt`: "Git, põe esse arquivo no palco." (Leva para Staging).
+- `git commit -m "mensagem"`: "Git, tira a foto agora!" (Grava no Repositório).
+- **Regra de Ouro**: A mensagem deve explicar O QUE foi feito e POR QUE.
 
 ---
 
-## 👑 Precedência (Ordem)
+## O Histórico: git log
 
-Quem ganha a briga?
-
-1. `()` Parênteses (O Chefe)
-2. `**`
-3. `*`, `/`, `//`, `%`
-4. `+`, `-`
-5. `==`, `>`, etc
-6. `not`
-7. `and`
-8. `or`
-
-**Na dúvida, use parênteses!**
+- Uma lista cronológica de tudo o que aconteceu.
+- Contém:
+  - Hash (ID único).
+  - Autor.
+  - Data.
+  - Mensagem.
 
 ---
 
-## 📝 Exemplo Prático
+## Resumo Visual
 
-```python
-idade = 25
-tem_carteira = True
-
-pode_dirigir = idade >= 18 and tem_carteira
-
-print(pode_dirigir) # True
-```
-
----
-
-## 🏁 Resumo
-
-1. **Módulo (`%`)** é útil para par/ímpar.
-2. **Relacionais** retornam Booleanos.
-3. **Lógicos** combinam condições.
-4. **Parênteses** controlam a ordem.
-
----
-
-# Hora de Codar! 🚀
-Bora para os exercícios.
+`Arquivo Novo` -> `Git Add` -> `Staging` -> `Git Commit` -> `Repositório`

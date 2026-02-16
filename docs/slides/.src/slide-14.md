@@ -1,93 +1,43 @@
-# Aula 14
-## POO Avançada
-
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+# Roteiro de Slides - Aula 14
 
 ---
 
-## 🎯 Objetivos
+## Do Código para a Internet
 
-- Herança ("É um...")
-- Polimorfismo (Comportamentos diferentes)
-- Encapsulamento (`__privado`)
-- Sobrescrita de métodos
-
----
-
-## 🧬 Herança (Inheritance)
-
-Evita copiar código.
-Se `Animal` tem `comer()`, `Cachorro` também tem.
-
-```python
-class Animal:
-    def comer(self):
-        print("Comendo...")
-
-class Cachorro(Animal): # Cachorro herda de Animal
-    def latir(self):
-        print("Au!")
-```
-
-Cachorro faz DUAS coisas: come e late.
+- Ver código é chato para clientes/recrutadores.
+- Ver um **Site no ar** é incrível.
+- GitHub Pages permite isso em segundos.
 
 ---
 
-## 🎭 Polimorfismo
+## O que roda no Pages?
 
-O mesmo método, várias formas.
-
-```python
-class Gato(Animal):
-    def fazer_som(self):
-        print("Miau")
-
-class Pato(Animal):
-    def fazer_som(self):
-        print("Quack")
-```
-
-Se eu chamar `fazer_som()`, cada um reage do seu jeito.
+- **HTML** (Estrutura).
+- **CSS** (Estilo).
+- **JavaScript** (Interatividade).
+- Imagens / Fontes.
+- **NÃO RODA**: PHP, Java, Python, SQL (Backend).
 
 ---
 
-## 🦸‍♂️ O poder do `super()`
+## Como ativar?
 
-Chama a classe pai. Essencial no `__init__`.
-
-```python
-class Funcionario:
-    def __init__(self, nome):
-        self.nome = nome
-
-class Gerente(Funcionario):
-    def __init__(self, nome, senha):
-        super().__init__(nome) # Pai cuida do nome
-        self.senha = senha     # Eu cuido da senha
-```
+- Settings -> Pages.
+- Source: `Deploy from a branch`.
+- Branch: `main` / `root`.
+- Save.
 
 ---
 
-## 🔒 Encapsulamento
+## Endereço Personalizado
 
-Protegendo seus atributos.
-
-- Público: `self.nome` (Acesso livre)
-- Protegido: `self._saldo` (Só subclasses deviam mexer - Convenção)
-- Privado: `self.__senha` (O Python "esconde" o nome)
-
-Para acessar privados, usamos métodos **Getters e Setters** (`get_senha`, `set_senha`).
+- Padrão: `usuario.github.io/repo`.
+- Exemplo: `joaosilva.github.io/portfolio`.
+- Profissionalismo instantâneo.
 
 ---
 
-## 🏁 Resumo
+## Jekyll (Bônus)
 
-1. **Herança** cria hierarquias.
-2. **Polimorfismo** traz flexibilidade.
-3. **`super()`** reaproveita construtores.
-4. **Encapsulamento** traz segurança.
-
----
-
-# Prática! 🚀
-Vamos evoluir nossos objetos.
+- O GitHub tem um motor que transforma Markdown em Site Blog automaticamente.
+- Se você não sabe HTML, pode usar um tema Jekyll e criar um site lindo apenas editando arquivos `.md`.

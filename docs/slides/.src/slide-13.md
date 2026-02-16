@@ -1,97 +1,47 @@
-# Aula 13
-## Orientação a Objetos (Intro)
-
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+# Roteiro de Slides - Aula 13
 
 ---
 
-## 🎯 Objetivos
+## Git é Multijogador
 
-- Paradigma OO.
-- Classes vs Objetos.
-- Atributos (`self.variavel`).
-- Métodos (`def funcao()`).
-- O Construtor `__init__`.
+- Um jogo cooperativo, não competitivo.
+- Objetivo: Construir o software juntos sem quebrar nada.
 
 ---
 
-## 🏗️ Classe vs Objeto
+## Papéis no GitHub
 
-Imagine uma fábrica de carros.
-
-- **Classe (Molde):** O desenho técnico do carro. Definições de motor, cor, rodas. Não dá para dirigir o desenho.
-- **Objeto (Instância):** O carro real que saiu da fábrica. Dá para dirigir, abastecer e bater.
-
-```python
-class Carro: # Molde
-    pass
-
-meu_fusca = Carro() # Objeto
-```
+- **Owner**: O Deus do repo. Pode deletar, arquivar, transferir.
+- **Admin**: Gerencia acessos.
+- **Write (Colaborador)**: O desenvolvedor padrão. Lê, escreve, cria branches.
+- **Read**: Só pode ver (repos privados).
+- **Sem acesso (Público)**: Qualquer um na internet (pode ver e fazer fork).
 
 ---
 
-## 💾 Atributos (Dados)
+## O Fluxo de Trabalho (Revisão)
 
-São as variáveis que "vivem" dentro do objeto.
-Usamos `self` para dizer "meu atributo".
-
-```python
-class Carro:
-    def __init__(self, cor, modelo):
-        self.cor = cor
-        self.modelo = modelo
-
-c1 = Carro("Azul", "Fusca")
-print(c1.cor) # Azul
-```
-
-### `__init__`
-Roda AUTOMATICAMENTE quando criamos o objeto. Serve para inicializar.
+1. `git pull` (Café da manhã dos campeões).
+2. `git switch -c feature`.
+3. Code, Code, Code.
+4. `git push`.
+5. PR & Review.
 
 ---
 
-## ⚙️ Métodos (Ações)
+## O Pesadelo "Rejected"
 
-São funções que o objeto sabe executar.
-O primeiro parâmetro TEM QUE SER `self`.
-
-```python
-class Carro:
-    # ... init ...
-
-    def acelerar(self):
-        print(f"O {self.modelo} está acelerando! Vrum!")
-
-c1.acelerar()
-```
+`! [rejected] main -> main (fetch first)`
+- Significa: "Alguém chegou na sua frente".
+- O servidor tem commits que você não tem.
+- Você não pode sobrescrever o histórico deles.
+- Solução: Baixe (`pull`), misture (`merge/rebase`), depois suba (`push`).
 
 ---
 
-## 🤳 O tal do `self`
+## Branch Protection
 
-Por que preciso declarar `self`?
-O Python passa o objeto automaticamente como primeiro argumento.
-
-Quando chamamos:
-`c1.acelerar()`
-
-O Python faz internamente:
-`Carro.acelerar(c1)`
-
-Isso é o `self`: o próprio objeto `c1`.
-
----
-
-## 🏁 Resumo
-
-1. **POO** modela o mundo real.
-2. **Classes** definem a estrutura.
-3. **Objetos** são criados a partir de classes.
-4. **Atributos** guardam estado.
-5. **Métodos** definem comportamento.
-
----
-
-# Prática! 🚀
-Vamos criar nossos próprios objetos.
+- Trava de segurança no gatilho.
+- Impede `git push origin main`.
+- Obriga Code Review.
+- Essencial em empresas sérias.

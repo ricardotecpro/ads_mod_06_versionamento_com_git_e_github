@@ -1,116 +1,47 @@
-# Aula 08
-## Dicionários
-
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+# Roteiro de Slides - Aula 08
 
 ---
 
-## 🎯 Objetivos
+## Chega de trabalhar sozinho!
 
-- Estrutura Chave-Valor (`key: value`)
-- Acesso seguro com `.get()`
-- Manipulação (Add, Edit, Remove)
-- Loops em dicionários
-
----
-
-## 📖 O que é um Dict?
-
-Uma coleção onde cada item tem uma "etiqueta" (chave).
-Análogo a um JSON ou uma linha de tabela.
-
-```python
-carro = {
-    "marca": "Ford",
-    "modelo": "Mustang",
-    "ano": 1964
-}
-```
-
-- Chaves (`keys`): "marca", "modelo", "ano"
-- Valores (`values`): "Ford", "Mustang", 1964
+- Git brilha mesmo em equipes.
+- O problema: Se 10 pessoas derem `git push` na `main` ao mesmo tempo, vira o caos.
+- A solução: **Pull Requests**.
 
 ---
 
-## 🔑 Acessando Dados
+## O Fluxo de Ouro (GitHub Flow)
 
-Use a chave entre colchetes.
-
-```python
-print(carro["modelo"]) # Mustang
-```
-
-### O método `.get()`
-Se a chave não existir, `[]` quebra o código. `get()` retorna `None` (seguro).
-
-```python
-print(carro.get("cor")) # None
-print(carro.get("cor", "Preto")) # Valor padrão
-```
+1. **Branch**: Crie um espaço seguro.
+2. **Commit**: Faça suas mudanças.
+3. **Push**: Envie para a nuvem.
+4. **Pull Request**: "Ei time, vejam o que eu fiz!"
+5. **Review**: Discussão, correções, elogios.
+6. **Merge**: O Grande Momento. Entra na base oficial.
 
 ---
 
-## ✏️ Modificando
+## Code Review: Por que fazer?
 
-```python
-# Alterar valor existente
-carro["ano"] = 2020
-
-# Criar nova chave
-carro["cor"] = "Vermelho"
-
-# Remover chave
-del carro["modelo"]
-# ou
-cor = carro.pop("cor")
-```
+- **Qualidade**: 4 olhos veem mais que 2.
+- **Conhecimento**: Juniors aprendem com Seniors (e vice-versa).
+- **Consistência**: O código fica com "a cara do time", não de uma pessoa só.
 
 ---
 
-## 🔄 Loops e Dicts
+## O Merge no GitHub
 
-Três formas principais:
-
-```python
-# 1. Pelas chaves (keys)
-for k in carro.keys():
-    print(k)
-
-# 2. Pelos valores (values)
-for v in carro.values():
-    print(v)
-
-# 3. Por ambos (items) - O MAIS USADO!
-for k, v in carro.items():
-    print(f"{k}: {v}")
-```
+- Não é via linha de comando.
+- É um botão verde "Merge pull request".
+- Opções:
+  - **Merge Commit**: Mantém toda a história (recomendado).
+  - **Squash**: Resume tudo em 1 commit (bom para limpeza).
+  - **Rebase**: Lineariza a história (avançado).
 
 ---
 
-## 🏗️ Lista de Dicionários
+## E depois?
 
-Estrutura muito poderosa para dados reais.
-
-```python
-clientes = [
-    {"id": 1, "nome": "Ana"},
-    {"id": 2, "nome": "Beto"}
-]
-
-print(clientes[0]["nome"]) # Ana
-```
-
----
-
-## 🏁 Resumo
-
-1. Dicionários mapeiam **chaves** para **valores**.
-2. Sintaxe: `{chave: valor}`.
-3. Chaves devem ser únicas.
-4. Use `.items()` para iterar chave e valor juntos.
-5. Base para APIs e manipulação de dados complexos.
-
----
-
-# Prática! 🚀
-Vamos para os exercícios.
+- O GitHub está atualizado.
+- Mas seu computador NÂO!
+- Sempre lembre de: `git checkout main` e `git pull`.

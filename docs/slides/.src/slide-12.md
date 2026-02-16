@@ -1,100 +1,60 @@
-# Aula 12
-## Tratamento de Erros e Exceções
-
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+# Roteiro de Slides - Aula 12
 
 ---
 
-## 🎯 Objetivos
+## README.md
 
-- Impedir que o programa quebre ("Crash").
-- Blocos `try`, `except`, `else`, `finally`.
-- Tipos comuns de erros.
-- Lançar exceções (`raise`).
+- A "capa do livro" do seu projeto.
+- É a primeira (e as vezes única) coisa que recrutadores veem.
+- Sem README = "Projeto abandonado".
 
 ---
 
-## 💥 O Problema
+## Markdown: O que é?
 
-O mundo real é caótico. Usuários digitam errado, arquivos somem, a internet cai.
+- Criado por John Gruber em 2004.
+- Foco: "Ser legível como texto puro, mas convertível para HTML".
+- Usado no GitHub, Slack, Discord, Reddit, Trello...
+
+---
+
+## Sintaxe Essencial 1
+
+`# Título 1`
+`## Título 2`
+`### Título 3`
+
+`**Negrito**` e `*Itálico*`.
+
+`[Texto do Link](https://google.com)`
+
+---
+
+## Sintaxe Essencial 2
+
+Imagens:
+`![Descrição para Cegos](url-da-imagem.png)`
+
+Listas:
+- Item 1
+- Item 2
+  - Subitem
+
+---
+
+## Code Blocks
+
+Para mostrar código, use três crases:
 
 ```python
-x = int(input("Número: "))
-# Se digitar "oi", o programa FECHA com erro vermelho.
-```
-
-Precisamos lidar com isso elegantemente.
-
----
-
-## 🛡️ A Estrutura Básica
-
-```python
-try:
-    # Tente fazer isso...
-    x = int(input("Número: "))
-    print(10 / x)
-
-except ValueError:
-    # Se der erro de valor (texto em vez de num)
-    print("Digite apenas números!")
-
-except ZeroDivisionError:
-    # Se tentar dividir por zero
-    print("Não pode dividir por 0!")
-
-except Exception as e:
-    # Qualquer outro erro
-    print(f"Erro desconhecido: {e}")
-```
-
----
-
-## ☀️ Else e Finally
-
-```python
-try:
-    arquivo = open("dados.txt", "r")
-except FileNotFoundError:
-    print("Erro ao abrir.")
-else:
-    # Só executa se o TRY deu certo
-    print("Arquivo aberto com sucesso!")
-    conteudo = arquivo.read()
-finally:
-    # Executa SEMPRE (dando erro ou não)
-    print("Finalizando operação...")
+def ola():
+    print("Mundo")
 ```
 
 ---
 
-## 🤚 Raise (Levantar erro)
+## Badges (Escudos)
 
-Você pode criar suas próprias regras.
-
-```python
-def sacar(saldo, valor):
-    if valor > saldo:
-        raise ValueError("Saldo insuficiente!")
-    
-    return saldo - valor
-
-try:
-    sacar(100, 500)
-except ValueError as e:
-    print(f"Falha no saque: {e}")
-```
-
----
-
-## 🏁 Resumo
-
-1. Use `try/except` para código perigoso (I/O, Conversão).
-2. Capture erros específicos (`ValueError` é melhor que `Exception`).
-3. O programa não para se o erro for tratado.
-4. `finally` é ótimo para fechar recursos.
-
----
-
-# Prática! 🚀
-Vamos blindar nossos códigos.
+- Aquelas medalhas coloridas: `build passing`, `wip`, `version 1.0`.
+- Dão ar de "projeto sério".
+- Use `Shields.io`.

@@ -1,118 +1,45 @@
-# Aula 10
-## Módulos e Pacotes
-
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+# Roteiro de Slides - Aula 10
 
 ---
 
-## 🎯 Objetivos
+## O Caos da Comunicação
 
-- Reutilizar código com `import`
-- Biblioteca Padrão (`stdlib`)
-- Criar Módulos próprios (`.py`)
-- Pacotes (Pastas)
-
----
-
-## 📦 O que é um Módulo?
-
-Arquivos `.py` contendo:
-- Funções
-- Classes
-- Variáveis
-
-**Vantagem:** Divide problemas grandes em partes pequenas e organizadas.
+- Email, WhatsApp, Slack... Onde está a tarefa?
+- **Issues** centralizam tudo no lugar onde o código vive.
+- Regra: "Se não tem Issue, não existe demanda".
 
 ---
 
-## 🔌 Importando ("Baterias Inclusas")
+## Componentes de uma Issue
 
-O Python já vem com muita coisa pronta.
-
-**Exemplo `math`:**
-```python
-import math
-
-print(math.pi) # 3.14159...
-print(math.sqrt(16)) # 4.0
-```
-
-**Exemplo `random`:**
-```python
-import random
-
-print(random.randint(1, 10)) # Sorteia de 1 a 10
-```
+1. **Título**: Explicativo.
+2. **Assignee**: O Dono da Bola.
+3. **Labels**: `bug` 🔴, `feature` 🟢, `good first issue` 🟣.
+4. **Milestone**: O prazo / entrega.
 
 ---
 
-## 🎯 Import Específico (`from ... import`)
+## GitHub Projects (Kanban)
 
-Pega só o que precisa (mais limpo).
-
-```python
-from math import sqrt, pi
-
-print(pi) # Não precisa do math.pi
-print(sqrt(9))
-```
+- Visualização em Colunas (Board).
+- Inspirado no método Kanban (Toyota).
+- **To Do**: Fila de espera.
+- **In Progress**: O que estou focando AGORA.
+- **Done**: Sucesso.
+- Ajuda a evitar "multitarefa" excessiva.
 
 ---
 
-## 🏷️ Apelidos (`as`)
+## Automação de Fechamento
 
-Para nomes longos ou convenções.
-
-```python
-import datetime as dt
-import pandas as pd # Convenção mundial
-
-inicio = dt.datetime.now()
-```
+- `Closes #12`
+- `Fixes #45`
+- `Resolves #99`
+- Coloque isso na descrição do PR e o GitHub faz a faxina para você.
 
 ---
 
-## 🔨 Seus Próprios Módulos
+## Organização é Poder
 
-Crie `minha_lib.py`:
-```python
-def ola():
-    print("Oi do módulo!")
-```
-
-Use em `main.py`:
-```python
-import minha_lib
-
-minha_lib.ola()
-```
-
----
-
-## 📂 Pacotes
-
-São **pastas** com arquivos Python.
-Geralmente têm um `__init__.py` dentro.
-
-`from meu_pacote import meu_modulo`
-
-Exemplo de estrutura:
-- `jogo/` (Pacote)
-  - `__init__.py`
-  - `graficos.py` (Módulo)
-  - `som.py` (Módulo)
-
----
-
-## 🏁 Resumo
-
-1. `import modulo`: Traz o arquivo.
-2. `from modulo import item`: Traz a função/classe.
-3. `as apelido`: Renomeia.
-4. Módulos organizam e evitam arquivos gigantes.
-5. Biblioteca Padrão é poderosa (`os`, `sys`, `math`, `random`...).
-
----
-
-# Prática! 🚀
-Vamos modularizar o mundo.
+- Recrutadores olham se você sabe se organizar.
+- Um repositório cheio de Issues e um Projeto montado impressionam tanto quanto um código complexo.

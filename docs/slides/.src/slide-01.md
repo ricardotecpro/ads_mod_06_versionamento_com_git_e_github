@@ -1,121 +1,60 @@
-# Aula 01
-## Introdução à Computação e Python
-
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+# Roteiro de Slides - Aula 01
 
 ---
 
-## 🎯 Objetivos da Aula
+## O Caos dos Arquivos Manuais
 
-- Compreender Lógica de Programação
-- Conhecer a linguagem Python
-- Configurar o Ambiente (VSCode)
-- Criar o primeiro programa ("Olá Mundo")
-
----
-
-## 🤔 O que é Programação?
-
-É a arte de instruir o computador.
-
-- **Computador:** Rápido, mas "burro" (precisa de instruções explícitas).
-- **Algoritmo:** Sequência de passos lógicos para resolver um problema.
-- **Código:** O algoritmo traduzido para uma linguagem que o computador entende.
+- Quem nunca?
+  - `trabalho.doc`
+  - `trabalho_final.doc`
+  - `trabalho_agora_vai.doc`
+- **Problemas**:
+  - Qual é a versão real?
+  - O que mudou entre a v1 e a v2?
+  - E se eu apagar algo importante por engano?
 
 ---
 
-## 🐍 Por que Python?
+## O que é VCS?
 
-Criada por **Guido van Rossum** (1991).
-
-- **Legível:** Parece inglês simples.
-- **Produtiva:** Faz mais com menos linhas de código.
-- **Versátil:** Web, Dados, IA, Automação...
-- **Mercado:** Uma das linguagens mais demandadas hoje.
+- **V**ersion **C**ontrol **S**ystem
+- "Uma máquina do tempo para seus arquivos"
+- Registra quem mudou, o que mudou e quando mudou.
+- Permite voltar ao passado a qualquer momento.
 
 ---
 
-## 🛠️ Ferramentas
+## Por que usar Git?
 
-1. **Python (Interpretador):** O "cérebro" que executa o código.
-2. **VSCode (Editor):** Onde escrevemos o código.
-
-> Dica: Instale as extensões recomendadas no VSCode para facilitar sua vida!
-
----
-
-## 🌍 Olá, Mundo!
-
-A tradição da programação.
-
-```python
-print("Olá, Mundo!")
-```
-
-- `print`: Função de saída (output). Mostra dados na tela.
-- `()`: Parênteses indicam chamada de função.
-- `""`: Aspas indicam texto (string).
+- **Padrão de Mercado**: Usado por 90%+ das empresas.
+- **Velocidade**: Extremamente rápido.
+- **Segurança**: Criptografia para garantir integridade.
+- **Distribuído**: Você não depende de um servidor central para trabalhar.
 
 ---
 
-## 📝 Comentários
+## Git vs GitHub
 
-O computador ignora, mas humanos agradecem.
-
-```python
-# Isto é um comentário
-print("Oi") # Comentário ao lado
-
-"""
-Comentário de
-várias linhas
-"""
-```
-
-Use para explicar o "porquê" do código, não o "como".
+| Git | GitHub |
+| :--- | :--- |
+| Software (Ferramenta) | Plataforma (Site) |
+| Instalado no seu PC | Na Nuvem (Internet) |
+| Linha de Comando (CLI) | Interface Gráfica (Web) |
+| Uso Local | Uso Compartilhado |
 
 ---
 
-## 📦 Variáveis (Spoiler)
+## Estrutura do Curso
 
-Caixinhas para guardar dados.
-
-```python
-nome = "Maria"
-idade = 25
-
-print(nome)
-print(idade)
-```
-
-Veremos mais detalhes na próxima aula!
+- **Módulo 1**: Fundamentos (Aulas 1-4)
+- **Módulo 2**: GitHub Essencial (Aulas 5-8)
+- **Módulo 3**: Fluxos de Trabalho (Aulas 9-12)
+- **Módulo 4**: Profissionalização (Aulas 13-16)
 
 ---
 
-## 🐞 Erros Comuns (Sintaxe)
+## Próximos Passos
 
-O Python é rigoroso!
-
-```python
-Print("Oi") # Erro! (P maiúsculo)
-print "Oi"  # Erro! (Falta parênteses - Python 3)
- print("Oi") # Erro! (Indentação incorreta no início)
-```
-
-**Atenção aos detalhes!**
-
----
-
-## 🏁 Resumo
-
-1. Programar é criar algoritmos.
-2. Python é simples e poderoso.
-3. `print()` mostra coisas na tela.
-4. Comentários ajudam na documentação.
-
----
-
-<!-- _class: lead -->
-# Dúvidas?
-
-Vamos para os exercícios! 🚀
+- Instalar o Git.
+- Configurar usuário e email.
+- Dar os primeiros comandos!

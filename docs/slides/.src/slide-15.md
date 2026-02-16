@@ -1,97 +1,41 @@
-# Aula 15
-## APIs e JSON
-
-![bg right:40% 80%](https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg)
+# Roteiro de Slides - Aula 15
 
 ---
 
-## 🎯 Objetivos
+## Todo mundo erra
 
-- O que é uma API?
-- O que é JSON?
-- Consumindo dados da Web (`requests`)
-- Status Codes HTTP (200, 404, 500)
-
----
-
-## 🌐 API (Interface de Programação)
-
-É como programas conversam entre si.
-Em vez de clicar num site, seu código manda uma mensagem:
-*"Ei, me dá a cotação do Dólar!"*
-
-E a API responde com dados.
+- Commitar na branch errada? ✅
+- Apagar arquivo errado? ✅
+- Perder o histórico? ✅
+- O Git tem ferramentas para consertar tudo isso.
 
 ---
 
-## 📦 JSON (JavaScript Object Notation)
+## O Comando Reset
 
-É a língua universal da Web.
-Muito parecido com Dicionários Python!
-
-```json
-{
-  "nome": "Mario",
-  "vidas": 3,
-  "poderes": ["pulo", "fogo"]
-}
-```
-
-Python converte isso para `dict` facilmente.
+Imagine uma fita cassete rebobinada.
+- `--soft`: Rebobina a fita (Commit), mas deixa as roupas no chão (Arquivos modificados).
+- `--hard`: Rebobina a fita E limpa o quarto (Apaga modificações). **CUIDADO**.
 
 ---
 
-## 📡 Fazendo Requisições
+## O Comando Restore
 
-Usamos a biblioteca `requests` (tem que instalar: `pip install requests`).
-
-```python
-import requests
-
-url = "https://api.exemplo.com/dados"
-resposta = requests.get(url)
-
-print(resposta.status_code) # 200 = Sucesso
-print(resposta.json()) # O dicionário com os dados
-```
+- "Desfazer (CTRL+Z)" do arquivo.
+- Se você não deu `add` ainda, `git restore arquivo` traz a versão do último commit.
 
 ---
 
-## 🚦 Códigos HTTP
+## O Comando Stash
 
-O servidor diz se deu certo ou errado.
-
-- **200 OK:** Deu certo! 👍
-- **404 Not Found:** Não achei. 🔍
-- **500 Internal Server Error:** O servidor quebrou. 🔥
+- "Esconder na gaveta".
+- Limpa sua mesa (Working Directory) para você atender uma urgência em outra branch.
+- Depois `git stash pop` traz tudo da gaveta de volta.
 
 ---
 
-## 🔎 Exemplo Real: ViaCEP
+## Reflog
 
-`https://viacep.com.br/ws/01001000/json/`
-
-Retorna:
-```json
-{
-  "cep": "01001-000",
-  "logradouro": "Praça da Sé",
-  "bairro": "Sé",
-  "localidade": "São Paulo",
-  "uf": "SP"
-}
-```
-
----
-
-## 🏁 Resumo
-
-1. **APIs** conectam o mundo.
-2. **JSON** é o formato de dados.
-3. **`requests.get()`** busca os dados.
-4. **`.json()`** transforma em dicionário.
-
----
-
-# Prática! 🚀
-Vamos conectar na Matrix.
+- O Diário Secreto do Git.
+- Registra cada movimento do HEAD.
+- Se você deletou um commit e quer ele de volta, o hash dele estará no `git reflog`.

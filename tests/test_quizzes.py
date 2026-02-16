@@ -79,8 +79,8 @@ class TestQuizzes:
         page = page_with_base_url
         page.goto(f"{base_url}/quizzes/quiz-01/")
         
-        # Procura por containers de quiz
-        questions = page.locator(".quiz-container")
+        # Procura por itens de quiz
+        questions = page.locator(".quiz-item")
         
         # Deve haver pelo menos 5 perguntas
         expect(questions).to_have_count(5)
