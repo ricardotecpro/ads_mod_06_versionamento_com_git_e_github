@@ -39,6 +39,18 @@ Com regras: "Toda mudança precisa de branch", "A main é sagrada", "Só mergeia
   - Merge.
 - Comparação Visual: GitHub Flow (linha reta com galhos curtos) vs Git Flow (teia de aranha complexa).
 
+### Diagrama do GitHub Flow
+
+```mermaid
+graph TD
+    A[main] -->|Criar Branch| B(feature-branch)
+    B -->|Commit| C(Alterações)
+    C -->|Pull Request| D{Revisão}
+    D -->|Aprovado| E[Merge na main]
+    D -->|Mudanças| B
+    E -->|Deploy| F[Produção]
+```
+
 ## 📝 Quiz
 1. No GitHub Flow, a branch `main` deve estar em qual estado?
 2. Qual a principal diferença para o Git Flow?

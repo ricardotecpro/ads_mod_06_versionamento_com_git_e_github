@@ -1,70 +1,64 @@
 # Sobre o Curso
 
-## 🎓 Python Backend - Do Zero ao Profissional
+## 🎓 Git e GitHub - Do Zero ao Profissional
 
-Este é um curso completo e estruturado de Python com foco em desenvolvimento backend. Desenvolvido para levar você do básico ao avançado, com uma abordagem prática e hands-on.
+Este é um curso completo e estruturado de Versionamento de Código com Git e GitHub. Desenvolvido para levar você do básico ao avançado, com uma abordagem prática e focada nas necessidades reais do mercado de desenvolvimento de software.
 
 ## 🎯 Objetivos do Curso
 
 <div class="grid cards" markdown>
 
--   :material-target: **Dominar Python**
+-   :material-target: **Dominar Git**
     
     ---
     
-    Aprender a sintaxe, estruturas de dados e conceitos fundamentais da linguagem Python.
+    Aprender os comandos fundamentais, fluxo de trabalho local e como o Git funciona por baixo dos panos.
 
--   :material-code-braces: **Programação Orientada a Objetos**
+-   :material-code-braces: **GitHub Profissional**
     
     ---
     
-    Entender e aplicar os princípios de POO: classes, objetos, herança e polimorfismo.
+    Utilizar o GitHub não apenas como repositório, mas como plataforma de colaboração, gestão de projetos e portfólio.
 
--   :material-api: **Desenvolvimento Backend**
+-   :material-api: **Colaboração**
     
     ---
     
-    Trabalhar com APIs, requisições HTTP e integração com serviços externos.
+    Trabalhar em equipe utilizando Branches, Pull Requests, Code Reviews e resolvendo conflitos de forma eficiente.
 
 -   :material-test-tube: **Boas Práticas**
     
     ---
     
-    Escrever código limpo, testável e seguindo as melhores práticas da indústria.
+    Criar um histórico de commits limpo, escrever mensagens significativas e manter repositórios organizados.
 
 </div>
 
 ## 📚 O Que Você Vai Aprender
 
-### Módulo 1 – Fundamentos
-- Introdução ao Python e configuração do ambiente
-- Variáveis, tipos de dados e operadores
-- Estruturas condicionais e controle de fluxo
+### Módulo 1 – Conceitos Básicos
+- Instalação e configuração do Git
+- Ciclo de vida dos arquivos (Tracked to Committed)
+- Histórico e navegação no tempo
+- Ramificação (Branching) e Fusão (Merging)
 
-### Módulo 2 – Estruturas de Controle
-- Laços de repetição (for, while)
-- Listas, tuplas e sets
-- Dicionários e manipulação de coleções
+### Módulo 2 – Trabalhando com GitHub
+- Repositórios Remotos
+- Sincronização (Push/Pull)
+- Resolução de Conflitos
+- Pull Requests e Code Review
 
-### Módulo 3 – Funções e Modularização
-- Criação e uso de funções
-- Módulos e pacotes
-- Organização de código
+### Módulo 3 – Fluxos e Organização
+- GitHub Flow
+- Issues e Projects (Kanban)
+- Markdown para documentação
+- README profissional
 
-### Módulo 4 – Arquivos e Exceções
-- Leitura e escrita de arquivos
-- Tratamento de exceções
-- Gerenciamento de erros
-
-### Módulo 5 – Programação Orientada a Objetos
-- Classes e objetos
-- Herança e polimorfismo
-- Encapsulamento e abstração
-
-### Módulo 6 – Ecossistema Python
-- APIs e requisições HTTP
-- Testes automatizados
-- Boas práticas e padrões de código
+### Módulo 4 – Colaboração e Carreira
+- Forks e contribuição Open Source
+- GitHub Pages para hospedagem
+- Tratamento de erros comuns (Detached HEAD, etc.)
+- Construção de portfólio
 
 ## 🛠️ Metodologia
 
@@ -98,15 +92,16 @@ Este é um curso completo e estruturado de Python com foco em desenvolvimento ba
 
 ## 👨‍🎓 Para Quem é Este Curso
 
-- **Iniciantes** que querem aprender programação do zero
-- **Desenvolvedores** que querem migrar para Python
-- **Estudantes** de ciência da computação e áreas relacionadas
-- **Profissionais** que querem se especializar em backend
+- **Iniciantes** que nunca usaram controle de versão
+- **Desenvolvedores** que usam Git apenas no básico ("add, commit, push")
+- **Estudantes** que precisam organizar seus trabalhos acadêmicos
+- **Profissionais** que querem melhorar seu fluxo de trabalho em equipe
 
 ## 📋 Pré-requisitos
 
 - Computador com Windows, Linux ou macOS
-- Vontade de aprender e praticar
+- Instalação do Git (coberta no curso)
+- Conta no GitHub (gratuita)
 - **Não é necessário conhecimento prévio de programação!**
 
 ## 🎖️ O Que Você Receberá
@@ -120,7 +115,7 @@ Este é um curso completo e estruturado de Python com foco em desenvolvimento ba
 
 ## 🚀 Comece Agora
 
-Pronto para começar sua jornada em Python?
+Pronto para dominar o Git?
 
 [:material-rocket: Ir para Aula 01](aulas/aula-01.md){ .md-button .md-button--primary }
 [:material-cog: Configurar Ambiente](setups/index.md){ .md-button }

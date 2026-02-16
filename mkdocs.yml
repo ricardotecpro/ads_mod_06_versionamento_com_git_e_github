@@ -1,7 +1,7 @@
-site_name: Python Backend - Curso Completo
-site_url: https://ricardotecpro.github.io/ads_spec_backend_com_python
-repo_url: https://github.com/ricardotecpro/ads_spec_backend_com_python
-repo_name: ricardotecpro/ads_spec_backend_com_python
+site_name: Git e GitHub - Curso Completo
+site_url: https://ricardotecpro.github.io/ads_mod_06_versionamento_com_git_e_github
+repo_url: https://github.com/ricardotecpro/ads_mod_06_versionamento_com_git_e_github
+repo_name: ricardotecpro/ads_mod_06_versionamento_com_git_e_github
 theme:
   name: material
   language: pt-BR
@@ -122,6 +122,8 @@ extra:
       link: https://github.com/ricardotecpro
     - icon: fontawesome/brands/linkedin
       link: https://linkedin.com/in/ricardotecpro
+    - icon: fontawesome/solid/globe
+      link: https://ricardotecpro.github.io/
   version:
     provider: mike
     default: estavel
@@ -134,102 +136,100 @@ nav:
   - Sobre: sobre.md
   - Aulas:
     - aulas/index.md
-    - Módulo 1 – Fundamentos:
-      - 'Aula 01 - Introdução ao Python': aulas/aula-01.md
-      - 'Aula 02 - Variáveis e Tipos de Dados': aulas/aula-02.md
-      - 'Aula 03 - Operadores e Expressões': aulas/aula-03.md
-      - 'Aula 04 - Estruturas Condicionais': aulas/aula-04.md
-    - Módulo 2 – Estruturas de Controle:
-      - 'Aula 05 - Laços de Repetição': aulas/aula-05.md
-      - 'Aula 06 - Listas e Coleções': aulas/aula-06.md
-      - 'Aula 07 - Tuplas e Sets': aulas/aula-07.md
-      - 'Aula 08 - Dicionários': aulas/aula-08.md
-    - Módulo 3 – Funções e Modularização:
-      - 'Aula 09 - Funções': aulas/aula-09.md
-      - 'Aula 10 - Módulos e Pacotes': aulas/aula-10.md
-    - Módulo 4 – Arquivos e Exceções:
-      - 'Aula 11 - Manipulação de Arquivos': aulas/aula-11.md
-      - 'Aula 12 - Tratamento de Exceções': aulas/aula-12.md
-    - Módulo 5 – Programação Orientada a Objetos:
-      - 'Aula 13 - Introdução a Classes e Objetos': aulas/aula-13.md
-      - 'Aula 14 - Herança e Polimorfismo': aulas/aula-14.md
-    - Módulo 6 – Ecossistema:
-      - 'Aula 15 - APIs e Requisições HTTP': aulas/aula-15.md
-      - 'Aula 16 - Testes e Boas Práticas': aulas/aula-16.md
+    - Módulo 1 – Conceitos Básicos:
+      - 'Aula 01 - Introdução ao Controle de Versão': aulas/aula-01.md
+      - 'Aula 02 - Instalação e Configuração': aulas/aula-02.md
+      - 'Aula 03 - Primeiros Passos com Git': aulas/aula-03.md
+      - 'Aula 04 - Branches e Merges': aulas/aula-04.md
+    - Módulo 2 – Trabalhando com GitHub:
+      - 'Aula 05 - Resolução de Conflitos': aulas/aula-05.md
+      - 'Aula 06 - Introdução ao GitHub': aulas/aula-06.md
+      - 'Aula 07 - Repositórios Remotos': aulas/aula-07.md
+      - 'Aula 08 - Pull Requests e Code Review': aulas/aula-08.md
+    - Módulo 3 – Fluxos e Organização:
+      - 'Aula 09 - GitHub Flow': aulas/aula-09.md
+      - 'Aula 10 - Issues e Projects': aulas/aula-10.md
+      - 'Aula 11 - Boas Práticas de Commit': aulas/aula-11.md
+      - 'Aula 12 - README e Markdown': aulas/aula-12.md
+    - Módulo 4 – Colaboração e Carreira:
+      - 'Aula 13 - Trabalhando em Equipe': aulas/aula-13.md
+      - 'Aula 14 - GitHub Pages e Portfólio': aulas/aula-14.md
+      - 'Aula 15 - Erros Comuns e Soluções': aulas/aula-15.md
+      - 'Aula 16 - Carreira e Próximos Passos': aulas/aula-16.md
   - Materiais:
       - materiais.md
       - Slides:
           - slides/index.md
-          - 'Slide 01 - Introdução ao Python': slides/slide-01.html
-          - 'Slide 02 - Variáveis e Tipos de Dados': slides/slide-02.html
-          - 'Slide 03 - Operadores e Expressões': slides/slide-03.html
-          - 'Slide 04 - Estruturas Condicionais': slides/slide-04.html
-          - 'Slide 05 - Laços de Repetição': slides/slide-05.html
-          - 'Slide 06 - Listas e Coleções': slides/slide-06.html
-          - 'Slide 07 - Tuplas e Sets': slides/slide-07.html
-          - 'Slide 08 - Dicionários': slides/slide-08.html
-          - 'Slide 09 - Funções': slides/slide-09.html
-          - 'Slide 10 - Módulos e Pacotes': slides/slide-10.html
-          - 'Slide 11 - Manipulação de Arquivos': slides/slide-11.html
-          - 'Slide 12 - Tratamento de Exceções': slides/slide-12.html
-          - 'Slide 13 - Introdução a Classes e Objetos': slides/slide-13.html
-          - 'Slide 14 - Herança e Polimorfismo': slides/slide-14.html
-          - 'Slide 15 - APIs e Requisições HTTP': slides/slide-15.html
-          - 'Slide 16 - Testes e Boas Práticas': slides/slide-16.html
+          - 'Slide 01 - Introdução': slides/slide-01.html
+          - 'Slide 02 - Instalação': slides/slide-02.html
+          - 'Slide 03 - Primeiros Passos': slides/slide-03.html
+          - 'Slide 04 - Branches': slides/slide-04.html
+          - 'Slide 05 - Conflitos': slides/slide-05.html
+          - 'Slide 06 - GitHub': slides/slide-06.html
+          - 'Slide 07 - Remotos': slides/slide-07.html
+          - 'Slide 08 - Pull Requests': slides/slide-08.html
+          - 'Slide 09 - Flow': slides/slide-09.html
+          - 'Slide 10 - Issues': slides/slide-10.html
+          - 'Slide 11 - Boas Práticas': slides/slide-11.html
+          - 'Slide 12 - README': slides/slide-12.html
+          - 'Slide 13 - Equipe': slides/slide-13.html
+          - 'Slide 14 - Pages': slides/slide-14.html
+          - 'Slide 15 - Erros': slides/slide-15.html
+          - 'Slide 16 - Carreira': slides/slide-16.html
       - Exercícios:
           - exercicios/index.md
-          - 'Exercício 01 - Introdução': exercicios/exercicio-01.md
-          - 'Exercício 02 - Variáveis': exercicios/exercicio-02.md
-          - 'Exercício 03 - Operadores': exercicios/exercicio-03.md
-          - 'Exercício 04 - Condicionais': exercicios/exercicio-04.md
-          - 'Exercício 05 - Repetição': exercicios/exercicio-05.md
-          - 'Exercício 06 - Listas': exercicios/exercicio-06.md
-          - 'Exercício 07 - Tuplas e Sets': exercicios/exercicio-07.md
-          - 'Exercício 08 - Dicionários': exercicios/exercicio-08.md
-          - 'Exercício 09 - Funções I': exercicios/exercicio-09.md
-          - 'Exercício 10 - Módulos': exercicios/exercicio-10.md
-          - 'Exercício 11 - Arquivos': exercicios/exercicio-11.md
-          - 'Exercício 12 - Exceções': exercicios/exercicio-12.md
-          - 'Exercício 13 - Classes': exercicios/exercicio-13.md
-          - 'Exercício 14 - Herança': exercicios/exercicio-14.md
-          - 'Exercício 15 - APIs': exercicios/exercicio-15.md
-          - 'Exercício 16 - Testes': exercicios/exercicio-16.md
+          - 'Exercício 01': exercicios/exercicio-01.md
+          - 'Exercício 02': exercicios/exercicio-02.md
+          - 'Exercício 03': exercicios/exercicio-03.md
+          - 'Exercício 04': exercicios/exercicio-04.md
+          - 'Exercício 05': exercicios/exercicio-05.md
+          - 'Exercício 06': exercicios/exercicio-06.md
+          - 'Exercício 07': exercicios/exercicio-07.md
+          - 'Exercício 08': exercicios/exercicio-08.md
+          - 'Exercício 09': exercicios/exercicio-09.md
+          - 'Exercício 10': exercicios/exercicio-10.md
+          - 'Exercício 11': exercicios/exercicio-11.md
+          - 'Exercício 12': exercicios/exercicio-12.md
+          - 'Exercício 13': exercicios/exercicio-13.md
+          - 'Exercício 14': exercicios/exercicio-14.md
+          - 'Exercício 15': exercicios/exercicio-15.md
+          - 'Exercício 16': exercicios/exercicio-16.md
       - Quizzes:
           - quizzes/index.md
-          - 'Quiz 01 - Introdução': quizzes/quiz-01.md
-          - 'Quiz 02 - Variáveis': quizzes/quiz-02.md
-          - 'Quiz 03 - Operadores': quizzes/quiz-03.md
-          - 'Quiz 04 - Condicionais': quizzes/quiz-04.md
-          - 'Quiz 05 - Loops': quizzes/quiz-05.md
-          - 'Quiz 06 - Listas': quizzes/quiz-06.md
-          - 'Quiz 07 - Tuplas e Sets': quizzes/quiz-07.md
-          - 'Quiz 08 - Dicionários': quizzes/quiz-08.md
-          - 'Quiz 09 - Funções I': quizzes/quiz-09.md
-          - 'Quiz 10 - Módulos': quizzes/quiz-10.md
-          - 'Quiz 11 - Arquivos': quizzes/quiz-11.md
-          - 'Quiz 12 - Exceções': quizzes/quiz-12.md
-          - 'Quiz 13 - POO Intro': quizzes/quiz-13.md
-          - 'Quiz 14 - POO Avançado': quizzes/quiz-14.md
-          - 'Quiz 15 - APIs': quizzes/quiz-15.md
-          - 'Quiz 16 - Testes': quizzes/quiz-16.md
+          - 'Quiz 01': quizzes/quiz-01.md
+          - 'Quiz 02': quizzes/quiz-02.md
+          - 'Quiz 03': quizzes/quiz-03.md
+          - 'Quiz 04': quizzes/quiz-04.md
+          - 'Quiz 05': quizzes/quiz-05.md
+          - 'Quiz 06': quizzes/quiz-06.md
+          - 'Quiz 07': quizzes/quiz-07.md
+          - 'Quiz 08': quizzes/quiz-08.md
+          - 'Quiz 09': quizzes/quiz-09.md
+          - 'Quiz 10': quizzes/quiz-10.md
+          - 'Quiz 11': quizzes/quiz-11.md
+          - 'Quiz 12': quizzes/quiz-12.md
+          - 'Quiz 13': quizzes/quiz-13.md
+          - 'Quiz 14': quizzes/quiz-14.md
+          - 'Quiz 15': quizzes/quiz-15.md
+          - 'Quiz 16': quizzes/quiz-16.md
       - Projetos:
           - projetos/index.md
-          - 'Projeto 01 - Primeiro Programa': projetos/projeto-01.md
-          - 'Projeto 02 - Calculadora IMC': projetos/projeto-02.md
-          - 'Projeto 03 - Calculadora de Gorjeta': projetos/projeto-03.md
-          - 'Projeto 04 - Pedra, Papel e Tesoura': projetos/projeto-04.md
-          - 'Projeto 05 - Tabuada': projetos/projeto-05.md
-          - 'Projeto 06 - Gerenciador de Tarefas': projetos/projeto-06.md
-          - 'Projeto 07 - Análise de Números': projetos/projeto-07.md
-          - 'Projeto 08 - Agenda Telefônica': projetos/projeto-08.md
-          - 'Projeto 09 - Conversor de Temperaturas': projetos/projeto-09.md
-          - 'Projeto 10 - Jogo da Forca': projetos/projeto-10.md
-          - 'Projeto 11 - To-Do List Persistente': projetos/projeto-11.md
-          - 'Projeto 12 - Calculadora Robusta': projetos/projeto-12.md
-          - 'Projeto 13 - Biblioteca': projetos/projeto-13.md
-          - 'Projeto 14 - RPG Simples': projetos/projeto-14.md
-          - 'Projeto 15 - Buscador GitHub': projetos/projeto-15.md
-          - 'Projeto 16 - Task Manager (TDD)': projetos/projeto-16.md
+          - 'Projeto 01': projetos/projeto-01.md
+          - 'Projeto 02': projetos/projeto-02.md
+          - 'Projeto 03': projetos/projeto-03.md
+          - 'Projeto 04': projetos/projeto-04.md
+          - 'Projeto 05': projetos/projeto-05.md
+          - 'Projeto 06': projetos/projeto-06.md
+          - 'Projeto 07': projetos/projeto-07.md
+          - 'Projeto 08': projetos/projeto-08.md
+          - 'Projeto 09': projetos/projeto-09.md
+          - 'Projeto 10': projetos/projeto-10.md
+          - 'Projeto 11': projetos/projeto-11.md
+          - 'Projeto 12': projetos/projeto-12.md
+          - 'Projeto 13': projetos/projeto-13.md
+          - 'Projeto 14': projetos/projeto-14.md
+          - 'Projeto 15': projetos/projeto-15.md
+          - 'Projeto 16': projetos/projeto-16.md
       - Configuração:
           - setups/index.md
           - 'Setup Windows': setups/setup-01.md

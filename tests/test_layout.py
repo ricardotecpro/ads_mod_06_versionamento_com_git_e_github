@@ -27,11 +27,11 @@ def test_homepage_structure(page: Page, base_url):
     page.goto(base_url)
     
     # Check title
-    expect(page).to_have_title("Python Backend - Curso Completo")
+    expect(page).to_have_title("Git e GitHub - Curso Completo")
     
     # Check main heading
     heading = page.locator("h1")
-    expect(heading).to_contain_text("Python Backend")
+    expect(heading).to_contain_text("Git e GitHub")
     
     # Check navigation cards exist
     # Material uses .md-typeset .grid.cards
@@ -44,7 +44,7 @@ def test_lesson_01_page(page: Page, base_url):
     page.goto(f"{base_url}/aulas/aula-01/")
     
     # Check title (flexible match)
-    expect(page).to_have_title(re.compile(r"Aula 01.*Python"))
+    expect(page).to_have_title(re.compile(r"Aula 01.*Introdução"))
     
     # Check main heading
     heading = page.locator("h1")
@@ -58,13 +58,13 @@ def test_lesson_01_page(page: Page, base_url):
 # Test 4: Quiz interactivity
 def test_quiz_functionality(page: Page, base_url):
     """Test that quiz JavaScript works correctly."""
-    page.goto(f"{base_url}/01/")
+    page.goto(f"{base_url}/quizzes/quiz-01/")
     
     # Wait for quiz to be visible
     first_quiz = page.locator(".quiz-container").first
     if first_quiz.is_visible():
         # Click on the correct answer (first option in first quiz)
-        correct_option = first_quiz.locator(".quiz-option[data-correct='true']")
+        correct_option = first_quiz.locator(".quiz-option[data-correct='true']").first
         correct_option.click()
         
         # Check that feedback is displayed
@@ -96,7 +96,7 @@ def test_lesson_16_page(page: Page, base_url):
     page.goto(f"{base_url}/aulas/aula-16/")
     
     # Check title
-    expect(page).to_have_title(re.compile(r"Aula 16.*Testes"))
+    expect(page).to_have_title(re.compile(r"Aula 16.*Carreira"))
     
     # Check quiz containers
     quiz_containers = page.locator(".quiz-container")
@@ -106,7 +106,7 @@ def test_lesson_16_page(page: Page, base_url):
 # Test 7: Mermaid diagram rendering (checking Lesson 11)
 def test_mermaid_diagram(page: Page, base_url):
     """Test that Mermaid diagrams are present in the content."""
-    page.goto(f"{base_url}/11/")
+    page.goto(f"{base_url}/aulas/aula-09/")
     
     # Check for mermaid code block or rendered diagram
     # MkDocs Material renders mermaid as div.mermaid or similar

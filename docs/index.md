@@ -1,18 +1,18 @@
-# Bem-vindo ao Curso de Python Backend
+# Bem-vindo ao Curso de Git e GitHub
 
-Aprenda Python do zero ao profissional com um curso completo, prático e estruturado!
+Domine o controle de versão e colabore como um profissional!
 
 ## 🎯 Sobre o Curso
 
-Este curso foi desenvolvido para te levar do básico ao avançado em Python, com foco em desenvolvimento backend. Você aprenderá através de aulas práticas, exercícios, projetos e quizzes interativos.
+Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e GitHub. Você aprenderá os fundamentos do controle de versão, como trabalhar com repositórios locais e remotos, resolver conflitos, e colaborar em projetos de software.
 
 **O que você vai aprender:**
-- Fundamentos da linguagem Python
-- Estruturas de dados e controle de fluxo
-- Programação Orientada a Objetos
-- Manipulação de arquivos e exceções
-- APIs e requisições HTTP
-- Testes e boas práticas
+- Fundamentos do Git (add, commit, push, pull)
+- Ramificação e Fusão (Branches e Merges)
+- Resolução de Conflitos
+- GitHub Flow e Pull Requests
+- Issues, Projects e Gestão de Tarefas
+- GitHub Pages e Portfólio Profissional
 
 ## 🚀 Comece Agora
 
@@ -22,7 +22,7 @@ Este curso foi desenvolvido para te levar do básico ao avançado em Python, com
     
     ---
     
-    16 aulas completas organizadas em 6 módulos, do básico ao avançado.
+    16 aulas completas organizadas em 4 módulos.
     
     [:octicons-arrow-right-24: Ver todas as aulas](aulas/index.md)
 
@@ -30,7 +30,7 @@ Este curso foi desenvolvido para te levar do básico ao avançado em Python, com
     
     ---
     
-    Slides interativos com RevealJS para todas as aulas do curso.
+    Slides interativos para acompanhar cada aula.
     
     [:octicons-arrow-right-24: Acessar slides](slides/index.md)
 
@@ -38,7 +38,7 @@ Este curso foi desenvolvido para te levar do básico ao avançado em Python, com
     
     ---
     
-    Pratique com exercícios para cada aula e fixe o conteúdo.
+    Pratique com exercícios focados em cada tópico.
     
     [:octicons-arrow-right-24: Ver exercícios](exercicios/index.md)
 
@@ -46,7 +46,7 @@ Este curso foi desenvolvido para te levar do básico ao avançado em Python, com
     
     ---
     
-    Teste seus conhecimentos com quizzes interativos.
+    Teste seus conhecimentos com quizzes rápidos.
     
     [:octicons-arrow-right-24: Fazer quizzes](quizzes/index.md)
 
@@ -54,7 +54,7 @@ Este curso foi desenvolvido para te levar do básico ao avançado em Python, com
     
     ---
     
-    Desenvolva projetos práticos para aplicar o que aprendeu.
+    Projetos práticos para construir seu portfólio.
     
     [:octicons-arrow-right-24: Ver projetos](projetos/index.md)
 
@@ -62,7 +62,7 @@ Este curso foi desenvolvido para te levar do básico ao avançado em Python, com
     
     ---
     
-    Guias de instalação e configuração do ambiente Python.
+    Guias de instalação do Git no Windows e Linux.
     
     [:octicons-arrow-right-24: Configurar ambiente](setups/index.md)
 
@@ -70,22 +70,19 @@ Este curso foi desenvolvido para te levar do básico ao avançado em Python, com
 
 ## 📚 Estrutura do Curso
 
-O curso está organizado em **6 módulos progressivos**:
+O curso está organizado em **4 módulos**:
 
-1. **Módulo 1 – Fundamentos** (Aulas 01-04)
-2. **Módulo 2 – Estruturas de Controle** (Aulas 05-08)
-3. **Módulo 3 – Funções e Modularização** (Aulas 09-10)
-4. **Módulo 4 – Arquivos e Exceções** (Aulas 11-12)
-5. **Módulo 5 – Programação Orientada a Objetos** (Aulas 13-14)
-6. **Módulo 6 – Ecossistema** (Aulas 15-16)
+1. **Módulo 1 – Conceitos Básicos** (Aulas 01-04)
+2. **Módulo 2 – Trabalhando com GitHub** (Aulas 05-08)
+3. **Módulo 3 – Fluxos e Organização** (Aulas 09-12)
+4. **Módulo 4 – Colaboração e Carreira** (Aulas 13-16)
 
 ## 🎓 Como Usar Este Curso
 
 1. **Configure seu ambiente** - Siga os guias de [configuração](setups/index.md)
-2. **Comece pela Aula 01** - Vá para [Aulas](aulas/index.md) e comece do início
-3. **Pratique regularmente** - Faça os exercícios e projetos de cada aula
-4. **Teste seus conhecimentos** - Complete os quizzes para validar seu aprendizado
-5. **Revise com os slides** - Use os slides para revisão rápida
+2. **Siga a ordem** - Comece pela Aula 01 e avance progressivamente
+3. **Pratique muito** - Git se aprende no terminal!
+4. **Crie seu portfólio** - Use os projetos para preencher seu GitHub 
 
 ---
 
