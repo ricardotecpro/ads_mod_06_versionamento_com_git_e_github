@@ -89,7 +89,7 @@
         <span class="option-letter">C)</span> A falta de espaço no disco rígido.
       </div>
       <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> A dificuldade de programar em Python.
+        <span class="option-letter">D)</span> A dificuldade de gerenciar backups manuais.
       </div>
     </div>
     <div class="quiz-feedback"></div>

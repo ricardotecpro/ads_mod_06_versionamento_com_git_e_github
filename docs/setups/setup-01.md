@@ -1,67 +1,72 @@
 # Configuração do Ambiente (Windows)
 
-Este guia irá ajudá-lo a configurar o ambiente de desenvolvimento Python no Windows usando o Visual Studio Code (VSCode).
+Este guia irá ajudá-lo a instalar e configurar o **Git** no Windows.
 
-## 1. Instalando o Python
+## 1. Instalando o Git
 
-O Python é a linguagem que usaremos. O interpretador é o programa que lê seu código e diz ao computador o que fazer.
+O Git é a ferramenta essencial que usaremos durante todo o curso.
 
 ### Passo 1: Baixar
-1. Acesse o site oficial: [python.org/downloads](https://www.python.org/downloads/).
-2. Clique no botão amarelo **Download Python 3.x.x** (a versão mais recente).
+1. Acesse o site oficial: [git-scm.com/download/win](https://git-scm.com/download/win).
+2. O download deve começar automaticamente. Se não, clique em **Click here to download**.
 
-### Passo 2: Instalar (MUITO IMPORTANTE!)
-1. Execute o instalador baixado (`python-3.x.x-amd64.exe`).
-2. **⚠️ ANTES DE CLICAR EM INSTALL, MARQUE A CAIXA:**
-   **[x] Add Python 3.x to PATH**
-   *(Se você esquecer isso, o Python não vai funcionar no terminal)*.
-3. Clique em **Install Now**.
-4. Aguarde o final e clique em **Close**.
+### Passo 2: Instalar
+1. Execute o instalador baixado (`Git-2.x.x-64-bit.exe`).
+2. Siga o processo de instalação (clique em **Next** repetidamente).
+3. **Opções Importantes**:
+   - Quando perguntar sobre o editor padrão, você pode deixar o **Vim** (padrão) ou escolher o **Visual Studio Code** se já tiver instalado.
+   - Na opção de "Adjusting your PATH environment", deixe a opção recomendada (**Git from the command line and also from 3rd-party software**).
+   - Nas demais telas, pode manter o padrão.
+4. Clique em **Install**.
+5. Aguarde e clique em **Finish**.
 
-### Passo 3: Testar
-1. Abra o **Menu Iniciar** e digite `cmd` ou `PowerShell`. Abra-o.
-2. Digite o comando:
-   ```powershell
-   python --version
+---
+
+## 2. Testando a Instalação
+
+Vamos garantir que o Git está pronto para uso.
+
+1. Abra o menu Iniciar e procure por **Git Bash**.
+2. Abra o aplicativo **Git Bash**. Ele é um terminal poderoso que simula comandos Linux no Windows.
+3. Digite o seguinte comando e aperte Enter:
+
+   ```bash
+   git --version
    ```
-3. Se aparecer algo como `Python 3.12.0`, parabéns! Está instalado.
+
+4. Se aparecer algo como `git version 2.40.0.windows.1`, parabéns! O Git está instalado.
 
 ---
 
-## 2. Instalando o Visual Studio Code (VSCode)
+## 3. Configuração Obrigatória (Identidade)
 
-O VSCode é o editor de texto onde escreveremos nosso código. Ele é leve, poderoso e gratuito.
+Antes de fazer qualquer commit, você precisa dizer ao Git quem você é.
 
-1. Acesse: [code.visualstudio.com](https://code.visualstudio.com/).
-2. Baixe a versão para **Windows**.
-3. Instale com as opções padrão (Next, Next, Install).
+No **Git Bash**, execute os dois comandos abaixo (substitua pelos seus dados):
 
----
+```bash
+git config --global user.name "Seu Nome Completo"
+git config --global user.email "seu.email@exemplo.com"
+```
 
-## 3. Configurando o VSCode para Python
+> **Dica**: Use o mesmo email que você usou (ou usará) para criar sua conta no GitHub.
 
-Para o VSCode entender Python e ajudar com cores e autocompletar, precisamos de uma extensão.
+Para verificar se salvou, digite:
 
-1. Abra o VSCode.
-2. No menu lateral esquerdo, clique no ícone de quadrados (**Extensions**) ou aperte `Ctrl+Shift+X`.
-3. Na barra de busca, digite `Python`.
-4. Clique na primeira opção (criada pela **Microsoft**) e clique em **Install**.
-5. Aguarde a instalação finalizar (pode pedir para recarregar).
+```bash
+git config --list
+```
 
----
-
-## 4. Seu primeiro teste no VSCode
-
-1. Crie uma pasta no seu computador para o curso (ex: `MeusEstudosPython`).
-2. No VSCode, vá em **File > Open Folder** e abra essa pasta.
-3. Crie um arquivo novo chamado `teste.py`.
-4. Escreva:
-   ```python
-   print("Configuração concluída com sucesso!")
-   ```
-5. Para rodar, clique no botão de **Play ▷** no canto superior direito (ou aperte `F5`).
-6. A mensagem deve aparecer no terminal na parte de baixo da tela.
+Procure por `user.name` e `user.email` na lista.
 
 ---
 
-🎉 **Pronto! Seu ambiente está configurado.**
+## 4. (Opcional) Visual Studio Code
+
+Embora o Git funcione no terminal, recomendamos o **VSCode** para editar os arquivos do curso.
+
+1. Baixe em [code.visualstudio.com](https://code.visualstudio.com/).
+2. Instale normalmente.
+3. Ele possui integração nativa com o Git!
+
+🎉 **Pronto! Seu ambiente Windows está configurado.**

@@ -4,39 +4,33 @@ Teste seus conhecimentos com quizzes interativos para cada aula!
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-box: **Módulo 1 – Fundamentos**
+-   :material-numeric-1-box: **Módulo 1 – Conceitos Básicos**
     
     - [Quiz 01 - Introdução](quiz-01.md)
-    - [Quiz 02 - Variáveis](quiz-02.md)
-    - [Quiz 03 - Operadores](quiz-03.md)
-    - [Quiz 04 - Condicionais](quiz-04.md)
+    - [Quiz 02 - Instalação](quiz-02.md)
+    - [Quiz 03 - Primeiros Passos](quiz-03.md)
+    - [Quiz 04 - Branches](quiz-04.md)
 
--   :material-numeric-2-box: **Módulo 2 – Estruturas de Controle**
+-   :material-numeric-2-box: **Módulo 2 – Trabalhando com GitHub**
     
-    - [Quiz 05 - Loops](quiz-05.md)
-    - [Quiz 06 - Listas](quiz-06.md)
-    - [Quiz 07 - Tuplas e Sets](quiz-07.md)
-    - [Quiz 08 - Dicionários](quiz-08.md)
+    - [Quiz 05 - Conflitos](quiz-05.md)
+    - [Quiz 06 - Intro GitHub](quiz-06.md)
+    - [Quiz 07 - Remotos](quiz-07.md)
+    - [Quiz 08 - Pull Requests](quiz-08.md)
 
--   :material-numeric-3-box: **Módulo 3 – Funções**
+-   :material-numeric-3-box: **Módulo 3 – Fluxos e Organização**
     
-    - [Quiz 09 - Funções I](quiz-09.md)
-    - [Quiz 10 - Módulos](quiz-10.md)
+    - [Quiz 09 - GitHub Flow](quiz-09.md)
+    - [Quiz 10 - Issues](quiz-10.md)
+    - [Quiz 11 - Boas Práticas](quiz-11.md)
+    - [Quiz 12 - Markdown](quiz-12.md)
 
--   :material-numeric-4-box: **Módulo 4 – Arquivos e Exceções**
+-   :material-numeric-4-box: **Módulo 4 – Colaboração e Carreira**
     
-    - [Quiz 11 - Arquivos](quiz-11.md)
-    - [Quiz 12 - Exceções](quiz-12.md)
-
--   :material-numeric-5-box: **Módulo 5 – POO**
-    
-    - [Quiz 13 - POO Intro](quiz-13.md)
-    - [Quiz 14 - POO Avançado](quiz-14.md)
-
--   :material-numeric-6-box: **Módulo 6 – Ecossistema**
-    
-    - [Quiz 15 - APIs](quiz-15.md)
-    - [Quiz 16 - Testes](quiz-16.md)
+    - [Quiz 13 - Equipe](quiz-13.md)
+    - [Quiz 14 - Pages](quiz-14.md)
+    - [Quiz 15 - Erros](quiz-15.md)
+    - [Quiz 16 - Carreira](quiz-16.md)
 
 </div>
 

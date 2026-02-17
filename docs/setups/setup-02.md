@@ -1,232 +1,101 @@
-# Configuração do Ambiente (Linux Ubuntu)
+# Configuração do Ambiente (Linux)
 
-Este guia mostra como instalar e configurar o Python e PyCharm no **Ubuntu** para desenvolvimento.
+Este guia mostra como instalar e configurar o **Git** no Linux (Ubuntu/Debian e derivados).
 
 ---
 
-## 1. Instalando Python no Ubuntu
+## 1. Instalando o Git
 
-O Ubuntu já vem com Python instalado. Vamos verificar e atualizar se necessário.
+O Git geralmente está disponível nos repositórios oficiais da maioria das distribuições.
 
-### Verificar Versão Instalada
+### No Ubuntu / Debian / Mint
+
+Abra seu terminal (`Ctrl+Alt+T`) e execute:
 
 ```bash
-python3 --version
+sudo apt update
+sudo apt install git -y
 ```
 
-Se aparecer `Python 3.10` ou superior, você já tem Python! Caso contrário, instale:
-
-### Instalar Python e Ferramentas
+### No Fedora
 
 ```bash
-# Atualizar repositórios
-sudo apt update
+sudo dnf install git -y
+```
 
-# Instalar Python 3 e ferramentas essenciais
-sudo apt install python3 python3-pip python3-venv -y
+### No Arch Linux
 
-# Verificar instalação
-python3 --version
-pip3 --version
+```bash
+sudo pacman -S git
+```
+
+---
+
+## 2. Verificando a Versão
+
+Após a instalação, verifique se tudo deu certo:
+
+```bash
+git --version
 ```
 
 **Saída esperada:**
 ```
-Python 3.12.x
-pip 24.x.x
+git version 2.34.1 (ou superior)
 ```
 
 ---
 
-## 2. Instalando e Configurando PyCharm no Ubuntu
+## 3. Configuração de Identidade (Obrigatória)
 
-PyCharm é a melhor IDE para Python, desenvolvida pela JetBrains.
+O Git exige que você se identifique para registrar a autoria das mudanças.
 
-### Método Recomendado: Via Snap
-
-O Snap já vem instalado no Ubuntu. Use este método para instalação fácil:
+Execute no terminal:
 
 ```bash
-# PyCharm Community (Gratuito e Open Source)
-sudo snap install pycharm-community --classic
-
-# OU PyCharm Professional (Pago, mas com 30 dias de trial)
-sudo snap install pycharm-professional --classic
+git config --global user.name "Seu Nome Completo"
+git config --global user.email "seu.email@exemplo.com"
 ```
 
-### Método Alternativo: Via Ubuntu Software
+> **Nota**: O email deve ser o mesmo da sua conta GitHub.
 
-1. Abra **Ubuntu Software** (ícone de sacola de compras)
-2. Busque por "PyCharm"
-3. Clique em **Install**
-
-### Abrir PyCharm
+Verifique se a configuração foi aplicada:
 
 ```bash
-# Via terminal
-pycharm-community
-
-# OU via menu de aplicativos
-# Pressione Super (tecla Windows) e digite "PyCharm"
+git config --list
 ```
 
 ---
 
-## 3. Configuração Inicial do PyCharm
+## 4. Configurando Chave SSH (Opcional, mas Recomendado)
 
-### Primeira Execução
+Para não precisar digitar senha a cada push para o GitHub, configure uma chave SSH.
 
-1. **Aceite os Termos de Uso**
-2. **Escolha o Tema:**
-   - Light (Claro)
-   - Darcula (Escuro) - Recomendado
+1. Gerar a chave:
+   ```bash
+   ssh-keygen -t ed25519 -C "seu.email@exemplo.com"
+   ```
+   (Pressione Enter para todas as perguntas).
 
-3. **Criar Novo Projeto:**
-   - Clique em **New Project**
-   - Escolha o local: `~/PycharmProjects/MeuPrimeiroProjeto`
-   - **Interpreter:** Selecione Python 3.x detectado automaticamente
-   - Clique em **Create**
+2. Iniciar o agente SSH:
+   ```bash
+   eval "$(ssh-agent -s)"
+   ssh-add ~/.ssh/id_ed25519
+   ```
 
-### Configurar Interpretador Python
+3. Exibir a chave pública para copiar:
+   ```bash
+   cat ~/.ssh/id_ed25519.pub
+   ```
 
-Se o PyCharm não detectar automaticamente:
-
-1. **File → Settings** (ou `Ctrl+Alt+S`)
-2. **Project → Python Interpreter**
-3. Clique no ícone de engrenagem → **Add**
-4. Selecione **System Interpreter**
-5. Escolha `/usr/bin/python3`
-
----
-
-## 4. Criando Seu Primeiro Programa
-
-1. **Criar arquivo:** Clique com botão direito no projeto → **New → Python File**
-2. Nome: `hello.py`
-3. Digite:
-
-```python
-print("Olá, Linux!")
-print("Python está funcionando!")
-```
-
-4. **Executar:** Clique com botão direito no arquivo → **Run 'hello'**
-   - Ou use o atalho: `Shift+F10`
-
----
-
-## 5. Instalando Bibliotecas (pip)
-
-### Via Terminal do PyCharm
-
-1. **View → Tool Windows → Terminal** (ou `Alt+F12`)
-2. Instalar biblioteca:
-
-```bash
-pip3 install requests
-```
-
-### Criar Ambiente Virtual (Recomendado)
-
-```bash
-# Criar ambiente virtual
-python3 -m venv venv
-
-# Ativar
-source venv/bin/activate
-
-# Instalar bibliotecas
-pip install requests flask pandas
-
-# Desativar quando terminar
-deactivate
-```
-
----
-
-## 6. Atalhos Úteis do PyCharm (Linux)
-
-| Atalho | Ação |
-|--------|------|
-| `Ctrl+Space` | Auto-completar código |
-| `Shift+F10` | Executar programa |
-| `Ctrl+/` | Comentar/descomentar linha |
-| `Ctrl+D` | Duplicar linha |
-| `Ctrl+Y` | Deletar linha |
-| `Ctrl+Alt+L` | Formatar código |
-| `Alt+F12` | Abrir terminal |
-
----
-
-## 7. Dicas Importantes
-
-### Permissões de Execução
-
-Se encontrar erro de permissão ao executar scripts:
-
-```bash
-chmod +x seu_script.py
-```
-
-### Atualizar pip
-
-```bash
-pip3 install --upgrade pip
-```
-
-### Verificar Pacotes Instalados
-
-```bash
-pip3 list
-```
-
----
-
-## 8. Solução de Problemas Comuns
-
-### Erro: "python: command not found"
-
-Use `python3` em vez de `python`:
-
-```bash
-python3 seu_script.py
-```
-
-### PyCharm não abre
-
-```bash
-# Via Snap
-snap run pycharm-community
-
-# Via Flatpak
-flatpak run com.jetbrains.PyCharm-Community
-```
-
-### Conflito de versões Python
-
-```bash
-# Verificar todas as versões instaladas
-ls /usr/bin/python*
-
-# Usar versão específica
-python3.10 --version
-```
-
----
-
-## 9. Recursos Adicionais
-
-- **Documentação Python:** [https://docs.python.org/pt-br/3/](https://docs.python.org/pt-br/3/)
-- **PyCharm Docs:** [https://www.jetbrains.com/help/pycharm/](https://www.jetbrains.com/help/pycharm/)
-- **Python Package Index (PyPI):** [https://pypi.org/](https://pypi.org/)
+4. Copie o resultado (começa com `ssh-ed25519...`) e adicione no GitHub em **Settings > SSH and GPG keys > New SSH key**.
 
 ---
 
 ## ✅ Pronto!
 
-Agora você tem um ambiente Python completo no Linux! 🐧🐍
+Agora você tem um ambiente Git completo no Linux! 🐧
 
 **Próximos passos:**
-- Explore os tutoriais integrados do PyCharm
-- Pratique com exercícios Python
-- Comece a desenvolver seus projetos!
+- Vá para [Aula 01](../aulas/aula-01.md)
+- Comece a versionar seus projetos!

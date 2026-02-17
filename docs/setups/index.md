@@ -1,22 +1,22 @@
 # Configuração do Ambiente
 
-Bem-vindo à seção de configuração! Aqui você encontra guias para instalar e configurar seu ambiente de desenvolvimento Python.
+Bem-vindo à seção de configuração! Aqui você encontra guias para instalar e configurar o Git no seu sistema.
 
 <div class="grid cards" markdown>
 
 -   :material-microsoft-windows: **Windows**
     
-    - [Instalação Windows](setup-01.md)
-    - Guia completo para Windows 10/11
-    - Python via Microsoft Store
-    - VSCode e extensões
+    - [Setup Windows](setup-01.md)
+    - Instalação do Git
+    - Git Bash
+    - Configuração de SSH (Opcional)
 
--   :material-linux: **Linux (Ubuntu)**
+-   :material-linux: **Linux**
     
-    - [Instalação Linux](setup-02.md)
-    - Guia para Ubuntu/Debian
-    - PyCharm Community
-    - Configuração do ambiente
+    - [Setup Linux](setup-02.md)
+    - Instalação via apt/dnf
+    - Configuração de Terminal
+    - Credenciais
 
 </div>
 
@@ -24,7 +24,6 @@ Bem-vindo à seção de configuração! Aqui você encontra guias para instalar 
 
 Após configurar seu ambiente:
 
-1. ✅ **Teste a instalação** - Execute seu primeiro programa
-2. 📚 **Comece as aulas** - Vá para [Aula 01](../aulas/aula-01.md)
-3. 💪 **Pratique** - Faça os exercícios propostos
-4. 🚀 **Desenvolva** - Crie seus próprios projetos
+1. ✅ **Teste a instalação**: `git --version`
+2. 📚 **Comece as aulas**: [Aula 01](../aulas/aula-01.md)
+3. 🚀 **Configure sua identidade**: `git config --global user.name`

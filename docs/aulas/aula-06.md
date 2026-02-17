@@ -52,7 +52,7 @@ Issues são usadas para:
 5: B
 
 ## 🛠 Exercícios
-1. **Perfil**: Acesse seu perfil no GitHub. Adicione uma foto profissional e uma bio curta (ex: "Desenvolvedor em formação | Apaixonado por Python").
+1. **Perfil**: Acesse seu perfil no GitHub. Adicione uma foto profissional e uma bio curta (ex: "Desenvolvedor em formação | Apaixonado por Tecnologia").
 2. **Exploração**: Procure por um projeto famoso (ex: `facebook/react`, `microsoft/vscode` ou `fastapi/fastapi`).
 3. **Interação**: Dê uma "Star" nesse projeto para tê-lo em sua lista de favoritos.
 4. **Follow**: Siga algum desenvolvedor relevante (pode ser o criador da linguagem que você estuda).

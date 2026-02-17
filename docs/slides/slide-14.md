@@ -16,7 +16,7 @@
 - **CSS** (Estilo).
 - **JavaScript** (Interatividade).
 - Imagens / Fontes.
-- **NÃO RODA**: PHP, Java, Python, SQL (Backend).
+- **NÃO RODA**: PHP, Java, SQL (Backend tradicionais).
 
 ---
 

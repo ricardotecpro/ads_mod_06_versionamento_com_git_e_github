@@ -4,39 +4,33 @@ Bem-vindo à seção de exercícios! Aqui você encontra listas de exercícios p
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-box: **Módulo 1 – Fundamentos**
+-   :material-numeric-1-box: **Módulo 1 – Conceitos Básicos**
     
     - [Exercício 01 - Introdução](exercicio-01.md)
-    - [Exercício 02 - Variáveis](exercicio-02.md)
-    - [Exercício 03 - Operadores](exercicio-03.md)
-    - [Exercício 04 - Condicionais](exercicio-04.md)
+    - [Exercício 02 - Instalação](exercicio-02.md)
+    - [Exercício 03 - Primeiros Passos](exercicio-03.md)
+    - [Exercício 04 - Branches](exercicio-04.md)
 
--   :material-numeric-2-box: **Módulo 2 – Estruturas de Controle**
+-   :material-numeric-2-box: **Módulo 2 – Trabalhando com GitHub**
     
-    - [Exercício 05 - Repetição](exercicio-05.md)
-    - [Exercício 06 - Listas](exercicio-06.md)
-    - [Exercício 07 - Tuplas e Sets](exercicio-07.md)
-    - [Exercício 08 - Dicionários](exercicio-08.md)
+    - [Exercício 05 - Conflitos](exercicio-05.md)
+    - [Exercício 06 - Intro GitHub](exercicio-06.md)
+    - [Exercício 07 - Remotos](exercicio-07.md)
+    - [Exercício 08 - Pull Requests](exercicio-08.md)
 
--   :material-numeric-3-box: **Módulo 3 – Funções**
+-   :material-numeric-3-box: **Módulo 3 – Fluxos e Organização**
     
-    - [Exercício 09 - Funções I](exercicio-09.md)
-    - [Exercício 10 - Módulos](exercicio-10.md)
+    - [Exercício 09 - GitHub Flow](exercicio-09.md)
+    - [Exercício 10 - Issues](exercicio-10.md)
+    - [Exercício 11 - Boas Práticas](exercicio-11.md)
+    - [Exercício 12 - Markdown](exercicio-12.md)
 
--   :material-numeric-4-box: **Módulo 4 – Arquivos e Exceções**
+-   :material-numeric-4-box: **Módulo 4 – Colaboração e Carreira**
     
-    - [Exercício 11 - Arquivos](exercicio-11.md)
-    - [Exercício 12 - Exceções](exercicio-12.md)
-
--   :material-numeric-5-box: **Módulo 5 – POO**
-    
-    - [Exercício 13 - Classes](exercicio-13.md)
-    - [Exercício 14 - Herança](exercicio-14.md)
-
--   :material-numeric-6-box: **Módulo 6 – Ecossistema**
-    
-    - [Exercício 15 - APIs](exercicio-15.md)
-    - [Exercício 16 - Testes](exercicio-16.md)
+    - [Exercício 13 - Equipe](exercicio-13.md)
+    - [Exercício 14 - Pages](exercicio-14.md)
+    - [Exercício 15 - Erros](exercicio-15.md)
+    - [Exercício 16 - Carreira](exercicio-16.md)
 
 </div>
 

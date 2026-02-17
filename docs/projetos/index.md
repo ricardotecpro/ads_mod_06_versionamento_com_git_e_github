@@ -1,49 +1,39 @@
 # Projetos Práticos
 
-Desenvolva projetos práticos para aplicar o que você aprendeu!
+Aprenda Git criando um projeto real do zero até a publicação!
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-box: **Módulo 1 – Fundamentos**
+-   :material-numeric-1-box: **Módulo 1 – O Início**
     
-    - [Projeto 01 - Primeiro Programa](projeto-01.md)
-    - [Projeto 02 - Calculadora IMC](projeto-02.md)
-    - [Projeto 03 - Calculadora de Gorjeta](projeto-03.md)
-    - [Projeto 04 - Pedra, Papel e Tesoura](projeto-04.md)
+    - [Projeto 01 - Criando o Portfólio](projeto-01.md)
+    - [Projeto 02 - Instalando Git](projeto-02.md)
+    - [Projeto 03 - Primeiro Commit](projeto-03.md)
+    - [Projeto 04 - Criando Branches](projeto-04.md)
 
--   :material-numeric-2-box: **Módulo 2 – Estruturas de Controle**
+-   :material-numeric-2-box: **Módulo 2 – GitHub**
     
-    - [Projeto 05 - Tabuada](projeto-05.md)
-    - [Projeto 06 - Gerenciador de Tarefas](projeto-06.md)
-    - [Projeto 07 - Análise de Números](projeto-07.md)
-    - [Projeto 08 - Agenda Telefônica](projeto-08.md)
+    - [Projeto 05 - Resolvendo Conflitos](projeto-05.md)
+    - [Projeto 06 - Criando Conta GitHub](projeto-06.md)
+    - [Projeto 07 - Subindo Repositório](projeto-07.md)
+    - [Projeto 08 - Primeiro PR](projeto-08.md)
 
--   :material-numeric-3-box: **Módulo 3 – Funções**
+-   :material-numeric-3-box: **Módulo 3 – Organização**
     
-    - [Projeto 09 - Conversor de Temperaturas](projeto-09.md)
-    - [Projeto 10 - Jogo da Forca](projeto-10.md)
+    - [Projeto 09 - Fluxo Profissional](projeto-09.md)
+    - [Projeto 10 - Criando Issues](projeto-10.md)
+    - [Projeto 11 - Histórico Limpo](projeto-11.md)
+    - [Projeto 12 - README Incrível](projeto-12.md)
 
--   :material-numeric-4-box: **Módulo 4 – Arquivos e Exceções**
+-   :material-numeric-4-box: **Módulo 4 – Publicação**
     
-    - [Projeto 11 - To-Do List Persistente](projeto-11.md)
-    - [Projeto 12 - Calculadora Robusta](projeto-12.md)
-
--   :material-numeric-5-box: **Módulo 5 – POO**
-    
-    - [Projeto 13 - Biblioteca](projeto-13.md)
-    - [Projeto 14 - RPG Simples](projeto-14.md)
-
--   :material-numeric-6-box: **Módulo 6 – Ecossistema**
-    
-    - [Projeto 15 - Buscador GitHub](projeto-15.md)
-    - [Projeto 16 - Task Manager (TDD)](projeto-16.md)
+    - [Projeto 13 - Simulando Equipe](projeto-13.md)
+    - [Projeto 14 - Publicando Site](projeto-14.md)
+    - [Projeto 15 - Corrigindo Erros](projeto-15.md)
+    - [Projeto 16 - Finalizando Portfólio](projeto-16.md)
 
 </div>
 
-## 🚀 Dicas para os Projetos
+## 🚀 Sobre o Projeto do Curso
 
-1. **Leia o enunciado com atenção** - Entenda o que é pedido
-2. **Planeje antes de codificar** - Pense na estrutura
-3. **Teste incrementalmente** - Não espere terminar tudo para testar
-4. **Refatore seu código** - Melhore a qualidade após funcionar
-5. **Compartilhe seus projetos** - Mostre o que você criou!
+Neste curso, você não fará projetos aleatórios. Você construirá, passo a passo, seu **Portfólio Profissional** hospedado no GitHub Pages. Cada aula adiciona uma nova camada de conhecimento e funcionalidade ao seu portfólio.
