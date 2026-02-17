@@ -59,10 +59,11 @@ O Git é um **Sistema de Controle de Versão Distribuído**.
 
 ## 🛠 Exercícios
 1. **Verificação Inicial**: Abra seu terminal e digite:
-   ```console
-   $ git --version
-   git version 2.40.0.windows.1
-   ```
+    <!-- termynal -->
+    ```console
+    $ git --version
+    git version 2.40.0.windows.1
+    ```
    Se der erro, não se preocupe, instalaremos na próxima aula.
 2. **Criação de Conta**: Acesse [github.com](https://github.com) e crie sua conta gratuita, caso ainda não tenha. Escolha um nome de usuário profissional.
 3. **Simulação Manual**: Crie uma pasta chamada `simulacao_vcs` no seu computador. Crie um arquivo texto, faça uma alteração e salve uma cópia `v2`. Note a dificuldade de gerenciar isso manualmente.
