@@ -1,7 +1,7 @@
 [project]
-name = "ads-spec-backend-com-python"
+name = "ads_mod_06_versionamento_com_git_e_github"
 version = "1.0.0"
-description = "Curso Completo de Python - Backend"
+description = "ads_mod_06_versionamento_com_git_e_github"
 authors = [
     {name = "Ricardo", email = "ricardo@example.com"}
 ]
