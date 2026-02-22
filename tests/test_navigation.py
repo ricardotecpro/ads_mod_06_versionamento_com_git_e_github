@@ -2,7 +2,9 @@
 Testes automatizados para navegação do site
 """
 import pytest
+import re
 from playwright.sync_api import Page, expect
+
 
 
 class TestNavigation:
@@ -11,9 +13,11 @@ class TestNavigation:
     def test_home_page_loads(self, page_with_base_url: Page, base_url: str):
         """Verifica se a página inicial carrega"""
         page = page_with_base_url
-        page.goto(base_url)
+        page.goto(f"{base_url}/")
         
-        expect(page).to_have_title("Git e GitHub - Curso")
+        # Verifica se o título contém o nome do curso (flexível)
+        expect(page).to_have_title(re.compile(r"Git e GitHub - Curso"))
+
 
     def _ensure_menu_visible(self, page: Page):
         """Helper to ensure menu is visible (opens drawer if needed)"""

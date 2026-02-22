@@ -16,7 +16,8 @@ def test_shortcuts_hidden_in_fullscreen(page: Page):
     """
     # Load a slide
     page.on("console", lambda msg: print(f"BROWSER LOG: {msg.text}"))
-    page.goto("/slides/slide-01.html")
+    page.goto("/slides/slide-01.html", wait_until="domcontentloaded")
+
 
     
     # 1. Verify shortcuts are initially visible

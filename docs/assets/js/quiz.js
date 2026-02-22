@@ -12,10 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
         // we might want to respect it if added by other means)
         if (option.classList.contains('disabled')) return;
 
-        const parent = option.parentElement;
+        const container = option.closest('.quiz-item');
+        if (!container) return;
 
         // Allow changing answer: Remove state from siblings
-        parent.querySelectorAll('.quiz-option').forEach(opt => {
+        container.querySelectorAll('.quiz-option').forEach(opt => {
             opt.classList.remove('selected', 'correct', 'incorrect');
             opt.classList.remove('disabled');
         });
@@ -25,7 +26,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Check answer
         const isCorrect = option.getAttribute('data-correct') === 'true';
         const feedbackText = option.getAttribute('data-feedback');
-        const feedbackEl = parent.querySelector('.quiz-feedback');
+        const feedbackEl = container.querySelector('.quiz-feedback');
+
 
         // Apply visual state to the option
         option.classList.add(isCorrect ? 'correct' : 'incorrect');

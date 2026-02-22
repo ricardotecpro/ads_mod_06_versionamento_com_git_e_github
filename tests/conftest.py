@@ -40,7 +40,10 @@ def start_server():
     
     for i in range(max_retries):
         try:
-            response = requests.get(url, timeout=1)
+            # Change to 127.0.0.1 for consistency
+            check_url = url.replace("localhost", "127.0.0.1")
+            response = requests.get(check_url, timeout=1)
+
             if response.status_code == 200:
                 server_started = True
                 break

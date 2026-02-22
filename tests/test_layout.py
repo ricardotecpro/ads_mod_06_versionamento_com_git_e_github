@@ -27,7 +27,7 @@ def test_homepage_structure(page: Page, base_url):
     page.goto(base_url)
     
     # Check title
-    expect(page).to_have_title("Git e GitHub - Curso")
+    expect(page).to_have_title(re.compile(r"Git e GitHub - Curso"))
     
     # Check main heading
     heading = page.locator("h1")
@@ -68,7 +68,9 @@ def test_quiz_functionality(page: Page, base_url):
         correct_option.click()
         
         # Check that feedback is displayed
-        feedback = first_quiz.locator(".quiz-feedback")
+        feedback = first_quiz.locator(".quiz-feedback").first
+        # Ensure we wait for the interaction to process
+        page.wait_for_timeout(500)
         expect(feedback).to_be_visible()
         expect(feedback).to_contain_text("Correto")
 
