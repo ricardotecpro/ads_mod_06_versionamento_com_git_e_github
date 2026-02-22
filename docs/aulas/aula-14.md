@@ -27,6 +27,31 @@ Clique em Save.
 ### 4. O Arquivo index.html
 Para que o site funcione, a primeira página DEVE se chamar `index.html`. Se não existir, o GitHub mostrará o README (se configurado) ou um erro 404.
 
+---
+
+## 📦 Limites do GitHub Pages (GitHub)
+
+* **Tamanho máximo do repositório:** 1 GB
+* **Tamanho recomendado do site publicado:** até 1 GB
+* **Tamanho máximo por arquivo:** 100 MB
+* **Limite de build (GitHub Pages build):** 10 builds por hora
+* **Largura de banda:** não é oficialmente especificada, mas uso excessivo pode gerar bloqueio temporário
+
+---
+
+### 💡 Observações importantes
+
+* Ideal para **sites estáticos** (HTML, CSS, JS).
+* Não suporta backend (PHP, Node.js, banco de dados etc.).
+* Perfeito para:
+
+  * Portfólios
+  * Landing pages
+  * Documentação
+  * Projetos front-end
+
+---
+
 ## 📽 Roteiro de Slides
 - O sonho do site próprio (Grátis!).
 - Diferença entre Repositório (Código) e Site (Produto Final).
