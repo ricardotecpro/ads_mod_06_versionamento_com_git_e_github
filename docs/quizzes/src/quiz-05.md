@@ -1,36 +1,36 @@
 # Quiz 05
 
-1. Qual a saída de `list(range(3))`?
+1. Quando ocorre um conflito de merge?
 
-    - [ ] [1, 2, 3]
-    - [ ] [0, 1, 2, 3]
-    - [x] [0, 1, 2]
-    - [ ] [1, 2]
+    - [ ] Quando o Git não tem conexão com a internet
+    - [x] Quando a mesma linha de um arquivo foi alterada de formas diferentes em dois locais
+    - [ ] Quando você esquece de usar o git add
+    - [ ] Sempre que você faz um merge
 
-2. O que acontece se a condição do `while` nunca for False?
+2. Como o Git resolve conflitos automaticamente na mesma linha?
 
-    - [ ] O programa para sozinho
-    - [x] Loop infinito
-    - [ ] O Python corrige
-    - [ ] Nada
+    - [ ] Ele pergunta ao usuário via chat
+    - [ ] Ele escolhe o commit mais antigo
+    - [ ] Ele escolhe o commit mais novo
+    - [x] Ele não resolve; ele pausa o merge e pede intervenção humana
 
-3. Qual comando **interrompe** totalmente um loop?
+3. O que significam as linhas entre `<<<<<<<` e `=======`?
 
-    - [ ] stop
-    - [ ] continue
-    - [x] break
-    - [ ] exit
+    - [x] O conteúdo que existe na sua branch atual (onde você está)
+    - [ ] O conteúdo que está vindo da outra branch
+    - [ ] Comentários inúteis que devem ser mantidos
+    - [ ] Erros de sistema do Windows
 
-4. Qual comando **pula** a iteração atual e volta ao início do loop?
+4. Qual comando usamos para marcar um arquivo como "resolvido"?
 
-    - [ ] skip
-    - [ ] next
-    - [ ] break
-    - [x] continue
+    - [ ] git resolved
+    - [ ] git fix
+    - [x] git add <arquivo>
+    - [ ] git commit --fixed
 
-5. Para repetir um código exatamente 10 vezes, qual a melhor opção?
+5. O que devemos fazer com os marcadores de conflito (`<<<<`, `====`, `>>>>`)?
 
-    - [ ] while i < 10
-    - [x] for i in range(10)
-    - [ ] if i == 10
-    - [ ] print(10)
+    - [x] Apagá-los manualmente após decidir qual código manter
+    - [ ] Deixá-los no código para referência futura
+    - [ ] Mudar a cor deles para azul
+    - [ ] Renomeá-los como comentários

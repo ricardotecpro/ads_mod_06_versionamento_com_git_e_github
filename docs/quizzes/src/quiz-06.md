@@ -1,36 +1,36 @@
 # Quiz 06
 
-1. Qual índice acessa o primeiro elemento de uma lista?
+1. Para que serve o botão "Star" em um repositório?
 
-    - [ ] 1
-    - [x] 0
-    - [ ] -1
-    - [ ] inicio
+    - [ ] Para deletar o projeto
+    - [x] Para adicionar o repositório aos seus favoritos e demonstrar apoio
+    - [ ] Para ver o código-fonte (Open Source)
+    - [ ] Para mudar a cor do site
 
-2. O que faz o método `.append(x)`?
+2. O que o "Fork" faz?
 
-    - [ ] Adiciona `x` no início da lista
-    - [x] Adiciona `x` no final da lista
-    - [ ] Remove `x` da lista
-    - [ ] Substitui tudo por `x`
+    - [x] Cria uma cópia completa do repositório de outra pessoa na sua própria conta
+    - [ ] Cria um branch novo no repositório original
+    - [ ] Deleta seu próprio código
+    - [ ] Abre um chat com o dono do projeto
 
-3. Dada a lista `x = [10, 20, 30]`, quanto é `x[-1]`?
+3. O que são "Issues"?
 
-    - [ ] 10
-    - [ ] 20
-    - [x] 30
-    - [ ] Erro
+    - [ ] Apenas erros no código
+    - [ ] Mensagens de texto entre usuários
+    - [x] Tarefas, bugs, melhorias ou discussões registradas no projeto
+    - [ ] Arquivos de configuração do sistema
 
-4. Como verificar o tamanho da lista `my_list`?
+4. Onde vejo a frequência de contribuições de um usuário?
 
-    - [ ] size(my_list)
-    - [ ] count(my_list)
-    - [x] len(my_list)
-    - [ ] my_list.length
+    - [ ] No histórico de navegação
+    - [ ] Na aba Settings
+    - [ ] Nas Issues abertas
+    - [x] No gráfico de contribuições (heatmap) no perfil do usuário
 
-5. O slicing `lista[1:3]` inclui o elemento do índice 3?
+5. Repositórios privados podem ser vistos por qualquer pessoa?
 
-    - [ ] Sim
-    - [x] Não
-    - [ ] Depende da lista
-    - [ ] Apenas se for string
+    - [ ] Sim, qualquer um com o link
+    - [x] Não, apenas pelo dono e pelas pessoas convidadas explicitamente
+    - [ ] Sim, se o GitHub permitir
+    - [ ] Apenas por amigos do Facebook

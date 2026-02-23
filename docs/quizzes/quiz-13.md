@@ -1,100 +1,49 @@
-# Quiz 13
+# Quiz 13 - Introdução
 
-<script src="../../assets/js/quiz.js" defer></script>
-
-<style>
-@import url("../../assets/css/quiz.css");
-</style>
+--8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-item" id="q1">
-    <div class="quiz-question">1. Para adicionar um membro da equipe com acesso de escrita ao repositório, onde vamos?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> No arquivo README.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> Settings > Collaborators.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Insights > Contributors.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Profile > Settings.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q2">
-    <div class="quiz-question">2. Qual a diferença funcional entre um Colaborador e um Contribuidor externo (Fork)?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">A)</span> O Colaborador pode fazer push direto no repositório; o Contribuidor precisa fazer Fork e PR.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> O Colaborador é pago.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> O Contribuidor tem mais poderes que o Colaborador.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Nenhuma.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q3">
-    <div class="quiz-question">3. O que acontece se eu tentar dar `git push` mas houver mudanças no servidor que eu ainda não baixei?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> O Git apaga as mudanças do servidor.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> O Git força o envio.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">C)</span> O Git rejeita o comando (Rejected - non-fast-forward) e pede um `git pull`.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> O computador desliga.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q4">
-    <div class="quiz-question">4. Qual é a prática recomendada antes de começar a codar todos os dias?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> `git push -f`
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> `git init`
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">C)</span> `git pull origin main` (para garantir que estou atualizado).
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Deletar a pasta `.git`.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q5">
-    <div class="quiz-question">5. Quem pode deletar o repositório inteiro?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Qualquer pessoa que tenha o link.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> Apenas o Owner (Dono) e Admins.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Os Colaboradores com permissão de leitura.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> O CEO do GitHub.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
+  <div class="quiz-question">1. Qual menu do GitHub usamos para adicionar pessoas para trabalharem no projeto conosco?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Actions</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Settings > Collaborators">Settings > Collaborators</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Pull Requests</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Insights</div>
+  <div class="quiz-feedback"></div>
 </div>
+
+<div class="quiz-container">
+  <div class="quiz-question">2. Um "Colaborador" com acesso de escrita precisa fazer Fork do projeto para contribuir?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sim, sempre</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Não, ele pode criar branches e dar push direto no repositório oficial">Não, ele pode criar branches e dar push direto no repositório oficial</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apenas se o projeto for público</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apenas se ele usar Windows</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">3. Qual a diferença principal entre o dono (Owner) e um Colaborador?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nenhuma, são iguais</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O Colaborador não pode ver o código</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O Owner tem poder total, inclusive para deletar o repositório ou mudar configurações críticas">O Owner tem poder total, inclusive para deletar o repositório ou mudar configurações críticas</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O Owner não pode commitar</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">4. O que acontece se seu colega der push na `main` e você tentar dar push sem atualizar seu PC antes?</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! O Git rejeita seu push (erro non-fast-forward) e pede para você fazer pull primeiro">O Git rejeita seu push (erro non-fast-forward) e pede para você fazer pull primeiro</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O Git apaga o que seu colega fez</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O computador trava</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O GitHub cria um repositório novo automaticamente</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">5. Qual comando baixa as atualizações do time do GitHub para o seu computador?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">git download</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">git sync</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! git pull">git pull</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">git push --reverse</div>
+  <div class="quiz-feedback"></div>
+</div>
+

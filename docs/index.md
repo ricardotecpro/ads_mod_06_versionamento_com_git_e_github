@@ -1,10 +1,10 @@
-# Bem-vindo ao Curso de Git e GitHub
+# Git e GitHub
 
 Domine o controle de versão e colabore como um profissional!
 
 ## 🎯 Sobre o Curso
 
-Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e GitHub. Você aprenderá os fundamentos do controle de versão, como trabalhar com repositórios locais e remotos, resolver conflitos, e colaborar em projetos de software.
+Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e GitHub. Você aprenderá os fundamentos do controle de versão, como trabalhar com repositórios locais e remotos, resolver conflitos, e colaborar em projetos de software realistas.
 
 **O que você vai aprender:**
 - Fundamentos do Git (add, commit, push, pull)
@@ -22,7 +22,7 @@ Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e 
     
     ---
     
-    16 aulas completas organizadas em 4 módulos.
+    16 aulas completas organizadas em 4 módulos práticos.
     
     [:octicons-arrow-right-24: Ver todas as aulas](aulas/index.md)
 
@@ -30,7 +30,7 @@ Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e 
     
     ---
     
-    Slides interativos para acompanhar cada aula.
+    Slides interativos em Reveal.js para acompanhar cada aula.
     
     [:octicons-arrow-right-24: Acessar slides](slides/index.md)
 
@@ -38,7 +38,7 @@ Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e 
     
     ---
     
-    Pratique com exercícios focados em cada tópico.
+    Pratique com exercícios focados em comandos reais de terminal.
     
     [:octicons-arrow-right-24: Ver exercícios](exercicios/index.md)
 
@@ -46,7 +46,7 @@ Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e 
     
     ---
     
-    Teste seus conhecimentos com quizzes rápidos.
+    Teste seus conhecimentos com quizzes interativos.
     
     [:octicons-arrow-right-24: Fazer quizzes](quizzes/index.md)
 
@@ -54,7 +54,7 @@ Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e 
     
     ---
     
-    Projetos práticos para construir seu portfólio.
+    Projetos práticos para construir seu portfólio no GitHub.
     
     [:octicons-arrow-right-24: Ver projetos](projetos/index.md)
 
@@ -62,7 +62,7 @@ Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e 
     
     ---
     
-    Guias de instalação do Git no Windows e Linux.
+    Guias de instalação do Git e configuração de identidade.
     
     [:octicons-arrow-right-24: Configurar ambiente](setups/index.md)
 
@@ -72,17 +72,17 @@ Este curso foi desenvolvido para te levar do zero absoluto ao domínio do Git e 
 
 O curso está organizado em **4 módulos**:
 
-1. **Módulo 1 – Conceitos Básicos** (Aulas 01-04)
-2. **Módulo 2 – Trabalhando com GitHub** (Aulas 05-08)
-3. **Módulo 3 – Fluxos e Organização** (Aulas 09-12)
-4. **Módulo 4 – Colaboração e Carreira** (Aulas 13-16)
+1. **Módulo 1 – Conceitos Básicos** (Aulas 01-04): Do Git Bash ao primeiro merge.
+2. **Módulo 2 – Trabalhando com GitHub** (Aulas 05-08): Repositórios remotos e colaboração.
+3. **Módulo 3 – Fluxos e Organização** (Aulas 09-12): Pull Requests e Documentação.
+4. **Módulo 4 – Colaboração e Carreira** (Aulas 13-16): Trabalho em equipe e Portfólio.
 
 ## 🎓 Como Usar Este Curso
 
 1. **Configure seu ambiente** - Siga os guias de [configuração](setups/index.md)
 2. **Siga a ordem** - Comece pela Aula 01 e avance progressivamente
-3. **Pratique muito** - Git se aprende no terminal!
-4. **Crie seu portfólio** - Use os projetos para preencher seu GitHub 
+3. **Pratique no Terminal** - Git se aprende digitando comandos!
+4. **Crie seu perfil** - Use os projetos para preencher seu portfólio no GitHub 
 
 ---
 

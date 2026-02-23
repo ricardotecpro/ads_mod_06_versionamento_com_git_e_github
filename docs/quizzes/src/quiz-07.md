@@ -1,36 +1,36 @@
 # Quiz 07
 
-1. Qual a principal diferença entre Lista e Tupla?
+1. Qual comando envia commits locais para o GitHub?
 
-    - [ ] Listas usam parênteses, Tuplas usam colchetes
-    - [x] Listas são mutáveis, Tuplas são imutáveis
-    - [ ] Tuplas aceitam duplicatas, Listas não
-    - [ ] Não há diferença
+    - [ ] git pull
+    - [ ] git commit
+    - [x] git push
+    - [ ] git upload
 
-2. Qual estrutura remove duplicatas automaticamente?
+2. O que é "origin" no comando `git push origin main`?
 
-    - [ ] List
-    - [ ] Tuple
-    - [x] Set
-    - [ ] Dictionary
+    - [ ] É o nome da sua pasta local
+    - [x] É o apelido padrão para o link do repositório remoto
+    - [ ] É o nome do usuário do GitHub
+    - [ ] É um comando do sistema operacional
 
-3. O que acontece se tentarmos fazer `meu_set[0]`?
+3. Qual comando copia um repositório inteiro do GitHub para sua máquina?
 
-    - [ ] Acessa o primeiro item
-    - [x] Gera um erro (TypeError) pois set não tem índice
-    - [ ] Retorna None
-    - [ ] Retorna o set inteiro
+    - [x] git clone
+    - [ ] git copy
+    - [ ] git download
+    - [ ] git init --remote
 
-4. Qual operador faz a **interseção** de dois sets (itens em comum)?
+4. Para que serve o arquivo `.gitignore`?
 
-    - [ ] |
-    - [ ] -
-    - [x] &
-    - [ ] +
+    - [ ] Para salvar senhas secretas
+    - [ ] Para obrigar o Git a subir todos os arquivos
+    - [ ] Para apagar o histórico de commits
+    - [x] Para listar arquivos e pastas que o Git deve ignorar (não rastrear)
 
-5. Dado `t = (1, 2, 3)`, o comando `t[0] = 10` funciona?
+5. Se eu quiser baixar apenas as atualizações de um repo já clonado, usaria `clone` novamente?
 
-    - [ ] Sim, a tupla vira `(10, 2, 3)`
-    - [x] Não, erro de TypeError (item assignment)
-    - [ ] Sim, mas a tupla vira uma lista
-    - [ ] Depende da versão do Python
+    - [ ] Sim, clonaria em outra pasta
+    - [x] Não, usaria o comando `git pull`
+    - [ ] Sim, após deletar a pasta original
+    - [ ] Não, usaria `git init`

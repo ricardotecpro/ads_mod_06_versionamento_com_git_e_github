@@ -1,100 +1,49 @@
-# Quiz 16
+# Quiz 16 - Introdução
 
-<script src="../../assets/js/quiz.js" defer></script>
-
-<style>
-@import url("../../assets/css/quiz.css");
-</style>
+--8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-item" id="q1">
-    <div class="quiz-question">1. O que é o "Heatmap" (Gráfico de Contribuição) no perfil do GitHub?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Um gráfico que mostra a temperatura do servidor.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> Um calendário visual que mostra a frequência das suas contribuições (commits, PRs, issues) ao longo do ano.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Um jogo de batalha naval.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Um contador de seguidores.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q2">
-    <div class="quiz-question">2. Qual evento anual incentiva a participação em projetos Open Source?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> GitCon.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> CodeFest.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">C)</span> Hacktoberfest.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Summer of Code.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q3">
-    <div class="quiz-question">3. O que significa CI/CD?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Código Interno / Código Dedicado.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> Continouos Integration / Continuous Delivery (ou Deployment).
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Command Interface / Command Delete.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Central Intelligence / Central Data.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q4">
-    <div class="quiz-question">4. O que são Git Hooks?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Ganchos de metal para pendurar o computador.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> Scripts que o Git executa automaticamente antes ou depois de eventos como commit, push e merge.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Erros de versionamento.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Vírus.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q5">
-    <div class="quiz-question">5. Qual é o melhor conselho para quem está começando na carreira de dev?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Decorar todos os comandos do Git.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> Nunca pedir ajuda.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">C)</span> Praticar consistentemente, construir projetos reais e colaborar com outros (Soft Skills).
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Usar apenas bloco de notas.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
+  <div class="quiz-question">1. O que geralmente indica a label `good first issue` em um projeto Open Source?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Que a tarefa é muito difícil</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Que a tarefa é adequada e amigável para iniciantes contribuírem">Que a tarefa é adequada e amigável para iniciantes contribuírem</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Que o projeto está abandonado</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Que você ganhará dinheiro se resolver</div>
+  <div class="quiz-feedback"></div>
 </div>
+
+<div class="quiz-container">
+  <div class="quiz-question">2. O que é Hacktoberfest?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Um vírus de computador</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Um evento global anual para incentivar contribuições ao Open Source">Um evento global anual para incentivar contribuições ao Open Source</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma linguagem de programação nova</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O nome do criador do Git</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">3. O que significa a sigla CI/CD em um contexto básico de GitHub?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Computer Internet / Code Design</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Create Issue / Close Discussion</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Continuous Integration / Continuous Deployment (Automação de testes e entregas)">Continuous Integration / Continuous Deployment (Automação de testes e entregas)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Commits Ilimitados / Codificação Direta</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">4. Qual a melhor maneira de demonstrar consistência e hábito de estudo no seu perfil do GitHub?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Ter 1 milhão de seguidores</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Manter o gráfico de contribuições (heatmap) ativo com commits regulares">Manter o gráfico de contribuições (heatmap) ativo com commits regulares</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Mudar sua foto todo dia</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Deletar repositórios antigos</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">5. Qual comando reescreve o histórico de forma linear, sendo uma alternativa ao `merge` tradicional?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">git linear</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! git rebase">git rebase</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">git sequence</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">git rewrite</div>
+  <div class="quiz-feedback"></div>
+</div>
+

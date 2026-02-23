@@ -1,100 +1,49 @@
-# Quiz 12
+# Quiz 12 - Introdução
 
-<script src="../../assets/js/quiz.js" defer></script>
-
-<style>
-@import url("../../assets/css/quiz.css");
-</style>
+--8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-item" id="q1">
-    <div class="quiz-question">1. Qual caractere (ou caracteres) define um Título de Nível 1 (H1) em Markdown?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> `=`
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> `#`
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> `*`
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> `<h1>`
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q2">
-    <div class="quiz-question">2. Como deixamos um texto em negrito (bold)?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">A)</span> `**Texto**` ou `__Texto__`
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> `*Texto*`
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> `~Texto~`
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> `[b]Texto[/b]`
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q3">
-    <div class="quiz-question">3. Qual a diferença de sintaxe entre um link e uma imagem?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Nenhuma.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> Imagens usam chaves `{}`.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">C)</span> A imagem começa com um ponto de exclamação `!`. Ex: `![Alt](url)`.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> O link começa com `@`.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q4">
-    <div class="quiz-question">4. Para criar um bloco de código de várias linhas com destaque de sintaxe, usamos:</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Aspas triplas `"""`.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> Parênteses `((()))`.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">C)</span> Crases triplas (backticks) ` ``` `.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Indentação com 4 espaços apenas.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q5">
-    <div class="quiz-question">5. Qual destes NÃO é um serviço de geração de Badges?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Shields.io
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> Badgen.net
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> GitHub Badges
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">D)</span> Badgify (fictício, ou menos conhecido).
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
+  <div class="quiz-question">1. Qual caractere é usado para criar títulos em Markdown?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">*</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! #">#</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">-</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">></div>
+  <div class="quiz-feedback"></div>
 </div>
+
+<div class="quiz-container">
+  <div class="quiz-question">2. Como se escreve um texto em negrito no Markdown?</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! **Texto em negrito**">**Texto em negrito**</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">*Texto em negrito*</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">_Texto em negrito_</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">[Texto em negrito]</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">3. Qual a diferença visual na sintaxe entre um Link e uma Imagem?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O link usa parênteses e a imagem não</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Não há diferença</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! A imagem começa com um ponto de exclamação `!` seguido de colchetes `![]()`">A imagem começa com um ponto de exclamação `!` seguido de colchetes `![]()`</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O link é sempre azul no editor</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">4. Para criar um bloco de código de várias linhas, o que usamos?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Uma crase no início e no fim</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Aspas duplas</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Colchetes</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Três crases (```) no início e no fim do bloco">Três crases (```) no início e no fim do bloco</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">5. Qual serviço popular é frequentemente usado para gerar "badges" (escudos de status) para o README?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Google Fonts</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Shields.io">Shields.io</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Imgur</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Wikipedia</div>
+  <div class="quiz-feedback"></div>
+</div>
+

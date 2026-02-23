@@ -1,36 +1,36 @@
 # Quiz 10
 
-1. Qual comando usamos para usar um código de outro arquivo?
+1. Qual a função do campo "Assignee" em uma Issue?
 
-    - [ ] include
-    - [ ] require
-    - [x] import
-    - [ ] use
+    - [ ] Dar uma nota para a tarefa
+    - [x] Definir quem é a pessoa responsável por realizar aquele trabalho
+    - [ ] Banir um usuário do projeto
+    - [ ] Mudar o nome do repositório
 
-2. Se eu fizer `import math`, como acesso a função `sqrt`?
+2. Para que servem as "Labels" nas Issues?
 
-    - [ ] sqrt()
-    - [x] math.sqrt()
-    - [ ] Math.sqrt()
-    - [ ] import.sqrt()
+    - [x] Para categorizar, organizar e filtrar as tarefas (ex: bug, feature, help wanted)
+    - [ ] Para mudar a cor do fundo do GitHub
+    - [ ] Para traduzir o texto automaticamente
+    - [ ] Para esconder a issue de outras pessoas
 
-3. Qual a vantagem de usar `from modulo import funcao`?
+3. O que acontece se eu usar a palavra-chave "Closes #10" num Pull Request?
 
-    - [ ] O código roda mais rápido
-    - [x] Permite chamar a função diretamente pelo nome, sem o prefixo do módulo
-    - [ ] Importa o módulo inteiro para a memória
-    - [ ] Permite alterar o código da função original
+    - [ ] O Pull Request é deletado
+    - [ ] O GitHub envia um email para o dono
+    - [x] A Issue #10 é fechada automaticamente quando o PR for mergeado
+    - [ ] Nada, é apenas um comentário
 
-4. O que é um pacote em Python?
+4. O GitHub Projects permite visualizar as tarefas em qual formato popular?
 
-    - [ ] Um arquivo .zip
-    - [ ] Um servidor de download
-    - [x] Uma pasta contendo módulos (e geralmente um `__init__.py`)
-    - [ ] Uma função que retorna vários valores
+    - [x] Kanban (Quadro com colunas como Todo, In Progress, Done)
+    - [ ] Planilha do Excel
+    - [ ] Gráfico de Pizza
+    - [ ] Apresentação de Slides
 
-5. Para usar o módulo `random` com o apelido `rnd`, como fazemos?
+5. Issues servem apenas para reportar bugs (erros)?
 
-    - [ ] import random nickname rnd
-    - [ ] import rnd from random
-    - [x] import random as rnd
-    - [ ] alias random = rnd
+    - [ ] Sim, para nada mais
+    - [x] Não, servem para planejar novas funções, documentação e discussões gerais
+    - [ ] Não, servem apenas para administradores
+    - [ ] Sim, se o projeto for privado

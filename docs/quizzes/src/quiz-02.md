@@ -1,36 +1,36 @@
 # Quiz 02
 
-1. Qual o tipo de dado da variável `x` em `x = 10.5`?
+1. Qual o site oficial para baixar o Git?
 
-    - [ ] int
-    - [x] float
-    - [ ] str
-    - [ ] bool
+    - [ ] github.com
+    - [x] git-scm.com
+    - [ ] bitbucket.org
+    - [ ] gitlab.com
 
-2. Qual a saída do código `print(type("10"))`?
+2. Qual comando define seu nome de usuário no Git?
 
-    - [ ] <class 'int'>
-    - [ ] <class 'float'>
-    - [x] "><class 'str'>
-    - [ ] <class 'bool'>
+    - [x] git config --global user.name
+    - [ ] git set user.name
+    - [ ] git username set
+    - [ ] git identity name
 
-3. O que a função `input()` retorna por padrão?
+3. O que a opção `--global` faz nas configurações?
 
-    - [ ] Um número inteiro (int)
-    - [ ] Um número decimal (float)
-    - [x] Um texto (str)
-    - [ ] O tipo que o usuário escolher
+    - [ ] Aplica apenas ao projeto atual
+    - [ ] Deleta todas as configurações antigas
+    - [x] Aplica a configuração a todos os repositórios do seu usuário no computador
+    - [ ] Envia as configurações para o GitHub automaticamente
 
-4. Qual variável segue as boas práticas (snake_case) do Python?
+4. Qual terminal é instalado junto com o Git no Windows?
 
-    - [ ] NomeUsuario
-    - [x] nome_usuario
-    - [ ] nome-usuario
-    - [ ] NOMEUSUARIO
+    - [ ] PowerShell
+    - [ ] CMD
+    - [ ] Terminal do VS Code
+    - [x] Git Bash
 
-5. Qual o resultado de `10 // 3` (divisão inteira)?
+5. Como verificar as configurações atuais?
 
-    - [ ] 3.3333...
-    - [x] 3
-    - [ ] 1
-    - [ ] 10
+    - [ ] git status
+    - [x] git config --list
+    - [ ] git log
+    - [ ] git check config

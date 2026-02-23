@@ -1,12 +1,12 @@
-site_name: Git e GitHub - Curso
+site_name: Git e GitHub
 site_url: https://ricardotecpro.github.io/ads_mod_06_versionamento_com_git_e_github
 repo_url: https://github.com/ricardotecpro/ads_mod_06_versionamento_com_git_e_github
 repo_name: ricardotecpro/ads_mod_06_versionamento_com_git_e_github
 theme:
   name: material
   language: pt-BR
-  favicon: assets/images/python-logo-notext.svg
-  logo: assets/images/python-logo-notext.svg
+  favicon: assets/images/logo.png
+  logo: assets/images/logo.png
   custom_dir: overrides
   features:
     - navigation.tracking
@@ -24,16 +24,16 @@ theme:
     # Light Mode (Default)
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: amber
+      primary: black
+      accent: indigo
       toggle:
         icon: material/weather-sunny
         name: Mudar para modo escuro
     # Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: amber
+      primary: black
+      accent: indigo
       toggle:
         icon: material/weather-night
         name: Mudar para modo claro
@@ -100,7 +100,6 @@ plugins:
         datetime_format: '%Y-%m-%d %H:%M:%S'
   - print-site:
       add_to_navigation: false
-      print_page_rel_path: 'print_page.md'
       print_page_title: 'Versão para Impressão'
       add_print_site_banner: false
       enumerate_headings: false
@@ -108,6 +107,11 @@ plugins:
 
 hooks:
   - hooks/copy_slides.py
+
+exclude_docs: |
+  quizzes/src/*
+  slides/src/*
+  slides/slide-*.md
 
 extra_css:
   - assets/css/quiz.css
@@ -135,36 +139,35 @@ extra:
     provider: mike
     default: estavel
 
-hooks:
-  - hooks/copy_slides.py
-
 nav:
   - Home: index.md
   - Sobre: sobre.md
   - Aulas:
-    - aulas/index.md
-    - Módulo 1 – Conceitos Básicos:
-      - 'Aula 01 - Introdução ao Controle de Versão': aulas/aula-01.md
-      - 'Aula 02 - Instalação e Configuração': aulas/aula-02.md
-      - 'Aula 03 - Primeiros Passos com Git': aulas/aula-03.md
-      - 'Aula 04 - Branches e Merges': aulas/aula-04.md
-    - Módulo 2 – Trabalhando com GitHub:
-      - 'Aula 05 - Resolução de Conflitos': aulas/aula-05.md
-      - 'Aula 06 - Introdução ao GitHub': aulas/aula-06.md
-      - 'Aula 07 - Repositórios Remotos': aulas/aula-07.md
-      - 'Aula 08 - Pull Requests e Code Review': aulas/aula-08.md
-    - Módulo 3 – Fluxos e Organização:
-      - 'Aula 09 - GitHub Flow': aulas/aula-09.md
-      - 'Aula 10 - Issues e Projects': aulas/aula-10.md
-      - 'Aula 11 - Boas Práticas de Commit': aulas/aula-11.md
-      - 'Aula 12 - README e Markdown': aulas/aula-12.md
-    - Módulo 4 – Colaboração e Carreira:
-      - 'Aula 13 - Trabalhando em Equipe': aulas/aula-13.md
-      - 'Aula 14 - GitHub Pages e Portfólio': aulas/aula-14.md
-      - 'Aula 15 - Erros Comuns e Soluções': aulas/aula-15.md
-      - 'Aula 16 - Carreira e Próximos Passos': aulas/aula-16.md
+      - aulas/index.md
+      - Módulo 1 – Conceitos Básicos:
+          - 'Aula 01 - Introdução ao Controle de Versão': aulas/aula-01.md
+          - 'Aula 02 - Instalação e Configuração': aulas/aula-02.md
+          - 'Aula 03 - Primeiros Passos com Git': aulas/aula-03.md
+          - 'Aula 04 - Branches e Merges': aulas/aula-04.md
+      - Módulo 2 – Trabalhando com GitHub:
+          - 'Aula 05 - Resolução de Conflitos': aulas/aula-05.md
+          - 'Aula 06 - Introdução ao GitHub': aulas/aula-06.md
+          - 'Aula 07 - Repositórios Remotos': aulas/aula-07.md
+          - 'Aula 08 - Pull Requests e Code Review': aulas/aula-08.md
+      - Módulo 3 – Fluxos e Organização:
+          - 'Aula 09 - GitHub Flow': aulas/aula-09.md
+          - 'Aula 10 - Issues e Projects': aulas/aula-10.md
+          - 'Aula 11 - Boas Práticas de Commit': aulas/aula-11.md
+          - 'Aula 12 - README e Markdown': aulas/aula-12.md
+      - Módulo 4 – Colaboração e Carreira:
+          - 'Aula 13 - Trabalhando em Equipe': aulas/aula-13.md
+          - 'Aula 14 - GitHub Pages e Portfólio': aulas/aula-14.md
+          - 'Aula 15 - Erros Comuns e Soluções': aulas/aula-15.md
+          - 'Aula 16 - Carreira e Próximos Passos': aulas/aula-16.md
   - Materiais:
       - materiais.md
+      - 'Plano de Ensino': plano-ensino.md
+      - 'Roadmap': project_roadmap.md
       - Slides:
           - slides/index.md
           - 'Slide 01 - Introdução': slides/slide-01.html

@@ -1,100 +1,49 @@
-# Quiz 10
+# Quiz 10 - Introdução
 
-<script src="../../assets/js/quiz.js" defer></script>
-
-<style>
-@import url("../../assets/css/quiz.css");
-</style>
+--8<-- "assets/quiz.html"
 
 <div class="quiz-container">
-  <div class="quiz-item" id="q1">
-    <div class="quiz-question">1. O campo "Assignee" em uma Issue indica:</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Quem criou a issue.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> Quem é o responsável por resolver a tarefa.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Quem será demitido se a tarefa falhar.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Quem aprovou o orçamento.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q2">
-    <div class="quiz-question">2. Labels (etiquetas) servem principalmente para:</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Deixar o projeto colorido e bonito.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> Filtrar, categorizar e priorizar issues e PRs.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Traduzir o projeto.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Aumentar a velocidade do site.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q3">
-    <div class="quiz-question">3. Qual palavra-chave na descrição de um PR fecha automaticamente a Issue #42?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> `Delete #42`
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> `Refers to #42`
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">C)</span> `Closes #42` (ou `Fixes #42`, `Resolves #42`)
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> `Goodbye #42`
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q4">
-    <div class="quiz-question">4. O GitHub Projects permite visualizar tarefas em qual formato popular de gestão?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">A)</span> Kanban (Colunas: A fazer, Fazendo, Feito).
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">B)</span> Planilha Excel.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Diagrama de Classes.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Fluxograma.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
-  <div class="quiz-item" id="q5">
-    <div class="quiz-question">5. Issues servem apenas para reportar Bugs?</div>
-    <div class="quiz-options">
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">A)</span> Sim, exclusivamente para erros.
-      </div>
-      <div class="quiz-option" data-correct="true" data-feedback="Correto!">
-        <span class="option-letter">B)</span> Não, servem para sugestões de melhoria (Features), discussões, tarefas e bugs.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">C)</span> Não, servem apenas para chat.
-      </div>
-      <div class="quiz-option" data-correct="false" data-feedback="Incorreto.">
-        <span class="option-letter">D)</span> Sim, e só o dono do repo pode criar.
-      </div>
-    </div>
-    <div class="quiz-feedback"></div>
-  </div>
+  <div class="quiz-question">1. Qual a função do campo "Assignee" em uma Issue?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Dar uma nota para a tarefa</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Definir quem é a pessoa responsável por realizar aquele trabalho">Definir quem é a pessoa responsável por realizar aquele trabalho</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Banir um usuário do projeto</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Mudar o nome do repositório</div>
+  <div class="quiz-feedback"></div>
 </div>
+
+<div class="quiz-container">
+  <div class="quiz-question">2. Para que servem as "Labels" nas Issues?</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Para categorizar, organizar e filtrar as tarefas (ex: bug, feature, help wanted)">Para categorizar, organizar e filtrar as tarefas (ex: bug, feature, help wanted)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para mudar a cor do fundo do GitHub</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para traduzir o texto automaticamente</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Para esconder a issue de outras pessoas</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">3. O que acontece se eu usar a palavra-chave "Closes #10" num Pull Request?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O Pull Request é deletado</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">O GitHub envia um email para o dono</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! A Issue #10 é fechada automaticamente quando o PR for mergeado">A Issue #10 é fechada automaticamente quando o PR for mergeado</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Nada, é apenas um comentário</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">4. O GitHub Projects permite visualizar as tarefas em qual formato popular?</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Kanban (Quadro com colunas como Todo, In Progress, Done)">Kanban (Quadro com colunas como Todo, In Progress, Done)</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Planilha do Excel</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Gráfico de Pizza</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Apresentação de Slides</div>
+  <div class="quiz-feedback"></div>
+</div>
+
+<div class="quiz-container">
+  <div class="quiz-question">5. Issues servem apenas para reportar bugs (erros)?</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sim, para nada mais</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! Não, servem para planejar novas funções, documentação e discussões gerais">Não, servem para planejar novas funções, documentação e discussões gerais</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Não, servem apenas para administradores</div>
+  <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Tente novamente.">Sim, se o projeto for privado</div>
+  <div class="quiz-feedback"></div>
+</div>
+

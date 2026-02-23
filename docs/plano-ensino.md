@@ -1,40 +1,40 @@
 # Plano de Ensino 📅
 
-**Curso**: Markdown Moderno para Computação
+**Curso**: Git e GitHub
 
 ## Ementa
-1.  **Módulo 1: Fundamentos do Markdown**: Sintaxe básica, organização de documentos e documentação de código.
-2.  **Módulo 2: Markdown Profissional**: Tabelas, integração com GitHub, Markdown estendido e estruturação técnica.
-3.  **Módulo 3: Diagramas e Visualização**: Uso do Mermaid para UML e diagramas avançados, além de fórmulas matemáticas com MathJax.
-4.  **Módulo 4: Documentação Interativa**: Criação de apresentações com Reveal.js, simulações de terminal com Termynal.js e publicação.
+1.  **Módulo 1: Conceitos Básicos**: Introdução ao controle de versão, instalação, primeiros passos e fluxo local (commits, branches).
+2.  **Módulo 2: Trabalhando com GitHub**: Repositórios remotos, colaboração, sincronização e resolução de conflitos.
+3.  **Módulo 3: Fluxos e Organização**: GitHub Flow, Pull Requests, boas práticas de commit e documentação (README).
+4.  **Módulo 4: Colaboração e Carreira**: Trabalho em equipe, Issues, Projects, portfólio no GitHub Pages e resolução de erros comuns.
 
 ## Cronograma (16 Aulas)
-### Módulo 1: Fundamentos do Markdown
-- **Aula 01**: Introdução ao Markdown e Ferramentas
-- **Aula 02**: Sintaxe Básica (Títulos, Listas, Links)
-- **Aula 03**: Organização e README Profissional
-- **Aula 04**: Markdown para Documentação de Código
+### Módulo 1: Conceitos Básicos
+- **Aula 01**: Introdução ao Controle de Versão
+- **Aula 02**: Instalação e Configuração
+- **Aula 03**: Primeiros Passos com Git (Init, Add, Commit)
+- **Aula 04**: Entendendo Branches e Merges
 
-### Módulo 2: Markdown Profissional
-- **Aula 05**: Tabelas e Estruturas Técnicas
-- **Aula 06**: Markdown no GitHub (Issues, PRs, Badges)
-- **Aula 07**: Markdown Estendido e HTML Embutido
-- **Aula 08**: Projeto Intermediário: Documentação de Sistema
+### Módulo 2: Trabalhando com GitHub
+- **Aula 05**: Introdução ao GitHub e Repositórios Remotos
+- **Aula 06**: Sincronização: Push, Pull e Fetch
+- **Aula 07**: Resolução de Conflitos
+- **Aula 08**: Projeto Intermediário: Primeiro Repositório Remoto
 
-### Módulo 3: Diagramas, Matemática e Visualização
-- **Aula 09**: Diagramas de Fluxo e Sequência com Mermaid
-- **Aula 10**: Diagramas de Classe, ER e Gantt
-- **Aula 11**: Fórmulas Matemáticas com MathJax (LaTeX)
-- **Aula 12**: Markdown Acadêmico e Relatórios Técnicos
+### Módulo 3: Fluxos e Organização
+- **Aula 09**: GitHub Flow e Trabalho Colaborativo
+- **Aula 10**: Pull Requests e Code Review
+- **Aula 11**: Boas Práticas de Commit
+- **Aula 12**: README.md e Markdown Profissional
 
-### Módulo 4: Apresentações e Documentação Interativa
-- **Aula 13**: Slides Profissionais com Reveal.js
-- **Aula 14**: Simulação de Terminal com Termynal.js
-- **Aula 15**: Projeto Integrador Final
-- **Aula 16**: Apresentação e Publicação no GitHub Pages
+### Módulo 4: Colaboração e Carreira
+- **Aula 13**: Issues, Projects e Gestão de Tarefas
+- **Aula 14**: GitHub Pages e Portfólio
+- **Aula 15**: Erros Comuns e Como Corrigi-los (Reset, Revert, Stash)
+- **Aula 16**: Carreira, Open Source e Próximos Passos
 
 ## Avaliação
-*   **Exercícios**: 16 listas de exercícios com desafios progressivos.
-*   **Projetos**: 16 mini-projetos aplicados a cada tema.
-*   **Quizzes**: 10 questões por aula com feedback imediato.
-*   **Projeto Final**: Documentação técnica completa + Slides + Site publicado.
+*   **Exercícios**: 16 listas de exercícios práticos no terminal.
+*   **Projetos**: Construção gradual de um portfólio real no GitHub.
+*   **Quizzes**: Testes de conhecimento ao final de cada módulo.
+*   **Projeto Final**: Repositório completo com README, histórico limpo e site publicado.

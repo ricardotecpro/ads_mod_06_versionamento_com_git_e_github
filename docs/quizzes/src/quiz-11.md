@@ -1,36 +1,36 @@
 # Quiz 11
 
-1. Qual a função usada para abrir arquivos em Python?
+1. Qual é a convenção gramatical recomendada para mensagens de commit em português?
 
-    - [ ] file()
-    - [x] open()
-    - [ ] read()
-    - [ ] load()
+    - [ ] Passado (ex: "Adicionei x")
+    - [x] Imperativo Presente (ex: "Adiciona x")
+    - [ ] Gerúndio (ex: "Adicionando x")
+    - [ ] Futuro (ex: "Irei adicionar x")
 
-2. O que acontece se abrirmos um arquivo existente no modo `'w'`?
+2. O que é um "Commit Atômico"?
 
-    - [ ] Ele adiciona conteúdo ao final
-    - [x] Ele apaga todo o conteúdo existente e começa do zero
-    - [ ] Ele gera um erro
-    - [ ] Ele abre em modo de leitura
+    - [x] Um commit que resolve apenas uma tarefa pequena e específica
+    - [ ] Um commit que contém todas as mudanças da semana
+    - [ ] Um commit que deleta o banco de dados
+    - [ ] Um commit feito por um robô
 
-3. Para adicionar conteúdo ao final de um arquivo sem apagar o que já existe, qual modo usamos?
+3. Qual desses prefixos indica uma nova funcionalidade no padrão Conventional Commits?
 
-    - [ ] 'r'
-    - [ ] 'w'
-    - [x] 'a'
-    - [ ] 'x'
+    - [ ] fix:
+    - [ ] docs:
+    - [x] feat:
+    - [ ] refactor:
 
-4. Qual a vantagem de usar o bloco `with`?
+4. Por que não devemos misturar correções de bugs com formatação de código no mesmo commit?
 
-    - [ ] O código fica mais rápido
-    - [x] Ele fecha o arquivo automaticamente, evitando vazamento de memória
-    - [ ] Ele criptografa o arquivo
-    - [ ] Ele permite ler arquivos PDF
+    - [ ] Porque o Git trava
+    - [ ] Porque o arquivo fica muito pesado
+    - [ ] Porque o GitHub não aceita
+    - [x] Porque dificulta a revisão (Code Review) e a possibilidade de reverter apenas uma das mudanças
 
-5. O que o método `.read()` faz?
+5. Qual mensagem de commit segue melhor as boas práticas?
 
-    - [ ] Lê apenas a primeira linha
-    - [x] Lê todo o conteúdo do arquivo como uma única string
-    - [ ] Lê o arquivo como uma lista de linhas
-    - [ ] Lê o nome do arquivo
+    - [ ] "ajustes"
+    - [ ] "corrigindo erro no login"
+    - [x] "fix: corrige validação do campo email"
+    - [ ] "MUDANÇAS FINAIS AGORA VAI"

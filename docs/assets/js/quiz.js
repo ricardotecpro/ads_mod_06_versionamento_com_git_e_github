@@ -31,7 +31,7 @@ function handleOptionClick(option) {
   // Prevent if disabled
   if (option.classList.contains("disabled")) return;
 
-  const container = option.closest(".quiz-item");
+  const container = option.closest(".quiz-container");
   if (!container) return;
 
   // Allow changing answer: Remove state from siblings

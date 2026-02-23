@@ -1,36 +1,36 @@
 # Quiz 12
 
-1. Qual bloco contém o código que pode gerar um erro?
+1. Qual caractere é usado para criar títulos em Markdown?
 
-    - [ ] except
-    - [x] try
-    - [ ] catch
-    - [ ] test
+    - [ ] *
+    - [x] #
+    - [ ] -
+    - [ ] >
 
-2. Qual bloco é executado SEMPRE, independentemente de erro?
+2. Como se escreve um texto em negrito no Markdown?
 
-    - [ ] else
-    - [ ] always
-    - [x] finally
-    - [ ] default
+    - [x] **Texto em negrito**
+    - [ ] *Texto em negrito*
+    - [ ] _Texto em negrito_
+    - [ ] [Texto em negrito]
 
-3. Qual exceção é levantada ao tentar dividir um número por zero?
+3. Qual a diferença visual na sintaxe entre um Link e uma Imagem?
 
-    - [ ] ValueError
-    - [ ] TypeError
-    - [ ] MathError
-    - [x] ZeroDivisionError
+    - [ ] O link usa parênteses e a imagem não
+    - [ ] Não há diferença
+    - [x] A imagem começa com um ponto de exclamação `!` seguido de colchetes `![]()`
+    - [ ] O link é sempre azul no editor
 
-4. O comando `raise` serve para:
+4. Para criar um bloco de código de várias linhas, o que usamos?
 
-    - [ ] Tratar um erro
-    - [ ] Ignorar um erro
-    - [x] Lançar (gerar) um erro propositalmente
-    - [ ] Aumentar a prioridade do erro
+    - [ ] Uma crase no início e no fim
+    - [ ] Aspas duplas
+    - [ ] Colchetes
+    - [x] Três crases (```) no início e no fim do bloco
 
-5. É considerado boa prática usar `except:` sem especificar o tipo de erro?
+5. Qual serviço popular é frequentemente usado para gerar "badges" (escudos de status) para o README?
 
-    - [ ] Sim, economiza código
-    - [x] Não, pois pode ocultar erros inesperados e dificultar a depuração
-    - [ ] Sim, o Python recomenda
-    - [ ] Tanto faz
+    - [ ] Google Fonts
+    - [x] Shields.io
+    - [ ] Imgur
+    - [ ] Wikipedia

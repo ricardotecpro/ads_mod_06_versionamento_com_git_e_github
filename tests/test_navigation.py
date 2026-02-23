@@ -16,7 +16,7 @@ class TestNavigation:
         page.goto(f"{base_url}/")
         
         # Verifica se o título contém o nome do curso (flexível)
-        expect(page).to_have_title(re.compile(r"Git e GitHub - Curso"))
+        expect(page).to_have_title(re.compile(r"Git e GitHub"))
 
 
     def _ensure_menu_visible(self, page: Page):

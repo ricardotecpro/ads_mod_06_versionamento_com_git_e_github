@@ -1,36 +1,36 @@
 # Quiz 14
 
-1. Qual a sintaxe para criar uma classe `Carro` que herda de `Veiculo`?
+1. O GitHub Pages é um serviço gratuito?
 
-    - [ ] class Carro extends Veiculo:
-    - [x] class Carro(Veiculo):
-    - [ ] class Carro inherits Veiculo:
-    - [ ] def Carro(Veiculo):
+    - [x] Sim, especialmente para repositórios públicos
+    - [ ] Não, custa 10 dólares por mês
+    - [ ] Apenas nos primeiros 30 dias
+    - [ ] Apenas para estudantes de TI
 
-2. O que é Polimorfismo?
+2. Posso hospedar um site feito em PHP com banco de dados MySQL no GitHub Pages?
 
-    - [ ] A capacidade de um objeto mudar de classe
-    - [x] A capacidade de objetos diferentes responderem ao mesmo método de formas diferentes
-    - [ ] A capacidade de herdar múltiplos pais
-    - [ ] A capacidade de criptografar dados
+    - [ ] Sim, funciona perfeitamente
+    - [x] Não, ele só aceita conteúdo estático (HTML, CSS, JS)
+    - [ ] Apenas se o banco de dados for pequeno
+    - [ ] Apenas no plano Pro
 
-3. Qual a função do `super()`?
+3. Qual é o nome obrigatório do arquivo principal para que o site carregue automaticamente na raiz?
 
-    - [ ] Cancelar a herança
-    - [x] Chamar métodos da classe pai (superclasse)
-    - [ ] Acessar variáveis globais
-    - [ ] Criar um super usuário
+    - [ ] home.html
+    - [ ] pagina-inicial.php
+    - [x] index.html
+    - [ ] startup.js
 
-4. Como definimos um atributo "privado" em Python (por convenção forte)?
+4. Em qual menu do repositório configuramos e ativamos o GitHub Pages?
 
-    - [ ] private variavel
-    - [ ] _variavel
-    - [x] __variavel (dois underlines)
-    - [ ] (variavel)
+    - [ ] Code
+    - [ ] Issues
+    - [ ] Security
+    - [x] Settings > Pages
 
-5. Se tenho `class A` e `class B(A)`, qual afirmação é verdadeira?
+5. Quanto tempo médio demora para o site ir ao ar após o primeiro push?
 
-    - [ ] A é subclasse de B
-    - [ ] B herda apenas os atributos de A, não os métodos
-    - [x] B é subclasse de A e herda atributos e métodos
-    - [ ] A precisa ser instanciada dentro de B
+    - [ ] 24 horas
+    - [x] Alguns segundos ou poucos minutos
+    - [ ] Uma semana para revisão manual
+    - [ ] É instantâneo (menos de 1 segundo)

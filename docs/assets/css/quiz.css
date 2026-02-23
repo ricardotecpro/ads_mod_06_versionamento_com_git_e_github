@@ -1,16 +1,18 @@
 /* Quiz Modern UI */
 :root {
-    --quiz-primary: #3776ab;
-    /* Python Blue */
-    --quiz-secondary: #ffda62;
-    /* Python Yellow */
-    --quiz-success: #28a745;
-    --quiz-error: #dc3545;
+    --quiz-primary: #0969da;
+    /* GitHub Blue */
+    --quiz-secondary: #24292f;
+    /* GitHub Black */
+    --quiz-success: #2da44e;
+    /* GitHub Green */
+    --quiz-error: #cf222e;
+    /* GitHub Red */
     --quiz-bg: #ffffff;
-    --quiz-text: #333333;
-    --quiz-border: #e0e0e0;
-    --quiz-hover: #f8f9fa;
-    --quiz-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --quiz-text: #24292f;
+    --quiz-border: #d0d7de;
+    --quiz-hover: #f6f8fa;
+    --quiz-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* Dark Mode Overrides */

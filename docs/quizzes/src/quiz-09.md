@@ -1,36 +1,36 @@
 # Quiz 09
 
-1. Qual palavra-chave é usada para definir uma função em Python?
+1. No GitHub Flow, a branch `main` deve estar em qual estado?
 
-    - [ ] function
-    - [ ] fun
-    - [x] def
-    - [ ] define
+    - [ ] Em desenvolvimento constante e instável
+    - [x] Sempre estável e pronta para deploy (produção)
+    - [ ] Vazia
+    - [ ] Bloqueada para leitura
 
-2. Para que serve o `return`?
+2. Qual a principal característica do GitHub Flow comparado ao Git Flow?
 
-    - [ ] Para imprimir algo na tela
-    - [x] Para devolver um valor e encerrar a função
-    - [ ] Para voltar ao início do loop
-    - [ ] Para repetir a função
+    - [x] É mais simples, leve e focado em entrega contínua
+    - [ ] É muito mais complexo e cheio de regras
+    - [ ] Só funciona para projetos em Python
+    - [ ] Não permite o uso de Branches
 
-3. Onde deve ficar a Docstring de uma função?
+3. O que deve ser feito antes de qualquer mudança de código no GitHub Flow?
 
-    - [ ] Fora da função, antes do def
-    - [x] Logo abaixo da linha do def, indentada
-    - [ ] No final da função
-    - [ ] Em um arquivo separado
+    - [ ] Comitar direto na main
+    - [ ] Abrir um Pull Request vazio
+    - [x] Criar uma nova branch a partir da main
+    - [ ] Deletar o repositório local
 
-4. Se uma função não tem `return`, o que ela retorna por padrão?
+4. Quando o código deve ir para produção (Deploy) no GitHub Flow?
 
-    - [ ] 0
-    - [ ] False
-    - [x] None
-    - [ ] Erro
+    - [ ] Uma vez por ano
+    - [ ] Apenas após aprovação do CEO
+    - [ ] Quando a branch de feature tem 100 commits
+    - [x] Logo após o merge bem-sucedido na branch main
 
-5. Qual a diferença entre `print(funcao())` e `funcao()`?
+5. O que acontece com a branch de feature após o merge?
 
-    - [ ] Nenhuma
-    - [x] O print exibe o valor retornado pela função; a chamada direta apenas executa o código
-    - [ ] A chamada direta é mais rápida
-    - [ ] O print executa a função duas vezes
+    - [ ] Ela se torna a nova main
+    - [x] Ela pode (e deve) ser deletada para manter o projeto limpo
+    - [ ] Ela é bloqueada para sempre
+    - [ ] Ela é renomeada para "fix"

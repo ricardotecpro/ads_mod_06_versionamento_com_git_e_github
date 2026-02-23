@@ -1,36 +1,36 @@
 # Quiz 04
 
-1. O que acontece se você não indentar o código dentro de um `if`?
+1. Qual é o nome padrão mais comum para o branch principal hoje em dia?
 
-    - [ ] O código executa normalmente
-    - [x] O Python gera um erro (IndentationError)
-    - [ ] O bloco `if` é ignorado
-    - [ ] O código vira um comentário
+    - [ ] master
+    - [ ] developer
+    - [x] main
+    - [ ] trunk
 
-2. Qual estrutura executa apenas se todas as condições anteriores forem falsas?
+2. Para que serve criar um branch?
 
-    - [ ] if
-    - [ ] elif
-    - [x] else
-    - [ ] then
+    - [ ] Para economizar espaço em disco
+    - [x] Para trabalhar em novas funcionalidades ou correções sem afetar o código principal
+    - [ ] Para enviar mensagens secretas para o time
+    - [ ] Para deletar o histórico antigo
 
-3. Quantos blocos `else` posso ter em uma única estrutura condicional?
+3. Qual comando cria um novo branch sem mudar para ele?
 
-    - [ ] Quantos quiser
-    - [x] No máximo um
-    - [ ] Pelo menos dois
-    - [ ] Depende da memória RAM
+    - [x] git branch nome-da-branch
+    - [ ] git switch nome-da-branch
+    - [ ] git branch --move
+    - [ ] git checkout -b
 
-4. O `elif` é obrigatório sempre que tem um `if`?
+4. Qual comando usamos para trocar de branch?
 
-    - [ ] Sim
-    - [x] Não, é opcional
-    - [ ] Apenas se tiver `else` junto
-    - [ ] Apenas em loops
+    - [ ] git move
+    - [ ] git go to
+    - [ ] git change
+    - [x] git switch (ou git checkout)
 
-5. Qual a sintaxe correta?
+5. O que o `git merge` faz?
 
-    - [ ] if x = 10 then:
-    - [ ] if (x == 10) {
-    - [x] if x == 10:
-    - [ ] if x == 10
+    - [ ] Deleta um branch antigo
+    - [x] Une as alterações de um branch em outro
+    - [ ] Compara dois arquivos diferentes
+    - [ ] Divide um commit em dois

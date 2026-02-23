@@ -1,36 +1,36 @@
 # Quiz 03
 
-1. Qual o resultado de `10 % 3`?
+1. Qual comando transforma uma pasta em um repositório Git?
 
-    - [ ] 3
-    - [x] 1
-    - [ ] 0
-    - [ ] 3.33
+    - [ ] git new
+    - [x] git init
+    - [ ] git start
+    - [ ] git create
 
-2. Qual o resultado de `5 == "5"`?
+2. Para onde o comando `git add` envia os arquivos?
 
-    - [ ] True
-    - [x] False
-    - [ ] Erro
-    - [ ] 5
+    - [ ] Para o GitHub
+    - [ ] Para o Repositório Local (.git)
+    - [x] Para a Staging Area (Área de Preparação)
+    - [ ] Para a Lixeira
 
-3. Avalie a expressão: `True and False or True`.
+3. Qual a função do `git commit`?
 
-    - [x] True
-    - [ ] False
-    - [ ] Depende da ordem
-    - [ ] None
+    - [x] Salvar definitivamente as alterações da Staging Area no Repositório Local
+    - [ ] Enviar os arquivos para a nuvem
+    - [ ] Deletar arquivos temporários
+    - [ ] Renomear o projeto
 
-4. Qual operador inverte um valor booleano?
+4. O que o `git status` faz?
 
-    - [ ] invert
-    - [ ] !
-    - [x] not
-    - [ ] reverse
+    - [ ] Mostra a velocidade da internet
+    - [ ] Mostra o histórico de commits
+    - [ ] Abre o navegador no GitHub
+    - [x] Mostra o estado atual dos arquivos (modificados, preparados, etc)
 
-5. Se `x = 5`, quanto vale `x` após `x *= 3`?
+5. Qual comando mostra o histórico de commits?
 
-    - [ ] 5
-    - [ ] 8
-    - [x] 15
-    - [ ] 3
+    - [ ] git history
+    - [x] git log
+    - [ ] git show history
+    - [ ] git status --log
