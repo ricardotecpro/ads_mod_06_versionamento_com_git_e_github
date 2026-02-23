@@ -1,7 +1,10 @@
 # Quiz 07
 
-<link rel="stylesheet" href="../../assets/css/quiz.css">
 <script src="../../assets/js/quiz.js" defer></script>
+
+<style>
+@import url("../../assets/css/quiz.css");
+</style>
 
 <div class="quiz-container">
   <div class="quiz-item" id="q1">
