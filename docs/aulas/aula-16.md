@@ -1,65 +1,59 @@
-# Aula 16 – Carreira, portfólio e próximos passos
+# Aula 16 – Carreira, Portfólio e Próximos Passos
 
 ## 🎯 Objetivos de Aprendizagem
-- Entender como o GitHub impulsiona sua carreira.
-- Aprender a contribuir com projetos Open Source.
-- Conhecer conceitos avançados para estudar a seguir (CI/CD, Actions).
-- Revisão geral do curso.
+- Entender como o GitHub impulsiona sua visibilidade no mercado de trabalho.
+- Aprender os primeiros passos para contribuir com projetos Open Source.
+- Conhecer conceitos avançados para continuar seus estudos (CI/CD, Actions, Hooks).
+- Revisão geral das competências adquiridas durante o curso.
+
+---
 
 ## 📚 Conteúdo
 
-### 1. O GitHub como Currículo
-Recrutadores buscam:
-- **Consistência**: O "paredão verde" (heatmap) mostra hábito de codar.
-- **Qualidade**: Projetos com README, código limpo e commits organizados.
-- **Colaboração**: PRs em outros projetos, issues abertas e discussões.
+### 1. Sua Marca Profissional no GitHub
+O GitHub é muito mais do que um repositório; é o seu currículo técnico em tempo real. Recrutadores buscam três pilares:
 
-### 2. Open Source
-Software de Código Aberto move o mundo.
-- **Como começar**: Procure issues com a label `good first issue` ou `help wanted`.
-- **Hacktoberfest**: Evento anual (Outubro) que incentiva contribuições.
+*   **Consistência**: O "paredão verde" (heatmap) demonstra hábito e disciplina de estudo.
+*   **Qualidade**: READMEs bem escritos, código limpo e histórico de commits organizado (Conventional Commits).
+*   **Curadoria**: O uso de "Pinned Repositories" para destacar seus melhores trabalhos no topo do perfil.
 
-### 3. Próximos Passos (O que estudar?)
-Você dominou o básico. O que vem agora?
-- **GitHub Actions (CI/CD)**: Automação de testes e deploy a cada push.
-- **Git Hooks**: Scripts que rodam antes do commit (ex: linters).
-- **Git Rebase**: Uma forma mais limpa (e perigosa) de fazer merge.
-- **Conventional Commits**: Aprofundar no padrão.
+!!! tip "Dica de Ouro"
+    Fixe (Pin) no máximo 6 repositórios. Escolha aqueles que você tem orgulho de explicar em uma entrevista técnica.
 
-### 4. Encerramento
-Você saiu do zero, instalou o Git, aprendeu comandos de terminal, conectou com a nuvem, trabalhou em branches, resolveu conflitos, fez code review e publicou um site.
-**Você agora é um desenvolvedor que sabe versionar código.** Parabéns!
+### 2. O Mundo do Open Source
+Software de código aberto move o mundo. Contribuir para projetos famosos é uma das melhores formas de aprender.
 
-## 📽 Roteiro de Slides
-- A Jornada do Herói: De `copia_final.doc` para `git push`.
-- Dicas de Carreira: Pinned Repos, Bio clara.
-- O Mundo Open Source: Não tenha medo de errar.
-- CI/CD: A esteira automática.
-- Obrigado e Sucesso!
+*   **good first issue**: Label usada para marcar tarefas ideais para quem está começando.
+*   **Hacktoberfest**: Evento anual que incentiva a primeira contribuição.
 
-## 📝 Quiz
-1. O que geralmente indica a label `good first issue` em um projeto Open Source?
-2. O que é Hacktoberfest?
-3. O que significa CI/CD (Conceito básico)?
-4. Qual a melhor maneira de mostrar consistência no GitHub?
-5. Qual comando reescreve o histórico de forma linear (alternativa ao merge)?
+### 3. Próximos Passos: O Mapa de Evolução
+Você dominou a base sólida. Veja o que o espera no nível intermediário/avançado:
 
-## Gabarito
-1: B ("Tarefa adequada para iniciantes")
-2: C ("Evento global de incentivo ao Open Source em Outubro")
-3: A ("Integração e Entrega Contínuas - Automação")
-4: D ("Manter o gráfico de contribuições (heatmap) ativo")
-5: B ("git rebase")
+```mermaid
+graph TD
+    A[Base Concluída: Git & GitHub] --> B[CI/CD com GitHub Actions]
+    A --> C[Padrões de Trabalho: Git Flow / Trunk Based]
+    B --> D[Automação de Testes e Deploy]
+    C --> E[Colaboração em Larga Escala]
+    A --> F[Git Hooks e Qualidade de Código]
+```
 
-## 🛠 Exercícios
-1. **Faxina Final**: Entre no seu GitHub. Arquive repositórios de teste (`teste-git`, etc) ou delete-os. Deixe apenas os projetos bons visíveis.
-2. **Pinned**: Escolha seus 6 melhores projetos (o `portfolio-dev` deve ser um deles) e "Pinet" (fixe) no seu perfil.
-3. **Star**: Dê uma estrela no repositório oficial do Git (`git/git`) em homenagem ao curso.
+### 4. Checklist do Desenvolvedor Profissional
+Sempre que iniciar um novo projeto, lembre-se:
+1. [:octicons-check-circle-24:] Criar um `.gitignore` adequado.
+2. [:octicons-check-circle-24:] Seguir o **GitHub Flow** (sempre usar branches).
+3. [:octicons-check-circle-24:] Escrever mensagens no padrão **Conventional Commits**.
+4. [:octicons-check-circle-24:] Criar um `README.md` "Gold Standard".
+5. [:octicons-check-circle-24:] Revisar o código (Code Review) mesmo trabalhando sozinho.
 
-## 🚀 Projeto da Aula
-O `portfolio-dev` está pronto, no ar e lindo.
-**Última missão**:
-1. Crie uma Issue final no seu repo: "Planejar próximos estudos".
-2. Liste o que você quer aprender em 2026.
-3. Adicione ao seu Project Board.
-4. Mantenha esse repo vivo. Cada projeto novo que você fizer, adicione o link nele. Ele é sua casa na internet.
+---
+
+## 📝 Prática
+
+### Exercícios de Fixação
+Faça a faxina final em seu perfil e prepare-se para ser descoberto pelo mercado.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 16](../exercicios/exercicio-16.md)
+
+### Mini-Projeto
+Finalizando seu Roadmap de estudos e conectando seu portfólio aos seus objetivos de carreira.
+[:octicons-arrow-right-24: Ver Projeto da Aula 16](../projetos/projeto-16.md)

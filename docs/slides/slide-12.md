@@ -1,60 +1,48 @@
-# Roteiro de Slides - Aula 12
+# Aula 12 – README e Markdown
 
 ---
 
-## README.md
+## O Seu Cartão de Visitas
 
-- A "capa do livro" do seu projeto.
-- É a primeira (e as vezes única) coisa que recrutadores veem.
-- Sem README = "Projeto abandonado".
-
----
-
-## Markdown: O que é?
-
-- Criado por John Gruber em 2004.
-- Foco: "Ser legível como texto puro, mas convertível para HTML".
-- Usado no GitHub, Slack, Discord, Reddit, Trello...
+- O **README.md** é o que o mundo vê primeiro.
+- Sem documentação = Projeto abandonado ou bagunçado.
+- Deve explicar: O que é? Para que serve? Como rodar?
 
 ---
 
-## Sintaxe Essencial 1
+## Markdown: Rápido e Versátil
 
-`# Título 1`
-`## Título 2`
-`### Título 3`
-
-`**Negrito**` e `*Itálico*`.
-
-`[Texto do Link](https://google.com)`
+- Linguagem leve de marcação de texto.
+- Usada em: GitHub, Slack, Discord, Reddit, Trello.
+- Arquivos `.md` são fáceis de ler e portáteis.
 
 ---
 
-## Sintaxe Essencial 2
+## Sintaxe Essencial
 
-Imagens:
-`![Descrição para Cegos](url-da-imagem.png)`
-
-Listas:
-- Item 1
-- Item 2
-  - Subitem
+- **Títulos**: `# H1`, `## H2`, `### H3`.
+- **Negrito**: `**texto**`.
+- **Listas**: `- item` ou `1. item`.
+- **Links**: `[nome](url)`.
+- **Imagens**: `![descrição](url)`.
 
 ---
 
-## Code Blocks
+## Blocos de Código
 
-Para mostrar código, use três crases:
-
-```python
-def ola():
-    print("Mundo")
+- Use crases triplas para sintaxe realçada:
+```javascript
+function hello() {
+  console.log("Olá Mundo!");
+}
 ```
 
 ---
 
-## Badges (Escudos)
+## Badges e Emojis 🚀
 
-- Aquelas medalhas coloridas: `build passing`, `wip`, `version 1.0`.
-- Dão ar de "projeto sério".
-- Use `Shields.io`.
+- Use emojis para dar personalidade.
+- Use **Badges** (escudos) via `Shields.io`:
+  - Mostrar versão.
+  - Tecnologias usadas.
+  - Status de build.

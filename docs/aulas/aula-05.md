@@ -1,78 +1,72 @@
-# Aula 05 – Resolução de Conflitos
+# Aula 05 – Resolução de Conflitos: O Dilema da Escolha
 
 ## 🎯 Objetivos de Aprendizagem
 - Entender o que é um conflito de merge (Merge Conflict).
-- Identificar quando e por que conflitos acontecem.
-- Aprender a ler os marcadores de conflito (`<<<<<<<`, `=======`, `>>>>>>>`).
-- Resolver conflitos manualmente e finalizar o merge.
+- Identificar por que conflitos acontecem e como o Git os detecta.
+- Aprender a ler e interpretar os marcadores de conflito (`<<<<<<<`, `=======`, `>>>>>>>`).
+- Resolver conflitos manualmente através do terminal ou editor de código.
+
+---
 
 ## 📚 Conteúdo
 
 ### 1. O que é um Conflito?
-O Git é muito inteligente. Se duas pessoas alterarem arquivos diferentes, ou até partes diferentes do MESMO arquivo, ele consegue unir (merge) tudo sozinho.
-Porém, se duas pessoas alterarem a **mesma linha** de formas diferentes, o Git entra em pânico: "Qual das duas versões eu devo manter?". Isso é um conflito.
+O Git é excelente em unir alterações automaticamente. Se você altera o cabeçalho e um colega altera o rodapé, o `git merge` faz o trabalho sozinho. Porém, se ambos alterarem a **mesma linha** de formas diferentes, o Git entra em "segurança": ele para o processo e pergunta: *"Quem está certo?"*.
 
-### 2. Identificando um Conflito
-Quando você tenta fazer um `git merge` e dá conflito, o Git avisa:
-`CONFLICT (content): Merge conflict in arquivo.txt`.
-O `git status` mostrará o arquivo como `both modified`.
-
-### 3. Anatomia de um Conflito
-Dentro do arquivo, o Git adiciona marcadores especiais:
-```text
-<<<<<<< HEAD
-Texto da minha branch atual (ex: main)
-=======
-Texto da branch que estou tentando unir (ex: feature)
->>>>>>> feature
+```mermaid
+graph TD
+    A[Commit Inicial] --> B[Branch A: Título Vermelho]
+    A --> C[Branch B: Título Azul]
+    B --> D{TENTATIVA DE MERGE}
+    C --> D
+    D --> E[CONFLITO!]
 ```
-Sua missão é:
-1. Apagar as linhas `<<<<`, `====`, `>>>>`.
-2. Decidir qual texto fica (ou reescrever um novo texto que combine os dois).
-3. Salvar.
 
-### 4. Finalizando
-Depois de editar e salvar:
-1. `git add arquivo.txt` (Isso diz ao Git: "Resolvi!").
-2. `git commit` (Sem mensagem, ele abrirá um editor com uma mensagem padrão de merge, basta salvar e sair).
+!!! info "O Conflito é um Recurso"
+    O conflito não é um erro do sistema, mas um mecanismo de segurança para evitar que o Git apague o trabalho de alguém sem supervisão humana.
 
-## 📽 Roteiro de Slides
-- O Pesadelo do Desenvolvedor Iniciante: A tela `CONFLICT`.
-- Por que acontece? (Mexer na mesma linha ao mesmo tempo).
-- O que o Git faz? (Ele PAUSA o merge e pede ajuda).
-- Os Símbolos Mágicos:
-  - `<<<<<<<` (O que eu tenho).
-  - `=======` (Divisória).
-  - `>>>>>>>` (O que está chegando).
-- O Passo a Passo da Resolução: Editar -> Add -> Commit.
-- Dica de Ouro: Comunique-se com sua equipe para evitar isso!
+### 2. Anatomia de um Conflito
+Quando o conflito acontece, o Git modifica o arquivo e adiciona marcadores visuais.
 
-## 📝 Quiz
-1. Quando ocorre um conflito de merge?
-2. Como o Git resolve conflitos automaticamente na mesma linha?
-3. O que significam as linhas entre `<<<<<<<` e `=======`?
-4. Qual comando usamos para marcar um arquivo como "resolvido"?
-5. O que devemos fazer com os marcadores de conflito (`<<<<`, `====`, `>>>>`)?
+!!! bug "Identificando Marcadores"
+    O arquivo ficará assim até você editá-lo:
+    ```text
+    <<<<<<< HEAD
+    Meu título é Incrível! (Sua versão atual)
+    =======
+    Este título é Fantástico! (Versão que está chegando)
+    >>>>>>> branch-do-colega
+    ```
 
-## Gabarito
-1: B
-2: D
-3: A
-4: C
-5: A
+### 3. Como Resolver: O Passo a Passo
+A resolução é um processo manual e envolve 3 etapas fundamentais:
 
-## 🛠 Exercícios
-1. **Prepare o Terreno**: Crie um repo novo `conflito-sandbox`. Crie `texto.txt` com "Linha 1: Original" e commite.
-2. **Branch A**: Crie branch `modificacao-a`. Mude para ela. Mude o texto para "Linha 1: Modificação A". Commite.
-3. **Branch B**: Volte para a `main`. Mude o arquivo para "Linha 1: Modificação B". Commite.
-4. **O Caos**: Tente fazer `git merge modificacao-a`. Veja o conflito acontecer!
-5. **A Solução**: Abra o arquivo, escolha qual frase manter, apague os marcadores, salve, faça `git add` e `git commit`.
+<!-- termynal -->
+```bash
+# 1. Identifique os arquivos com conflito
+$ git status
+both modified:   arquivo.txt
 
-## 🚀 Projeto da Aula
-No `meu-portfolio-git`:
-1. Crie uma branch `conflito-proposital`.
-2. Mude o título no `sobre.txt`. Commite.
-3. Volte para a `main`.
-4. Mude o MESMO título no `sobre.txt` para algo diferente. Commite.
-5. Tente mergear.
-6. **Resolva o conflito** escolhendo o melhor título e finalizando o merge. Parabéns, você é um pacificador de código!
+# 2. Abra o arquivo no seu editor, escolha a versão final e APAGUE os marcadores (<<<<, ====, >>>>)
+
+# 3. Marque como resolvido
+$ git add arquivo.txt
+
+# 4. Finalize o merge
+$ git commit
+```
+
+!!! tip "Dica de Ouro"
+    Muitas vezes, a melhor solução não é escolher uma ou outra versão, mas sim criar uma terceira versão que combine as ideias de ambas as partes. Comunique-se com seu time!
+
+---
+
+## 📝 Prática
+
+### Exercícios de Fixação
+Enfrente seu primeiro conflito em um ambiente controlado e seguro.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 05](../exercicios/exercicio-05.md)
+
+### Mini-Projeto
+Simulando um conflito no seu portfólio para dominar a resolução manual.
+[:octicons-arrow-right-24: Ver Projeto da Aula 05](../projetos/projeto-05.md)

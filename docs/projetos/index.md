@@ -1,39 +1,38 @@
 # Projetos Práticos
 
-Aprenda Git criando um projeto real do zero até a publicação!
+Aplique o conhecimento adquirido construindo seu portfólio passo a passo, simulando cenários reais do mercado.
 
-<div class="grid cards" markdown>
+!!! important "Evolução Contínua"
+    Cada projeto adiciona uma camada de complexidade ao seu repositório. Ao final do curso, você terá um projeto completo e profissional hospedado no GitHub.
 
--   :material-numeric-1-box: **Módulo 1 – O Início**
-    
-    - [Projeto 01 - Criando o Portfólio](projeto-01.md)
-    - [Projeto 02 - Instalando Git](projeto-02.md)
-    - [Projeto 03 - Primeiro Commit](projeto-03.md)
-    - [Projeto 04 - Criando Branches](projeto-04.md)
+---
 
--   :material-numeric-2-box: **Módulo 2 – GitHub**
-    
-    - [Projeto 05 - Resolvendo Conflitos](projeto-05.md)
-    - [Projeto 06 - Criando Conta GitHub](projeto-06.md)
-    - [Projeto 07 - Subindo Repositório](projeto-07.md)
-    - [Projeto 08 - Primeiro PR](projeto-08.md)
+## 📦 Módulo 1
+- [:octicons-arrow-right-24: Projeto 01 - Criando as Bases](projeto-01.md)
+- [:octicons-arrow-right-24: Projeto 02 - Preparando o Terminal](projeto-02.md)
+- [:octicons-arrow-right-24: Projeto 03 - O Primeiro Commit](projeto-03.md)
+- [:octicons-arrow-right-24: Projeto 04 - Trabalhando com Branches](projeto-04.md)
 
--   :material-numeric-3-box: **Módulo 3 – Organização**
-    
-    - [Projeto 09 - Fluxo Profissional](projeto-09.md)
-    - [Projeto 10 - Criando Issues](projeto-10.md)
-    - [Projeto 11 - Histórico Limpo](projeto-11.md)
-    - [Projeto 12 - README Incrível](projeto-12.md)
+---
 
--   :material-numeric-4-box: **Módulo 4 – Publicação**
-    
-    - [Projeto 13 - Simulando Equipe](projeto-13.md)
-    - [Projeto 14 - Publicando Site](projeto-14.md)
-    - [Projeto 15 - Corrigindo Erros](projeto-15.md)
-    - [Projeto 16 - Finalizando Portfólio](projeto-16.md)
+## 🤝 Módulo 2
+- [:octicons-arrow-right-24: Projeto 05 - Resolvendo Conflitos](projeto-05.md)
+- [:octicons-arrow-right-24: Projeto 06 - Perfil Profissional](projeto-06.md)
+- [:octicons-arrow-right-24: Projeto 07 - Subindo para a Nuvem](projeto-07.md)
+- [:octicons-arrow-right-24: Projeto 08 - Pull Requests](projeto-08.md)
 
-</div>
+---
 
-## 🚀 Sobre o Projeto do Curso
+## ⚙️ Módulo 3
+- [:octicons-arrow-right-24: Projeto 09 - GitHub Flow](projeto-09.md)
+- [:octicons-arrow-right-24: Projeto 10 - Issues e Projetos](projeto-10.md)
+- [:octicons-arrow-right-24: Projeto 11 - Arte do Commit](projeto-11.md)
+- [:octicons-arrow-right-24: Projeto 12 - README de Impacto](projeto-12.md)
 
-Neste curso, você não fará projetos aleatórios. Você construirá, passo a passo, seu **Portfólio Profissional** hospedado no GitHub Pages. Cada aula adiciona uma nova camada de conhecimento e funcionalidade ao seu portfólio.
+---
+
+## 🚀 Módulo 4
+- [:octicons-arrow-right-24: Projeto 13 - Blindando o Repo](projeto-13.md)
+- [:octicons-arrow-right-24: Projeto 14 - Site no Ar](projeto-14.md)
+- [:octicons-arrow-right-24: Projeto 15 - Viagem no Tempo](projeto-15.md)
+- [:octicons-arrow-right-24: Projeto 16 - Legado e Licença](projeto-16.md)

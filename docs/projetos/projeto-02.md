@@ -1,23 +1,25 @@
-# Projeto da Aula 02
+# Projeto 02 - Validando a Bancada de Trabalho
 
-## 🚀 Projeto da Aula: Preparando o Ambiente
+---
 
-Nesta etapa, vamos garantir que sua "bancada de trabalho" está pronta.
+## 🚀 Objetivo
+Garantir que as ferramentas de linha de comando estão prontas para atuar dentro da sua pasta de projeto.
 
-### Passo 1: O Terminal Correto
-1. Volte à pasta `meu-portfolio-git` que você criou na Aula 01.
-2. Se você usa Windows:
-   - Clique com o botão direito em um espaço vazio dentro da pasta.
-   - Escolha a opção **"Open Git Bash Here"**.
-   - Uma janela preta (ou colorida) vai abrir. Note que o caminho da pasta já aparece nela (ex: `/c/Users/voce/Documents/meu-portfolio-git`).
-3. Se você usa Mac/Linux:
-   - Abra o Terminal.
-   - Digite `cd ~/Documents/meu-portfolio-git` (ajuste o caminho se necessário) para entrar na pasta.
+### 📋 Passo a Passo
 
-### Passo 2: Teste Final
+#### 1. Acesso via Terminal
+1. Localize sua pasta `meu-portfolio-git`.
+2. **Windows**: Clique com o botão direito em um espaço vazio da pasta e escolha **"Open Git Bash Here"**.
+3. **Mac/Linux**: Abra o terminal e navegue até a pasta usando o comando `cd` (ex: `cd ~/Documentos/meu-portfolio-git`).
+
+#### 2. Teste de Diagnóstico
 No terminal aberto dentro da pasta, digite:
 ```bash
 git status
 ```
-Você deve ver uma mensagem de erro dizendo `fatal: not a git repository`.
-**ISSO É BOM!** Significa que o Git está instalado, funcionando, mas (corretamente) avisou que aquela pasta ainda não é um repositório. Faremos isso na Aula 03.
+
+### 🔍 Resultado Esperado
+Você deve ver uma mensagem de erro:
+> `fatal: not a git repository (or any of the parent directories): .git`
+
+**ISSO É UM SUCESSO!** Significa que o Git está instalado corretamente e detectou que esta pasta ainda não começou a ser monitorada. Faremos isso na próxima aula!

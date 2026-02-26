@@ -1,45 +1,46 @@
-# Roteiro de Slides - Aula 10
+# Aula 10 – Issues e Projetos
 
 ---
 
-## O Caos da Comunicação
+## Organizando o Caos
 
-- Email, WhatsApp, Slack... Onde está a tarefa?
-- **Issues** centralizam tudo no lugar onde o código vive.
-- Regra: "Se não tem Issue, não existe demanda".
-
----
-
-## Componentes de uma Issue
-
-1. **Título**: Explicativo.
-2. **Assignee**: O Dono da Bola.
-3. **Labels**: `bug` 🔴, `feature` 🟢, `good first issue` 🟣.
-4. **Milestone**: O prazo / entrega.
+- **Issue**: A menor unidade de trabalho no GitHub.
+- Serve para registrar:
+  - Bugs 🐛.
+  - Novas ideias 💡.
+  - Tarefas administrativa 📋.
 
 ---
 
-## GitHub Projects (Kanban)
+## Gestão Visual com Projetos
 
-- Visualização em Colunas (Board).
-- Inspirado no método Kanban (Toyota).
+- **Kanban**: Visualização por colunas.
 - **To Do**: Fila de espera.
-- **In Progress**: O que estou focando AGORA.
-- **Done**: Sucesso.
-- Ajuda a evitar "multitarefa" excessiva.
+- **In Progress**: Foco total agora.
+- **Done**: Entrega realizada.
+
+---
+
+## Anatomia de uma Issue
+
+- **Labels**: Etiquetas coloridas para filtro rápido.
+- **Assignees**: Quem é o responsável pela entrega.
+- **Milestones**: Marcos (ex: "Lançamento v1.0").
 
 ---
 
 ## Automação de Fechamento
 
-- `Closes #12`
-- `Fixes #45`
-- `Resolves #99`
-- Coloque isso na descrição do PR e o GitHub faz a faxina para você.
+- Não perca tempo fechando issues manualmente!
+- Escreva na descrição do seu Pull Request:
+  - `Closes #42`
+- O GitHub fechará a issue #42 automaticamente no momento do Merge.
 
 ---
 
-## Organização é Poder
+## O Roadmap do Projeto
 
-- Recrutadores olham se você sabe se organizar.
-- Um repositório cheio de Issues e um Projeto montado impressionam tanto quanto um código complexo.
+- Um projeto bem organizado com Issues e Quadros demonstra:
+  - Profissionalismo.
+  - Habilidade de planejamento.
+  - Transparência para o time e clientes.

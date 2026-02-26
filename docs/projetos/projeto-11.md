@@ -1,24 +1,36 @@
-# Projeto da Aula 11
+# Projeto 11 - A Arte do Commit Profissional
 
-## 🚀 Projeto da Aula: Limpeza e Qualidade
+---
 
-No quadro do seu projeto no GitHub, pegue a tarefa "Melhorar CSS" (ou similar).
+## 🚀 Objetivo
+Aplicar o padrão **Conventional Commits** e entender a importância de mensagens claras para a manutenção do software.
 
-### Passo 1: Branch
-`git switch -c style-improvements`
+### 📋 Passo a Passo
 
-### Passo 2: Mudança 1
-Se você tiver um arquivo CSS/Estilo no portfólio, mude a fonte para "Verdana" (ou outra).
-`git add .`
-`git commit -m "style: altera fonte principal para Verdana"`
+#### 1. Identificando a Melhoria
+Escolha uma pequena alteração estética no seu portfólio (ex: corrigir um erro de digitação ou mudar a ordem de uma lista).
 
-### Passo 3: Mudança 2
-Adicione uma cor de fundo.
-`git add .`
-`git commit -m "style: define cor de fundo cinza claro"`
+#### 2. Commit Semântico
+Realize a alteração e, ao fazer o commit, use rigorosamente o prefixo correto:
+- Se for erro de digitação: `fix: corrige typo no arquivo sobre.txt`
+- Se for nova informação: `feat: adiciona formação acadêmica`
+- Se for apenas visual: `style: melhora indentação do texto`
 
-### Passo 4: Push e PR
-Envie. No GitHub, veja como é fácil entender o que foi feito em cada passo.
-Se o revisor gostar da cor mas odiar a fonte, ele pode pedir para reverter apenas o commit da fonte. Se fosse tudo junto, seria um problema.
+#### 3. Multi-Commits (Atomicidade)
+Tente realizar duas melhorias separadas e faça **dois commits distintos**, um para cada ideia.
+```bash
+git add arquivo1.txt
+git commit -m "docs: atualiza bio"
 
-Hoje não temos exercício de código complexo, o foco é a **qualidade da mensagem**.
+git add arquivo2.txt
+git commit -m "feat: adiciona link de rede social"
+```
+
+#### 4. O Histórico Perfeito
+Verifique o resultado com:
+```bash
+git log --oneline
+```
+
+### 🏆 Conquista
+Seu histórico agora é uma lista de tarefas compreensível por qualquer pessoa (ou robô!) no mundo.

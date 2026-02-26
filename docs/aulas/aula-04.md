@@ -1,67 +1,83 @@
-# Aula 04 – Branches e merges
+# Aula 04 – Branches e Merges: As Linhas do Tempo
 
 ## 🎯 Objetivos de Aprendizagem
-- Entender o conceito de Branches (Ramificações).
-- Criar e navegar entre branches (`git branch`, `git switch`).
-- Realizar a fusão de alterações (`git merge`).
-- Compreender a segurança de trabalhar em branches separados.
+- Entender o conceito de Branches (Ramificações) como isolamento de trabalho.
+- Criar, listar e navegar entre branches utilizando `git branch` e `git switch`.
+- Realizar a fusão de alterações de diferentes linhas do tempo com `git merge`.
+- Compreender a segurança de trabalhar em "funcionalidades isoladas".
+
+---
 
 ## 📚 Conteúdo
 
-### 1. O que são Branches?
-Imagine que você está criando um jogo. Você tem a versão funcional (chamada `main` ou `master`). Você quer testar uma "fase de gelo", mas não quer estragar o jogo principal se der errado.
-No Git, você cria uma **Branch** (ramo/galho). É uma cópia paralela do seu projeto onde você pode experimentar livremente.
+### 1. O Conceito de "Multiverso" no Git
+Imagine que você tem um jogo funcional (branch `main`). Você quer testar uma "fase de gelo", mas não quer estragar a versão estável se algo der errado. No Git, você cria um **Branch**.
 
-### 2. Comandos Principais
-- **`git branch`**: Lista todos os branches.
-- **`git branch <nome>`**: Cria um novo branch.
-- **`git switch <nome>`**: Muda para o branch especificado. (Antigamente usava-se `checkout`).
-- **`git merge <nome>`**: Traz as mudanças de OUTRO branch para o branch ATUAL.
+!!! info "Definição"
+    Um branch é um ponteiro móvel para um commit. Ele permite que você saia da linha principal, faça experimentos e depois decida se quer incorporá-los ou descartá-los.
 
-### 3. O Fluxo de Trabalho Seguro
-Nunca trabalhe direto na `main`!
-1. Crie uma branch para sua tarefa: `git branch nova-funcionalidade`.
-2. Mude para ela: `git switch nova-funcionalidade`.
-3. Trabalhe, adicione e commite à vontade.
-4. Volte para a `main` e "puxe" as novidades com `git merge`.
+### 2. O Fluxo de Ramificação
 
-## 📽 Roteiro de Slides
-- O conceito de "Multiverso" ou "Linhas do Tempo Paralelas".
-- Branch Principal (`main`/`master`) vs Branches de Recurso (`feature`).
-- Por que usar branches? (Isolamento de risco).
-- Criando (`git branch`) e Trocando (`git switch`).
-- Unindo tudo (`git merge`).
-- O que acontece com os arquivos quando troco de branch? (Demonstração visual).
+```mermaid
+gitGraph
+    commit
+    commit
+    branch feature-gelo
+    checkout feature-gelo
+    commit
+    commit
+    checkout main
+    merge feature-gelo
+    commit
+```
 
-## 📝 Quiz
-1. Qual é o nome padrão mais comum para o branch principal hoje em dia?
-2. Para que serve criar um branch?
-3. Qual comando cria um novo branch sem mudar para ele?
-4. Qual comando usamos para trocar de branch?
-5. O que o `git merge` faz?
+### 3. Comandos de Navegação
 
-## Gabarito
-1: C
-2: B
-3: A
-4: D
-5: B
+!!! tip "Cuidado com o Trabalho Sujo"
+    Sempre faça commit ou "stash" (veremos adiante) das suas mudanças antes de trocar de branch, para evitar conflitos de arquivos.
 
-## 🛠 Exercícios
-1. **Criar Branch**: No seu projeto de teste `teste-git`, crie uma branch chamada `experiencia`.
-2. **Mudar**: Mude para essa branch com `git switch experiencia`.
-3. **Alterar**: Crie um arquivo `teste.txt` e faça o commit.
-4. **Voltar**: Volte para a `main` (`git switch main`).
-5. **Observar**: Veja que o arquivo `teste.txt` sumiu! (Ele está seguro na outra "linha do tempo").
-6. **Merge**: Estando na `main`, digite `git merge experiencia` para trazer o arquivo de volta.
+<!-- termynal -->
+```bash
+# Listar todos os branches locais
+$ git branch
+* main
 
-## 🚀 Projeto da Aula
-No seu `meu-portfolio-git`:
-1. Crie uma branch chamada `adiciona-contato`.
-2. Mude para ela: `git switch adiciona-contato`.
-3. Crie um arquivo `contato.txt` com seu email.
-4. `git add contato.txt`.
-5. `git commit -m "Cria arquivo de contato"`.
-6. Volte para a branch principal (`main` ou `master`). Note que o `contato.txt` sumiu da pasta.
-7. Faça o merge: `git merge adiciona-contato`.
-8. Agora o arquivo existe na branch principal também!
+# Criar um novo branch (ex: para uma nova funcionalidade)
+$ git branch feature-contato
+
+# Tocar para o novo branch
+$ git switch feature-contato
+Switched to branch 'feature-contato'
+```
+
+### 4. Unindo Mundos: O Merge
+Após terminar o trabalho na sua branch isolada, você deve trazer essas novidades para a branch principal.
+
+<!-- termynal -->
+```bash
+# 1. Volte para a branch que vai RECEBER as mudanças
+$ git switch main
+
+# 2. Execute o merge
+$ git merge feature-contato
+Updating a1b2c3d..e4f5g6h
+Fast-forward
+ contato.txt | 1 +
+ 1 file changed, 1 insertion(+)
+ create mode 100644 contato.txt
+```
+
+!!! success "Boas Práticas"
+    Nunca trabalhe diretamente na `main`. Crie uma branch para cada nova tarefa. Isso mantém o código estável sempre disponível para "produção".
+
+---
+
+## 📝 Prática
+
+### Exercícios de Fixação
+Experimente criar e unir diferentes linhas do tempo.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 04](../exercicios/exercicio-04.md)
+
+### Mini-Projeto
+Adicionando novas funcionalidades ao seu portfólio de forma segura através de branches.
+[:octicons-arrow-right-24: Ver Projeto da Aula 04](../projetos/projeto-04.md)

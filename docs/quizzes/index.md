@@ -1,41 +1,38 @@
 # Quizzes Interativos
 
-Teste seus conhecimentos com quizzes interativos para cada aula!
+Teste seus conhecimentos sobre Git e GitHub com nossos quizzes interativos.
 
-<div class="grid cards" markdown>
+!!! info "Sobre os Testes"
+    Cada quiz contém 10 perguntas focadas na aula correspondente. Você receberá o feedback instantâneo após cada resposta.
 
--   :material-numeric-1-box: **Módulo 1 – Conceitos Básicos**
-    
-    - [Quiz 01 - Introdução](quiz-01.md)
-    - [Quiz 02 - Instalação](quiz-02.md)
-    - [Quiz 03 - Primeiros Passos](quiz-03.md)
-    - [Quiz 04 - Branches](quiz-04.md)
+---
 
--   :material-numeric-2-box: **Módulo 2 – Trabalhando com GitHub**
-    
-    - [Quiz 05 - Conflitos](quiz-05.md)
-    - [Quiz 06 - Intro GitHub](quiz-06.md)
-    - [Quiz 07 - Remotos](quiz-07.md)
-    - [Quiz 08 - Pull Requests](quiz-08.md)
+## 📦 Módulo 1
+- [:octicons-arrow-right-24: Quiz 01](quiz-01.md)
+- [:octicons-arrow-right-24: Quiz 02](quiz-02.md)
+- [:octicons-arrow-right-24: Quiz 03](quiz-03.md)
+- [:octicons-arrow-right-24: Quiz 04](quiz-04.md)
 
--   :material-numeric-3-box: **Módulo 3 – Fluxos e Organização**
-    
-    - [Quiz 09 - GitHub Flow](quiz-09.md)
-    - [Quiz 10 - Issues](quiz-10.md)
-    - [Quiz 11 - Boas Práticas](quiz-11.md)
-    - [Quiz 12 - Markdown](quiz-12.md)
+---
 
--   :material-numeric-4-box: **Módulo 4 – Colaboração e Carreira**
-    
-    - [Quiz 13 - Equipe](quiz-13.md)
-    - [Quiz 14 - Pages](quiz-14.md)
-    - [Quiz 15 - Erros](quiz-15.md)
-    - [Quiz 16 - Carreira](quiz-16.md)
+## 🤝 Módulo 2
+- [:octicons-arrow-right-24: Quiz 05](quiz-05.md)
+- [:octicons-arrow-right-24: Quiz 06](quiz-06.md)
+- [:octicons-arrow-right-24: Quiz 07](quiz-07.md)
+- [:octicons-arrow-right-24: Quiz 08](quiz-08.md)
 
-</div>
+---
 
-## 🎯 Como Usar
+## ⚙️ Módulo 3
+- [:octicons-arrow-right-24: Quiz 09](quiz-09.md)
+- [:octicons-arrow-right-24: Quiz 10](quiz-10.md)
+- [:octicons-arrow-right-24: Quiz 11](quiz-11.md)
+- [:octicons-arrow-right-24: Quiz 12](quiz-12.md)
 
-- Responda todas as perguntas antes de verificar o resultado
-- Use os quizzes para revisar o conteúdo das aulas
-- Refaça os quizzes até acertar 100%!
+---
+
+## 🚀 Módulo 4
+- [:octicons-arrow-right-24: Quiz 13](quiz-13.md)
+- [:octicons-arrow-right-24: Quiz 14](quiz-14.md)
+- [:octicons-arrow-right-24: Quiz 15](quiz-15.md)
+- [:octicons-arrow-right-24: Quiz 16](quiz-16.md)

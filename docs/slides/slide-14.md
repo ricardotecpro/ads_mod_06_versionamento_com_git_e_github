@@ -1,43 +1,43 @@
-# Roteiro de Slides - Aula 14
+# Aula 14 – GitHub Pages: Seu Site no Ar
 
 ---
 
-## Do Código para a Internet
+## Da Pasta para a Nuvem
 
-- Ver código é chato para clientes/recrutadores.
-- Ver um **Site no ar** é incrível.
-- GitHub Pages permite isso em segundos.
-
----
-
-## O que roda no Pages?
-
-- **HTML** (Estrutura).
-- **CSS** (Estilo).
-- **JavaScript** (Interatividade).
-- Imagens / Fontes.
-- **NÃO RODA**: PHP, Java, Python, SQL (Backend).
+- O **GitHub Pages** é o serviço de hospedagem gratuita do GitHub.
+- Transforma seu repositório em uma URL real.
+- Ideal para: Portfólios, Documentação e Landing Pages.
 
 ---
 
-## Como ativar?
+## Estático vs. Dinâmico
 
-- Settings -> Pages.
-- Source: `Deploy from a branch`.
-- Branch: `main` / `root`.
-- Save.
-
----
-
-## Endereço Personalizado
-
-- Padrão: `usuario.github.io/repo`.
-- Exemplo: `joaosilva.github.io/portfolio`.
-- Profissionalismo instantâneo.
+| ✅ Suportado (Static) | ❌ Não Suportado (Backend) |
+| :--- | :--- |
+| HTML, CSS, JS | PHP, Python, Java |
+| Imagens, SVGs | Bancos de Dados |
+| Repos públicos (grátis) | Lógicas de servidor |
 
 ---
 
-## Jekyll (Bônus)
+## O Requisito: index.html
 
-- O GitHub tem um motor que transforma Markdown em Site Blog automaticamente.
-- Se você não sabe HTML, pode usar um tema Jekyll e criar um site lindo apenas editando arquivos `.md`.
+- O GitHub busca por um arquivo chamado **`index.html`** na raiz.
+- Deve ser minúsculo! (Case-sensitive).
+- Sem ele, você receberá um erro 404.
+
+---
+
+## Ativando em 3 Segundos
+
+1. Vá em `Settings > Pages`.
+2. Escolha a branch `main`.
+3. Clique em `Save` e aguarde o link aparecer.
+
+---
+
+## Limites do Serviço
+
+- Tamanho recomendado: Até 1GB.
+- Tráfego mensal: 100GB.
+- Use com sabedoria e bom senso.

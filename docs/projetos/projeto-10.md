@@ -1,26 +1,29 @@
-# Projeto da Aula 10
+# Projeto 10 - Gestão com Issues e Projetos
 
-## 🚀 Projeto da Aula: Organização Profissional
+---
 
-Vamos tratar o `portfolio-dev` como um produto real.
+## 🚀 Objetivo
+Trabalhar como um desenvolvedor organizado, transformando ideias em tarefas rastreáveis e visuais.
 
-### Passo 1: O Backlog
-Volte no seu GitHub Project e crie cards para tudo que você imagina que falta no seu portfólio, mesmo que não saiba fazer ainda:
-- "Colocar ícones de redes sociais".
-- "Criar versão escura (Dark Mode)".
-- "Adicionar depoimentos".
-- "Otimizar para celular".
+### 📋 Passo a Passo
 
-### Passo 2: Priorização
-Arraste os cards. O que é mais importante fica no topo da coluna "Todo".
-O que é "sonho distante" fica no fim.
+#### 1. Mapeamento de Necessidades (Backlog)
+No seu repositório no GitHub:
+1. Vá em **Issues** e crie 3 novas tarefas:
+   - `docs: adicionar link do LinkedIn ao sobre.txt`
+   - `feat: criar arquivo de projetos realizados`
+   - `style: padronizar caixa alta nos títulos`
 
-### Passo 3: Execução
-- Escolha a tarefa mais fácil (ex: adicionar redes sociais no texto).
-- Mova para "In Progress".
-- Abra a Issue associada.
-- Vá no terminal, crie a branch, resolva, envie o PR (como na aula passada).
-- No PR, use `Closes #NUMERO_DA_ISSUE`.
-- Ao mergear, veja a mágica:
-  1. A Issue fecha.
-  2. O card no Projeto move para "Done" (se a automação estiver ligada) ou você move manualmente, sentindo o prazer da tarefa cumprida.
+#### 2. Organização Visual (Kanban)
+1. Vá em **Projects** e crie um novo quadro (Board).
+2. Adicione as Issues criadas à coluna **Todo**.
+3. Arraste a primeira Issue para **In Progress**.
+
+#### 3. Automação de Fechamento
+1. No terminal, crie uma branch para resolver a primeira Issue.
+2. Ao realizar o **Pull Request**, escreva na descrição:
+   > "Este PR adiciona o link profissional e closes #1" (Substitua #1 pelo número da sua issue).
+3. Faça o Merge e verifique se a Issue foi fechada automaticamente.
+
+### 🏆 Conquista
+Você não apenas escreve código, você **gerencia** um projeto. Isso é o que diferencia amadores de profissionais.

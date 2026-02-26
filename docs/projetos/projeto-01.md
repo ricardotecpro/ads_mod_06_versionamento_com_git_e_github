@@ -1,19 +1,24 @@
-# Projeto da Aula 01
+# Projeto 01 - Criando as Bases do Portfólio
 
-## 🚀 Projeto da Aula: Repositório de Portfólio no GitHub
+---
 
-Neste curso, vamos desenvolver um **Portfólio Profissional** que servirá como seu cartão de visitas no mundo da tecnologia.
+## 🚀 Objetivo
+Neste curso, vamos desenvolver um **Portfólio Profissional** que servirá como sua vitrine técnica no mundo da tecnologia. O primeiro passo é apenas organizativo.
 
-### Passo 1: Preparação do Ambiente
-1. Vá até a pasta `Documentos` do seu computador.
+### 📋 Passo a Passo
+
+#### 1. Preparação da Pasta
+1. Escolha um local seguro no seu computador (ex: `Documentos`).
 2. Crie uma nova pasta chamada `meu-portfolio-git`.
-   - **Nota**: Evite usar espaços em nomes de pastas de projetos (use hífens ou underlines).
+   - **Nota**: Evite usar espaços ou caracteres especiais em nomes de pastas de projetos.
 
-### Passo 2: O Primeiro Arquivo
-1. Abra essa pasta.
-2. Usando o Bloco de Notas ou VS Code, crie um arquivo chamado `sobre.txt`.
-3. Dentro dele, escreva apenas seu nome completo e uma breve descrição (ex: "Estudante de Análise e Desenvolvimento de Sistemas").
+#### 2. O Primeiro Documento
+1. Abra a pasta `meu-portfolio-git`.
+2. Usando o **VS Code** (ou Bloco de Notas), crie um arquivo chamado `sobre.txt`.
+3. Dentro dele, escreva:
+   - Seu nome completo.
+   - Sua área de estudo (ex: "Estudante de Análise e Desenvolvimento de Sistemas").
 4. Salve o arquivo.
 
-### O que fizemos?
-Por enquanto, apenas criamos a estrutura. Nas próximas aulas, vamos transformar essa pasta comum em um **Repositório Git** e conectá-la ao GitHub. Mantenha essa pasta salva!
+### 🔍 O que fizemos?
+Por enquanto, esta é apenas uma pasta comum no seu computador. Nas próximas aulas, vamos transformá-la em um **Repositório Git** e começar a salvar suas versões!

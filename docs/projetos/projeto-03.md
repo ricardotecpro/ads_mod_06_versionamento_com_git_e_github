@@ -1,42 +1,42 @@
-# Projeto da Aula 03
+# Projeto 03 - O Primeiro Commit
 
-## 🚀 Projeto da Aula: Primeiro Commit no Portfólio
+---
 
-Agora vamos oficializar nosso projeto.
+## 🚀 Objetivo
+Transformar sua pasta comum em um repositório oficial e realizar o primeiro salvamento histórico.
 
-### Passo 1: Inicializar
-1. No terminal, dentro da pasta `meu-portfolio-git`.
-2. Execute:
-   ```bash
-   git init
-   ```
-   *Terminal deve responder*: `Initialized empty Git repository in...`
+### 📋 Passo a Passo
 
-### Passo 2: Verificar Estado
-1. Execute:
+#### 1. Inicialização
+Abra o Git Bash na pasta do seu portfólio e execute:
+```bash
+git init
+```
+*Observe que uma pasta oculta `.git` será criada.*
+
+#### 2. Ciclo de Salvamento (Snapshot)
+
+1. **Verifique o estado**:
    ```bash
    git status
    ```
-   *Terminal*: Mostrará `sobre.txt` em vermelho (Untracked files).
+   *O arquivo `sobre.txt` aparecerá em vermelho (Untracked).*
 
-### Passo 3: Preparar (Staging)
-1. Execute:
+2. **Prepare para o commit**:
    ```bash
    git add sobre.txt
    ```
-2. Execute `git status` novamente.
-   *Terminal*: Mostrará `sobre.txt` em verde (Changes to be committed).
 
-### Passo 4: Commitar (Salvar)
-1. Execute:
+3. **Grave a versão**:
    ```bash
-   git commit -m "Cria arquivo inicial sobre mim"
+   git commit -m "feat: cria arquivo inicial sobre mim"
    ```
-   *Terminal*: `[master (root-commit)...] 1 file changed...`
 
-### Passo 5: Conferir
-1. Execute:
-   ```bash
-   git log
-   ```
-   Você verá seu nome, email, data e a mensagem do commit. Parabéns, seu projeto está versionado!
+#### 3. Auditoria do Histórico
+Para confirmar que seu nome e a mensagem foram gravados, use:
+```bash
+git log
+```
+
+### 🏆 Conquista
+Seu projeto agora tem uma "âncora" no tempo. Você pode mudar o arquivo e, se errar, terá como voltar para este exato momento!

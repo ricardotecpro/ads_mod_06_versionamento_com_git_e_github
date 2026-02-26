@@ -1,25 +1,32 @@
 # Exercícios da Aula 07
 
-## 🛠 Exercícios
+## 🛠 Sincronização: Repositórios Remotos e .gitignore
 
-1. **A Prática do Clone**:
-   - Saia da pasta do seu projeto (`cd ..`).
-   - Clone um repositório público qualquer, por exemplo, o guia de markdown:
-     `git clone https://github.com/adam-p/markdown-here.git`
-   - Entre na pasta criada.
-   - Dê um `git log` e veja que você tem todo o histórico do projeto de outra pessoa!
+### Nível: Básico
 
-2. **O Arquivo .gitignore**:
-   - No seu repo de teste (`teste-local`):
-   - Crie um arquivo chamado `segredo.txt`.
-   - Crie um arquivo chamado `.gitignore`.
-   - Dentro do `.gitignore` escreva: `segredo.txt`.
-   - Tente dar `git add segredo.txt`.
-   - O Git vai ignorar/reclamar. Isso prova que funcionou.
+1.  **A Prática do Clone**:
+    - Saia da pasta do seu projeto atual no terminal (`cd ..`).
+    - Escolha um repositório público no GitHub (ex: um projeto de código aberto).
+    - Utilize o comando de clonagem para baixar esse projeto completo para sua máquina. Qual o comando utilizado?
 
-3. **Verificando Remotes**:
-   - Digite `git remote -v`.
-   - Você verá os endereços de `fetch` (onde baixa) e `push` (para onde envia).
+2.  **Verificando o Vínculo**:
+    - Dentro da pasta do projeto que você acabou de clonar, digite um comando para listar os endereços remotos de `fetch` e `push`. O que o termo "origin" representa?
 
-## Atenção com Senhas
-Nunca suba arquivos com senhas reais para o GitHub Público. Se acontecer, considere a senha comprometida e mude-a imediatamente no serviço original.
+### Nível: Intermediário
+
+3.  **Segurança com .gitignore**:
+    - No seu repositório de testes, crie um arquivo chamado `configuracao_privada.txt`.
+    - Crie (ou edite) o arquivo `.gitignore` na raiz e adicione o nome do arquivo acima dentro dele.
+    - Tente adicionar o arquivo ao Git (`git add configuracao_privada.txt`). O que acontece?
+
+4.  **Conexão Remota**:
+    - Imagine que você criou um repositório local e agora quer vinculá-lo a um novo repositório vazio no GitHub. Qual o comando utilizado para adicionar esse "vínculo remoto" com o apelido `origin`?
+
+### Nível: Desafio
+
+5.  **Ignorando por Padrão**:
+    - No seu arquivo `.gitignore`, adicione uma regra que ignore **todos** os arquivos que terminem com a extensão `.log`, independentemente do nome. Como você escreveu essa regra utilizando caracteres curinga?
+
+---
+
+[:octicons-arrow-right-24: Ver Solução](solutions/solucao-07.md)

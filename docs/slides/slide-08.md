@@ -1,47 +1,41 @@
-# Roteiro de Slides - Aula 08
+# Aula 08 – Pull Requests e Code Review
 
 ---
 
-## Chega de trabalhar sozinho!
+## O Pedido de Inclusão
 
-- Git brilha mesmo em equipes.
-- O problema: Se 10 pessoas derem `git push` na `main` ao mesmo tempo, vira o caos.
-- A solução: **Pull Requests**.
+- **Pull Request (PR)**: "Time, terminei minha tarefa, revisem e 'puxem' para a branch principal".
+- Evita bagunça na branch `main`.
 
 ---
 
-## O Fluxo de Ouro (GitHub Flow)
+## O Ciclo do PR
 
-1. **Branch**: Crie um espaço seguro.
-2. **Commit**: Faça suas mudanças.
-3. **Push**: Envie para a nuvem.
-4. **Pull Request**: "Ei time, vejam o que eu fiz!"
-5. **Review**: Discussão, correções, elogios.
-6. **Merge**: O Grande Momento. Entra na base oficial.
+1. **Branch**: Trabalhe isolado.
+2. **Push**: Suba para o GitHub.
+3. **Open PR**: Clique no botão no site.
+4. **Discussão**: Receba feedback.
+5. **Merge**: Finalize e una os códigos.
 
 ---
 
 ## Code Review: Por que fazer?
 
-- **Qualidade**: 4 olhos veem mais que 2.
-- **Conhecimento**: Juniors aprendem com Seniors (e vice-versa).
-- **Consistência**: O código fica com "a cara do time", não de uma pessoa só.
+- **Qualidade**: Encontre bugs antes do cliente.
+- **Aprendizado**: Troca de conhecimento entre o time.
+- **Padrão**: Garantir que o código siga as regras da empresa.
 
 ---
 
-## O Merge no GitHub
+## Ética na Revisão
 
-- Não é via linha de comando.
-- É um botão verde "Merge pull request".
-- Opções:
-  - **Merge Commit**: Mantém toda a história (recomendado).
-  - **Squash**: Resume tudo em 1 commit (bom para limpeza).
-  - **Rebase**: Lineariza a história (avançado).
+- Critique o **código**, não o autor.
+- Seja construtivo e educado.
+- Elogie boas soluções!
 
 ---
 
-## E depois?
+## Pós-Merge
 
-- O GitHub está atualizado.
-- Mas seu computador NÂO!
-- Sempre lembre de: `git checkout main` e `git pull`.
+- O código entrou na `main` do GitHub.
+- **Importante**: Todo o time deve dar um `git pull` para atualizar seus computadores locais.

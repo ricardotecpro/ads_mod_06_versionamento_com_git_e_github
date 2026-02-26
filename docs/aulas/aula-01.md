@@ -1,75 +1,82 @@
-# Aula 01 – O que é controle de versão e por que usar Git
+# Aula 01 – O que é Controle de Versão e por que usar Git?
 
 ## 🎯 Objetivos de Aprendizagem
-- Entender o conceito de Controle de Versão e sua importância.
+- Entender o conceito de Controle de Versão e sua importância no desenvolvimento.
 - Diferenciar Git (software) de GitHub (plataforma).
 - Compreender a diferença entre sistemas centralizados e distribuídos.
 - Conhecer a história e a popularidade do Git no mercado de TI.
 
+---
+
 ## 📚 Conteúdo
 
 ### 1. O Problema do "Versão Final.doc"
-Você já trabalhou em um arquivo importante e acabou criando cópias como:
-- `tcc_final.doc`
-- `tcc_final_agora_vai.doc`
-- `tcc_final_IMPRIMIR.doc`
+Você já trabalhou em um arquivo importante e acabou criando cópias como `tcc_final.doc`, `tcc_final_v2.doc` ou `tcc_final_IMPRIMIR.doc`? Isso é **controle de versão manual** e é extremamente propenso a falhas: você perde o histórico de quem mudou o quê, quando e por quê.
 
-Isso é **controle de versão manual** e é propenso a falhas. Você perde o histórico do que mudou, quem mudou e por que mudou.
+!!! warning "Atenção"
+    O controle manual de arquivos não escala. Em equipes profissionais, perder o rastro de uma alteração pode significar horas de trabalho perdido.
 
 ### 2. O que é um Sistema de Controle de Versão (VCS)?
-Um VCS (*Version Control System*) é um software que registra as mudanças em um ou mais arquivos ao longo do tempo. Ele permite que você:
-- Reverta arquivos para um estado anterior.
-- Compare mudanças ao longo do tempo.
-- Veja quem modificou o que.
-- Recupere arquivos perdidos.
+Um **Version Control System (VCS)** é um software que rastreia mudanças em arquivos ao longo do tempo. Ele funciona como uma "Máquina do Tempo" para o seu código.
 
-### 3. Git: O Padrão da Indústria
-O Git é um **Sistema de Controle de Versão Distribuído**.
-- **Distribuído** significa que cada desenvolvedor tem uma cópia completa de todo o histórico do projeto em seu computador, não apenas a última versão.
-- Foi criado por Linus Torvalds (criador do Linux) em 2005.
-- É rápido, eficiente e permite trabalho offline.
+!!! info "Conceito"
+    Um VCS permite que você reverta arquivos para estados anteriores, compare mudanças entre versões e recupere arquivos perdidos acidentalmente.
 
-### 4. Git vs GitHub
-É crucial não confundir os dois:
-- **Git**: É a ferramenta (software) que você instala no seu computador para gerenciar versões. Funciona localmente.
-- **GitHub**: É uma plataforma na nuvem que hospeda repositórios Git. Funciona como uma rede social para desenvolvedores e facilita o trabalho em equipe.
-*Analogia*: O Git é como o Microsoft Word (ferramenta), e o GitHub é como o Google Drive (onde você guarda e compartilha).
+### 3. Sistemas Centralizados vs. Distribuídos
+Existem dois tipos principais de arquitetura para controle de versão:
 
-## 📽 Roteiro de Slides
-- O Caos dos Arquivos Manuais (v1, v2, final)
-- O que é Version Control System (VCS)?
-- Benefícios: Histórico, Backup, Trabalho em Equipe
-- Git: Distribuído, Rápido, Padrão de Mercado
-- Git vs GitHub: Ferramenta Local vs Plataforma na Nuvem
-- Glossário Inicial: Repositório, Commit (visão geral)
+```mermaid
+graph TD
+    subgraph "Centralizado (ex: SVN)"
+        C1[Servidor Central] --- A1[Usuário A]
+        C1 --- B1[Usuário B]
+    end
+    subgraph "Distribuído (ex: Git)"
+        S2[Servidor Central] --- U1[Repositório Local A]
+        S2 --- U2[Repositório Local B]
+        U1 ---|Offline| U1
+        U2 ---|Offline| U2
+    end
+```
 
-## 📝 Quiz
-1. Qual é a principal função de um Sistema de Controle de Versão?
-2. Quem criou o Git?
-3. Qual a diferença fundamental entre Git e GitHub?
-4. O que significa o Git ser "Distribuído"?
-5. Qual problema o Git resolve?
+*   **Centralizado**: Existe um único servidor que guarda o histórico. Se o servidor cair, ninguém consegue trabalhar.
+*   **Distribuído**: Cada desenvolvedor possui uma **cópia completa** do histórico em sua máquina. O servidor central serve apenas como ponto de sincronização.
 
-## Gabarito
-1: A
-2: C
-3: B
-4: D
-5: A
+### 4. Git vs GitHub: Não Confunda!
+É a dúvida mais comum para quem está começando:
 
-## 🛠 Exercícios
-1. **Verificação Inicial**: Abra seu terminal e digite:
-    <!-- termynal -->
-    ```console
-    $ git --version
-    git version 2.40.0.windows.1
-    ```
-   Se der erro, não se preocupe, instalaremos na próxima aula.
-2. **Criação de Conta**: Acesse [github.com](https://github.com) e crie sua conta gratuita, caso ainda não tenha. Escolha um nome de usuário profissional.
-3. **Simulação Manual**: Crie uma pasta chamada `simulacao_vcs` no seu computador. Crie um arquivo texto, faça uma alteração e salve uma cópia `v2`. Note a dificuldade de gerenciar isso manualmente.
+| Característica | Git | GitHub |
+| :--- | :--- | :--- |
+| **O que é?** | Software de controle de versão (local). | Plataforma de hospedagem na nuvem. |
+| **Instalação** | Instalado no seu computador. | Acessado via navegador. |
+| **Função** | Gerencia o histórico de arquivos. | Facilita a colaboração e redes sociais. |
 
-## 🚀 Projeto da Aula
-Neste curso, construiremos um **Portfólio Profissional**.
-- **Passo 1**: Crie uma pasta no seu computador (Desktop ou Documentos) chamada `meu-portfolio-git`.
-- **Passo 2**: Dentro dela, crie um arquivo de texto simples chamado `sobre.txt` e escreva apenas seu nome.
-- **Passo 3**: Guarde essa pasta. Nas próximas aulas, vamos transformá-la em um repositório Git e subi-la para o GitHub.
+!!! tip "Dica"
+    Pense no **Git** como o motor (software) e no **GitHub** como a concessionária (onde você guarda e exibe seus carros).
+
+### 5. Verificação Inicial do Ambiente
+
+Antes de começarmos a codar, vamos verificar se você já tem a ferramenta instalada.
+
+<!-- termynal -->
+```bash
+# Verificando a versão do Git instalada
+$ git --version
+git version 2.45.0.windows.1
+
+# Verificando se o comando 'git' é reconhecido
+$ where git
+C:\Program Files\Git\cmd\git.exe
+```
+
+---
+
+## 📝 Prática
+
+### Exercícios de Fixação
+O conteúdo prático desta aula foca na compreensão teórica e verificação de ambiente.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 01](../exercicios/exercicio-01.md)
+
+### Mini-Projeto
+Construiremos um **Portfólio Profissional** ao longo deste curso. O primeiro passo é apenas organizativo.
+[:octicons-arrow-right-24: Ver Projeto da Aula 01](../projetos/projeto-01.md)

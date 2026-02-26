@@ -1,47 +1,47 @@
-# Roteiro de Slides - Aula 11
+# Aula 11 – A Arte do Commit
 
 ---
 
-## O Histórico é para Humanos
+## Histórico para Humanos
 
-- O Git não liga para sua mensagem.
-- Mas seus colegas (e seu chefe) ligam.
-- Mensagens ruins = "Dívida Técnica".
-
----
-
-## Regra do Imperativo
-
-- O Git usa imperativo automaticamente nos merges (`Merge branch...`).
-- Siga o padrão:
-  - `Adiciona` (Isso aplica a adição).
-  - `Remove` (Isso aplica a remoção).
-  - `Corrige` (Isso aplica a correção).
+- O Git não liga para a mensagem que você escreve.
+- Mas seus colegas (e seu "eu do futuro") ligam muito!
+- Evite: `ajuste`, `teste`, `arrumando`.
 
 ---
 
-## Atomicidade
+## Commits Atômicos
 
-- 1 Commit = 1 Ideia Lógica.
-- Se você demorou 3 dias para commitar, provavelmente tem coisas demais misturadas.
-- Commite cedo, commite sempre, commite pouco.
+- **1 Commit = 1 Única Ação.**
+- Facilita o Code Review.
+- Torna a reversão de erros cirúrgica.
+- Se você fez 10 coisas, faça 10 commits.
 
 ---
 
 ## Conventional Commits
 
-- Um padrão global.
-- `feat`: Feature nova.
-- `fix`: Bug fix.
-- `docs`: Documentação.
-- `chore`: Tarefas chatas (configuração, build).
-- Ferramentas automáticas podem gerar Changelogs (notas de versão) lendo esses prefixos!
+Padrão de mercado para mensagens profissionais:
+- **`feat:`**: Nova funcionalidade.
+- **`fix:`**: Correção de bug.
+- **`docs:`**: Documentação.
+- **`style:`**: Formatação de código.
+- **`refactor:`**: Melhoria técnica sem mudar o resultado.
 
 ---
 
-## O comando Amend
+## A Regra do Imperativo
 
-- Errou a mensagem? Esqueceu um arquivo?
-- `git commit --amend`
-- Refaz o último commit.
-- **PERIGO**: Nunca faça isso em commits que já foram para o GitHub (Push).
+- Escreva como se estivesse dando uma ordem ao código:
+  - `Adiciona botão de busca` ✅
+  - `Adicionado botão de busca` ❌ (Passado)
+
+---
+
+## Errei a mensagem! E agora?
+
+- Se você **ainda não deu push**:
+  ```bash
+  git commit --amend -m "Nova mensagem correta"
+  ```
+- **Aviso**: Nunca use `--amend` em commits que já estão no GitHub.

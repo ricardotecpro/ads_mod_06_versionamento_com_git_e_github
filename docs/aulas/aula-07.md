@@ -1,90 +1,86 @@
-# Aula 07 – Criando e gerenciando repositórios no GitHub
+# Aula 07 – Repositórios Remotos: Conectando-se ao Mundo
 
 ## 🎯 Objetivos de Aprendizagem
-- Criar um novo repositório no GitHub.
-- Conectar um repositório local a um remoto (`git remote add`).
-- Enviar alterações para a nuvem (`git push`).
-- Baixar projetos existentes (`git clone`).
-- Entender o arquivo `.gitignore`.
+- Criar um novo repositório no GitHub para hospedar seu código na nuvem.
+- Conectar um repositório local a um remoto utilizando `git remote add`.
+- Realizar o envio de alterações para o servidor através do `git push`.
+- Baixar e colaborar em projetos existentes utilizando o `git clone`.
+- Compreender a função vital do arquivo `.gitignore`.
+
+---
 
 ## 📚 Conteúdo
 
-### 1. Criando um Repositório Remoto
-No GitHub, clique no botão **New** (ou `+` no canto superior direito).
-- Dê um nome (ex: `meu-primeiro-repo`).
-- Escolha Público ou Privado.
-- (Opcional) Inicializar com README, .gitignore ou License.
+### 1. O Conceito de Repositório Remoto
+Até agora, seu trabalho vive apenas no seu computador. Para colaborar ou ter um backup seguro, usamos um **Remote**.
+
+```mermaid
+graph LR
+    subgraph Local [Seu Computador]
+        A[Git Repo Local]
+    end
+    subgraph Cloud [GitHub / Nuvem]
+        B[Git Repo Remoto]
+    end
+    A -- "git push" --> B
+    B -- "git clone / pull" --> A
+```
 
 ### 2. Conectando Local e Remoto
-Se você já tem um repo local (como nosso portfólio), conecte-o assim:
-```bash
-git remote add origin https://github.com/SEU-USUARIO/NOME-DO-REPO.git
-```
-- **origin**: É apenas um apelido padrão para o link do repositório remoto.
+O primeiro passo é dizer ao seu Git local onde está o "balde" na nuvem.
 
-### 3. Enviando Alterações (Push)
-Para enviar seus commits locais para o servidor:
-```bash
-git push -u origin main
-```
-- `-u`: Configura o vínculo (upstream) para que nos próximos pushes você possa digitar apenas `git push`.
+!!! info "O Apelido 'origin'"
+    `origin` é apenas uma convenção. É o nome padrão que damos ao repositório principal no servidor.
 
-### 4. Baixando Projetos (Clone)
-Para baixar um projeto completo do GitHub para seu computador:
+<!-- termynal -->
 ```bash
-git clone https://github.com/usuario/projeto.git
-```
-Isso cria uma pasta com todo o histórico do projeto.
+# Adiciona um vínculo remoto (troque pela URL do seu repo)
+$ git remote add origin https://github.com/usuario/projeto.git
 
-### 5. Ignorando Arquivos (.gitignore)
-Nem tudo deve ir para o Git (senhas, arquivos temporários, pastas de build).
-Crie um arquivo chamado `.gitignore` e liste o que o Git deve ignorar:
+# Verifica se o vínculo foi criado com sucesso
+$ git remote -v
+origin  https://github.com/usuario/projeto.git (fetch)
+origin  https://github.com/usuario/projeto.git (push)
+```
+
+### 3. Enviando e Baixando Código
+*   **Push**: "Empurra" seus commits para o servidor.
+*   **Clone**: Cria uma cópia local completa de um repositório remoto pela primeira vez.
+
+!!! tip "Upstream (-u)"
+    Ao usar `git push -u origin main` pela primeira vez, você vincula as branches. No futuro, bastará digitar apenas `git push`.
+
+<!-- termynal -->
+```bash
+# Enviando para a branch principal
+$ git push -u origin main
+
+# Clonando um projeto de outra pessoa
+$ git clone https://github.com/outra-pessoa/projeto-legal.git
+```
+
+### 4. O Arquivo .gitignore
+Nem tudo deve ir para o GitHub! Arquivos de configuração pessoal, senhas (`.env`), pastas de dependências gigantes (`node_modules`) ou arquivos temporários devem ser ignorados.
+
+!!! warning "Segurança"
+    Nunca coloque chaves de API ou senhas em repositórios públicos. Use o `.gitignore` para prevenir acidentes!
+
+**Exemplo de `.gitignore`:**
 ```text
 .env
 node_modules/
 *.log
+.DS_Store
 ```
 
-## 📽 Roteiro de Slides
-- Local vs Remoto: Conceito chave.
-- Criando o "Balde" na Nuvem (New Repo).
-- O Elo de Ligação: `git remote add origin URL`.
-- O Envio: `git push` (Empurrar).
-- O Download: `git clone` (Clonar).
-- A Importância do `.gitignore` (Não suba lixo nem senhas!).
+---
 
-## 📝 Quiz
-1. Qual comando envia commits locais para o GitHub?
-2. O que é "origin" no comando `git push origin main`?
-3. Qual comando copia um repositório inteiro do GitHub para sua máquina?
-4. Para que serve o arquivo `.gitignore`?
-5. Se eu quiser baixar apenas as atualizações de um repo já clonado, usaria `clone` novamente?
+## 📝 Prática
 
-## Gabarito
-1: C
-2: B
-3: A
-4: D
-5: B (Não, usaria `git pull` - spoiler da próxima aula, mas a resposta certa é "Não").
+### Exercícios de Fixação
+Pratique a conexão entre seu computador e a nuvem.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 07](../exercicios/exercicio-07.md)
 
-## 🛠 Exercícios
-1. **GitHub**: Crie um repositório chamado `teste-remoto`. Não marque nenhuma opção (README, gitignore).
-2. **Local**: Crie uma pasta `teste-local`, inicie o git, crie um arquivo e commite.
-3. **Link**: Adicione o remote (`git remote add origin ...`).
-4. **Push**: Envie (`git push -u origin main`).
-5. **Confira**: Recarregue a página do GitHub e veja seu arquivo lá!
-
-## 🚀 Projeto da Aula
-Agora é a hora da verdade para o `meu-portfolio-git`.
-
-1. Vá no GitHub e crie um novo repositório chamado `portfolio-dev`.
-2. Não marque nenhuma opção de inicialização (README, etc). Crie o repo vazio.
-3. Copie o link HTTPS fornecido (ex: `https://github.com/seu-user/portfolio-dev.git`).
-4. No terminal do seu projeto local:
-   ```bash
-   git remote add origin COLAR_O_LINK_AQUI
-   git branch -M main
-   git push -u origin main
-   ```
-   *(Pode pedir login/senha. Se usar HTTPS, pode precisar de um Token ou Git Credential Manager).*
-5. Vá ao GitHub e veja: Seu portfólio está online!
+### Mini-Projeto
+Momento épico: suba seu portfólio para o GitHub e torne-o público!
+[:octicons-arrow-right-24: Ver Projeto da Aula 07](../projetos/projeto-07.md)

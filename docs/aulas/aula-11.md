@@ -1,83 +1,63 @@
-# Aula 11 – Boas práticas de commits e versionamento
+# Aula 11 – Boas Práticas: A Arte do Commit
 
 ## 🎯 Objetivos de Aprendizagem
-- Escrever mensagens de commit claras e úteis.
-- Entender o conceito de **Commit Atômico**.
-- Conhecer o padrão **Conventional Commits**.
-- Evitar erros comuns (commits gigantes, mensagens vagas).
+- Escrever mensagens de commit claras, úteis e profissionais.
+- Entender e aplicar o conceito de **Commit Atômico**.
+- Conhecer o padrão global **Conventional Commits**.
+- Evitar erros comuns como commits gigantes ou mensagens vagas.
+
+---
 
 ## 📚 Conteúdo
 
-### 1. Mensagens de Commit Importam
-Imagine ler um histórico assim:
-- `correção`
-- `arrumando`
-- `teste`
-- `final`
-Isso não ajuda ninguém. O objetivo da mensagem de commit é explicar o PORQUÊ da mudança.
+### 1. Mensagens que Contam Histórias
+Cuidado com o "Hall da Vergonha" do histórico do Git: `ajuste`, `teste`, `arrumando`, `final_v2`. Isso não ajuda ninguém. O objetivo da mensagem de commit é explicar o **porquê** da mudança.
 
-### 2. A Regra do Imperativo
-No Git, a convenção é usar o verbo no imperativo presente (como se você estivesse dando uma ordem ao código).
-- **Ruim**: "Adicionado botão de login" (Passado) ou "Adicionando botão" (Gerúndio).
-- **Bom**: "Adiciona botão de login" (Imperativo).
-*Dica*: A mensagem deve completar a frase: "Se eu aplicar este commit, ele irá..." -> "Adicionar botão de login".
+| ❌ Ruim | ✅ Bom | Motivo |
+| :--- | :--- | :--- |
+| `corrigido` | `fix: corrige erro no login` | Explica o que foi feito. |
+| `mais coisas` | `feat: adiciona botão de busca` | Especifica a funcionalidade. |
+| `lixo` | `refactor: limpa código morto` | Indica uma melhoria técnica. |
 
-### 3. Commits Atômicos
-Um commit deve fazer **uma única coisa**.
-Se você corrigiu um bug no login E mudou a cor do rodapé:
-- **Errado**: `git commit -m "Arruma login e muda cor"` (Misturou assuntos).
-- **Certo**: Faça dois commits separados.
-Isso facilita reverter uma mudança sem afetar a outra.
+!!! tip "A Regra do Imperativo"
+    Escreva a mensagem como se estivesse dando uma ordem ao código: "Adiciona botão", "Remove ícone", "Corrige bug".
 
-### 4. Conventional Commits
-Um padrão muito usado na indústria:
-- `feat: adiciona filtro de busca` (Nova feature).
-- `fix: corrige erro de cálculo` (Correção de bug).
-- `docs: atualiza readme` (Documentação).
-- `style: formata código` (Espaços, pontuação).
-- `refactor: melhora performance` (Sem mudar funcionalidade).
+### 2. Commits Atômicos: O Superpoder da Reversão
+Um commit deve fazer **uma única coisa**. Se você corrigiu um erro no rodapé e mudou a cor do cabeçalho, faça dois commits separados.
 
-## 📽 Roteiro de Slides
-- O Hall da Vergonha: "wip", "fix", "bug".
-- A Estrutura Ideal: Título (50 chars) + Corpo (Opcional).
-- O Modo Imperativo: "Adiciona", "Remove", "Corrige".
-- Commit Atômico: Pequeno e focado.
-- Padrões de Mercado: Conventional Commits (`feat:`, `fix:`).
-- Por que isso ajuda no Code Review?
+!!! failure "Commit Gigante"
+    Misturar assuntos dificulta o Code Review e torna quase impossível reverter apenas uma parte da mudança se algo der errado.
 
-## 📝 Quiz
-1. Qual é a convenção gramatical recomendada para mensagens de commit em português?
-2. O que é um "Commit Atômico"?
-3. Qual desses prefixos indica uma nova funcionalidade no padrão Conventional Commits?
-4. Por que não devemos misturar correções de bugs com formatação de código no mesmo commit?
-5. Qual mensagem é a mais adequada?
+### 3. Conventional Commits
+Este é o padrão de mercado usado por grandes empresas e projetos Open Source:
 
-## Gabarito
-1: B ("Imperativo Presente")
-2: A ("Um commit que resolve apenas uma tarefa específica")
-3: C ("feat:")
-4: D ("Porque dificulta o review e a reversão de mudanças específicas")
-5: C ("fix: corrige erro de validação no formulário")
+*   **`feat:`**: Nova funcionalidade.
+*   **`fix:`**: Correção de bug.
+*   **`docs:`**: Alteração em documentação.
+*   **`style:`**: Formatação (espaços, ponto e vírgula) sem mudar lógica.
+*   **`refactor:`**: Melhoria de código que não altera o comportamento.
+*   **`test:`**: Adição ou correção de testes.
 
-## 🛠 Exercícios
-1. **Analise o Histórico**: Dê `git log` no seu projeto. Suas mensagens seguem o padrão? (Provavelmente não, e tudo bem, estamos aprendendo).
-2. **Prática de Amend**:
-   - Faça uma alteração qualquer e commite com a mensagem "erro".
-   - Ops! Mensagem ruim.
-   - Use `git commit --amend -m "fix: corrige erro de digitação"` para reescrever o ÚLTIMO commit sem criar um novo.
-   - **Cuidado**: Só faça isso se ainda não deu Push!
+### 4. Ops, errei a mensagem! (git commit --amend)
+Cometeu um erro de digitação no último commit? Não se desespere!
 
-3. **Divisão**:
-   - Faça duas alterações diferentes (ex: crie `a.txt` e `b.txt`).
-   - Tente commitar `a.txt` primeiro (`git add a.txt`, `git commit`).
-   - Depois commite `b.txt`.
-   - Isso é atomicidade.
+<!-- termynal -->
+```bash
+# Corrigindo a mensagem do ÚLTIMO commit (antes do push)
+$ git commit --amend -m "feat: adiciona busca por categorias"
+```
 
-## 🚀 Projeto da Aula
-Vamos limpar o histórico futuro do `portfolio-dev`.
-1. Escolha uma tarefa pequena do seu Project Board (ex: Criar arquivo de Estilos ou atualizar Texto).
-2. Crie a branch.
-3. Faça a mudança.
-4. Na hora de commitar, use o padrão Conventional Commit.
-   Ex: `feat: adiciona seção de projetos no readme`
-5. Veja como fica bonito no histórico do GitHub.
+!!! warning "Cuidado"
+    Nunca use o `--amend` em commits que você já enviou para o GitHub (`push`), pois isso reescreve o histórico e pode causar problemas para seus colegas.
+
+---
+
+## 📝 Prática
+
+### Exercícios de Fixação
+Refine suas mensagens e aprenda a dividir suas tarefas em pequenas entregas.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 11](../exercicios/exercicio-11.md)
+
+### Mini-Projeto
+Padronizando o histórico do seu portfólio com Conventional Commits.
+[:octicons-arrow-right-24: Ver Projeto da Aula 11](../projetos/projeto-11.md)

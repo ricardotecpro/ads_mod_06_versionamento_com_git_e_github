@@ -1,21 +1,30 @@
 # Exercícios da Aula 09
 
-## 🛠 Exercícios
+## 🛠 Fluxo de Trabalho: GitHub Flow na Prática
 
-1. **Investigação de Branches**:
-   - Execute `git branch -a`.
-   - O `-a` mostra branches locais e remotas (`remotes/origin/...`).
-   - Veja se você tem branches antigas "mentindo" no seu computador que já foram mergeadas e deletadas no GitHub.
-   - Use `git fetch --prune` para limpar a lista de branches remotas que não existem mais.
+### Nível: Básico
 
-2. **Limpeza Local**:
-   - Se você já mergeou a branch `feature-pr` (da aula passada), delete-a do seu computador para manter a ordem.
-   - Comando: `git branch -d feature-pr`.
-   - Se o Git reclamar que não foi mergeada (e você sabe que foi, ou não importa), use `-D` (maiúsculo) para forçar.
+1.  **Sincronização Inicial**:
+    - Antes de iniciar qualquer tarefa, você deve garantir que sua branch local está atualizada com o servidor. Qual a sequência de dois comandos para garantir que você está na `main` e com o código mais recente?
 
-3. **Fluxo Rápido**:
-   - Tente fazer o ciclo todo (Criar branch, mudar arquivo, commitar, push) em menos de 2 minutos.
-   - O GitHub Flow depende de agilidade. Com a prática, esses comandos viram memória muscular.
+2.  **Criação Expressa**:
+    - Utilize o comando de atalho para criar uma branch chamada `ajuste-texto` e alternar para ela simultaneamente. Qual comando você utilizou?
 
-## Dica
-Mantenha seu repositório limpo. Branches velhas só causam confusão. Mergeou? Deletou.
+### Nível: Intermediário
+
+3.  **O Ciclo Completo**:
+    - Realize uma alteração simples em um arquivo, commite-a e envie-a para o GitHub. 
+    - No navegador, abra o Pull Request. 
+    - Após "aprovar" seu próprio PR, realize o merge. O que deve ser feito com a branch `ajuste-texto` no GitHub após o merge?
+
+4.  **Faxina de Branches**:
+    - Após o merge no servidor, sua branch local ainda existe. Como você deleta uma branch local que já foi integrada ao projeto?
+
+### Nível: Desafio
+
+5.  **Limpando Rastros Remotos**:
+    - Às vezes, deletamos branches no GitHub, mas o nosso Git local ainda "acha" que elas existem no servidor. Descubra e execute o comando `git fetch` com a opção `--prune` para limpar essas referências obsoletas.
+
+---
+
+[:octicons-arrow-right-24: Ver Solução](solutions/solucao-09.md)

@@ -1,47 +1,44 @@
-# Roteiro de Slides - Aula 16
+# Aula 16 – Carreira e Portfólio
 
 ---
 
-## Parabéns!
+## Sua Vitrine Profissional
 
-- Você sobreviveu a 16 aulas.
-- De "O que é Git?" a "Merge Conflict" e "CI/CD".
-- Você não é mais um iniciante.
-
----
-
-## O Mercado de Trabalho
-
-- Git é **obrigatório**. Não é "diferencial".
-- O que é diferencial?
-  - Saber resolver conflitos sem pânico.
-  - Escrever commits limpos.
-  - Saber trabalhar com PRs e Code Review.
+O GitHub é o seu currículo técnico real:
+1. **Consistência**: O "paredão verde" mostra disciplina.
+2. **Qualidade**: Convenções (commits) e documentação (README).
+3. **Curadoria**: Use os **Pins** para fixar seus 6 melhores projetos.
 
 ---
 
-## Open Source
+## O Mundo Open Source
 
-- Milhares de projetos precisam de ajuda.
-- Comece corrigindo documentação (typos).
-- Traduza READMEs.
-- Pegue `good first issues`.
-- Networking poderoso.
+- Contribua para crescer.
+- Procure labels: `good first issue`.
+- Comece pequeno: corrija typos, melhore traduções ou READMEs.
+- Participe do **Hacktoberfest**.
 
 ---
 
-## Próximos Passos (Tech Tree)
+## Checklist Profissional
 
-- **GitHub Actions**: Automatize seus testes.
-- **Git Avançado**: `rebase`, `cherry-pick`, `bisect`.
-- **Outras ferramentas**: GitLab, Bitbucket, Azure DevOps (os conceitos são os mesmos).
+- [ ] `.gitignore` configurado?
+- [ ] Mensagens seguem o **Conventional Commits**?
+- [ ] Branch principal (`main`) está estável?
+- [ ] README tem banner, badges e instruções de uso?
+
+---
+
+## Próximos Passos (Nível 2)
+
+- **GitHub Actions**: Automação de testes.
+- **Git Avançado**: `rebase`, `bisect`, `cherry-pick`.
+- **Hooks**: Scripts que rodam antes do commit.
 
 ---
 
 ## Dica Final
 
-> "Code is read much more often than it is written." (Guido van Rossum)
+> "Code is read much more often than it is written."
 >
-> Escreva código (e commits) pensando em quem vai ler depois.
-
-**Sucesso na jornada!**
+> Faça commits e documentação pensando no colega que vai ler depois. Sucesso na jornada!

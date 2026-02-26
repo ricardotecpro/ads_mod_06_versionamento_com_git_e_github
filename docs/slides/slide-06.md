@@ -1,47 +1,44 @@
-# Roteiro de Slides - Aula 06
+# Aula 06 – Introdução ao GitHub
 
 ---
 
-## O GitHub Social
+## Além do Versionamento
 
-- **Git** é técnico. **GitHub** é social.
-- É onde você:
-  - Mostra seu trabalho (Portfólio).
-  - Interage com a comunidade (Open Source).
-  - Gerencia projetos (Issues/Projects).
+- **Git** = Motor (técnico).
+- **GitHub** = Concessionária/Rede Social (comunidade).
+- Seu portfólio profissional começa aqui.
 
 ---
 
-## O Perfil (Seu Currículo Vivo)
+## O Perfil do Desenvolvedor
 
-- **Foto**: Profissional (ou pelo menos decente). Evite anime/memes se busca emprego sério.
-- **Bio**: Quem é você em 140 caracteres?
-- **Pinned Repos**: Seus melhores projetos em destaque.
-- **Contribution Graph**: A prova de que você programa.
-
----
-
-## Interações Mágicas
-
-- **Star ⭐**: Favorito. Mostra apreço e salva para depois.
-- **Watch 👁️**: Notificações. "Quero saber tudo o que acontece aqui".
-- **Fork 🍴**: Bifurcação. "Quero uma cópia disso para eu mexer".
+- **Bio**: Curta e direta.
+- **Foto**: Amigável e clara.
+- **Heatmap (Quadradinhos Verdes)**: Prova de consistência e hábito de estudo.
+- **Pins**: Destaque seus melhores projetos!
 
 ---
 
-## Issues (Não são só problemas)
+## Interação Social
 
-- Uma **Issue** é um ticket de discussão.
-- Pode ser:
-  - 🐛 Bug report (Algo quebrou).
-  - 💡 Feature request (Ideia nova).
-  - ❓ Dúvida.
-- Todo grande projeto Open Source é gerenciado via Issues.
+- **Star (Estrela)** ⭐: Marque como favorito e apoie o autor.
+- **Watch (Observar)** 👁️: Receba notificações de atualizações.
+- **Fork (Bifurcação)** 🍴: Crie uma cópia para contribuir ou estudar.
 
 ---
 
-## Próxima Aula
+## Issues: Gestão de Projetos
 
-- Vamos tirar o projeto do seu computador (Local).
-- E enviá-lo para os servidores do GitHub (Remoto).
-- O comando mágico: `git push`.
+- Não serve apenas para relatar erros (bugs).
+- Use para:
+  - Sugerir melhorias.
+  - Discutir arquitetura.
+  - Organizar seu próprio To-Do list.
+
+---
+
+## Segurança em Primeiro Lugar
+
+- Ative o **2FA (Dois Fatores)**.
+- O seu código (e o da sua empresa) é valioso.
+- Proteja sua conta contra acessos indevidos.

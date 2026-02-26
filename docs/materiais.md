@@ -1,42 +1,36 @@
-# Materiais Complementares
+# Materiais
 
-Bem-vindo à seção de materiais de apoio do curso de **Git e GitHub**. Aqui você encontra referências rápidas e links úteis para aprofundar seus conhecimentos.
-
-## 🛠️ Links Essenciais
-
-- 📥 [**Download do Git**](https://git-scm.com/downloads) - Site oficial para baixar o Git.
-- 🐙 [**GitHub**](https://github.com) - A plataforma onde você hospedará seus projetos.
-- 📋 [**Documentação Oficial (Português)**](https://git-scm.com/book/pt-br/v2) - O livro "Pro Git" detalhado.
-- 🗂️ [**Git Cheat Sheet (GitHub)**](https://education.github.com/git-cheat-sheet-education.pdf) - Guia rápido de comandos.
-
-## 📖 Conteúdo do Curso
+Bem-vindo à seção de materiais complementares do curso. Aqui você encontra recursos adicionais para apoiar seus estudos.
 
 <div class="grid cards" markdown>
 
 -   :material-presentation: [**Slides**](slides/index.md)
     ---
-    Slides visuais para revisão de conceitos.
+    Acesse os slides de todas as aulas para revisão.
 
 -   :material-dumbbell: [**Exercícios**](exercicios/index.md)
     ---
-    Desafios práticos para cada aula.
+    Pratique com listas de exercícios para cada módulo.
 
 -   :material-school: [**Quizzes**](quizzes/index.md)
     ---
-    Validação de conhecimento interativa.
+    Teste seus conhecimentos com quizzes interativos.
 
 -   :material-rocket: [**Projetos**](projetos/index.md)
     ---
-    Builds passo a passo para seu portfólio.
+    Desenvolva projetos práticos para aplicar o que aprendeu.
+
+-   :material-cog: [**Setups**](setups/index.md)
+    ---
+    Guias de instalação e configuração do ambiente.
 
 </div>
 
-## 💡 Outras Ferramentas Úteis
-
-- [**Oh My Zsh**](https://ohmyz.sh/) - Para turbinar seu terminal (Linux/macOS).
-- [**Visual Studio Code**](https://code.visualstudio.com/) - O editor mais usado com integração Git.
-- [**GitKraken**](https://www.gitkraken.com/) ou [**GitHub Desktop**](https://desktop.github.com/) - Interfaces gráficas para Git.
-
 ---
 
-**Precisa de ajuda?** Abra uma issue no repositório do curso ou revise a [Aula 02](aulas/aula-02.md) sobre configuração de ambiente.
+## 🛠️ Links Essenciais
+
+*   📥 [**Download do Git**](https://git-scm.com/downloads)
+*   🐙 [**GitHub Office**](https://github.com)
+*   📋 [**Documentação Oficial (PT-BR)**](https://git-scm.com/book/pt-br/v2)
+*   🗂️ [**Git Cheat Sheet**](https://education.github.com/git-cheat-sheet-education.pdf)

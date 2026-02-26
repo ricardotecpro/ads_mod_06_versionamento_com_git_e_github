@@ -1,82 +1,78 @@
-# Aula 02 – Instalando e configurando o Git
+# Aula 02 – Instalando e Configurando o Git
 
 ## 🎯 Objetivos de Aprendizagem
 - Instalar o Git no seu sistema operacional (Windows, Mac ou Linux).
-- Configurar sua identidade (nome e email) no Git.
-- Verificar se a instalação e configuração foram bem-sucedidas.
-- Entender onde essas configurações ficam salvas.
+- Configurar sua identidade global (nome e e-mail).
+- Verificar e validar a instalação e o ambiente.
+- Entender a importância da configuração de autoria.
+
+---
 
 ## 📚 Conteúdo
 
-### 1. Instalação
+### 1. Preparando o Ambiente
+Para começar a usar o Git, precisamos de duas coisas: a ferramenta instalada e uma identidade configurada.
+
+```mermaid
+flowchart LR
+    A[Download] --> B[Instalação]
+    B --> C[Terminal / Git Bash]
+    C --> D[Configurar Nome]
+    D --> E[Configurar Email]
+    E --> F[Validar! OK]
+```
 
 #### Windows
-- Acesse [git-scm.com](https://git-scm.com).
-- Baixe a versão para Windows.
-- Execute o instalador.
-- **Importante**: Na tela de escolha de editor, pode manter o padrão (Vim) ou mudar para VS Code se já tiver instalado. Nas outras opções, "Next" (Avançar) é seguro para iniciantes.
-- Após instalar, procure por "Git Bash" no menu Iniciar. Esse será seu terminal principal.
+- Acesse [git-scm.com](https://git-scm.com) e baixe a versão para Windows.
+- No instalador: mantenha o padrão (Vim) ou selecione **VS Code** se preferir.
+- **Dica**: No Windows, sempre use o **Git Bash** que vem junto na instalação. Ele emula um terminal Linux/Unix robusto.
 
 #### macOS
-- Se você tem o Homebrew instalado: `brew install git`.
-- Ou baixe o instalador em [git-scm.com](https://git-scm.com).
+- Instale via Homebrew: `brew install git`.
+- Ou baixe o instalador no site oficial.
 
 #### Linux (Ubuntu/Debian)
-- Abra o terminal e rode: `sudo apt-get update` e depois `sudo apt-get install git-all`.
+- Execute: `sudo apt-get update && sudo apt-get install git-all`.
 
-### 2. Configuração Inicial (Obrigatória)
-O Git precisa saber quem você é para atribuir a autoria das mudanças.
+### 2. Configuração de Identidade (Obrigatória)
+O Git registra quem fez cada alteração. Sem isso, você não consegue fazer "commits".
 
-Abra o terminal (Git Bash no Windows) e execute:
+!!! important "Configuração Global"
+    As configurações abaixo precisam ser feitas apenas uma vez no seu computador.
 
+<!-- termynal -->
 ```bash
-git config --global user.name "Seu Nome Completo"
-git config --global user.email "seu.email@exemplo.com"
+# Configure seu nome profissional
+$ git config --global user.name "Seu Nome Completo"
+
+# Configure seu e-mail (prefira o mesmo do GitHub)
+$ git config --global user.email "seu.email@exemplo.com"
 ```
 
-> **Dica**: Use o mesmo email da sua conta GitHub.
+!!! tip "Dica de Ouro"
+    Use o e-mail que você pretende usar na sua conta do GitHub para que seu gráfico de contribuições ("paredão verde") seja contabilizado corretamente.
 
-### 3. Verificando as Configurações
-Para ver se deu certo, digite:
+### 3. Onde as configurações ficam salvas?
+O Git guarda essas informações em um arquivo chamado `.gitconfig` na sua pasta de usuário (`HOME`).
 
-```bash
-git config --list
-```
+!!! info "Verificando tudo"
+    Para listar todas as configurações ativas e confirmar se seu nome e e-mail estão corretos, use:
+    <!-- termynal -->
+    ```bash
+    $ git config --list
+    user.name=Seu Nome Completo
+    user.email=seu.email@exemplo.com
+    core.editor=vim
+    ```
 
-Você deve ver seu nome e email na lista que aparecerá. Pressione `Q` para sair da lista se ela for longa.
+---
 
-## 📽 Roteiro de Slides
-- Download do Git (site oficial git-scm.com)
-- Passo a passo da instalação (Windows: Next, Next, Next...)
-- O Terminal: Git Bash (Windows) vs Terminal (Mac/Linux)
-- Configuração de Identidade:
-  - `git config --global user.name`
-  - `git config --global user.email`
-- Por que configurar? (Autoria e Segurança)
-- Verificando tudo: `git config --list`
+## 📝 Prática
 
-## 📝 Quiz
-1. Qual o site oficial para baixar o Git?
-2. Qual comando define seu nome de usuário no Git?
-3. O que a opção `--global` faz nas configurações?
-4. Qual terminal é instalado junto com o Git no Windows?
-5. Como verificar as configurações atuais?
+### Exercícios de Fixação
+Coloque a mão na massa instalando e configurando sua máquina.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 02](../exercicios/exercicio-02.md)
 
-## Gabarito
-1: B
-2: A
-3: C
-4: D
-5: B
-
-## 🛠 Exercícios
-1. **Instalação**: Baixe e instale o Git no seu computador.
-2. **Setup de Identidade**: Configure seu nome e email corretamente.
-3. **Validação**: Use o comando `git config --list` e tire um print ou anote o resultado para garantir que está correto.
-
-## 🚀 Projeto da Aula
-Voltando à pasta `meu-portfolio-git`:
-1. Clique com o botão direito dentro da pasta.
-2. Selecione "Open Git Bash here" (se estiver no Windows).
-3. Digite `git --version` para confirmar que o Git está rodando DENTRO da sua pasta de projeto.
-4. Ainda não vamos iniciar o repositório, apenas garantir que o terminal funciona no lugar certo.
+### Mini-Projeto
+Garantindo que sua pasta de portfólio está pronta para o terminal.
+[:octicons-arrow-right-24: Ver Projeto da Aula 02](../projetos/projeto-02.md)

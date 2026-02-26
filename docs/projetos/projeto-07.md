@@ -1,17 +1,30 @@
-# Projeto da Aula 07
+# Projeto 07 - Subindo para a Nuvem
 
-## 🚀 Projeto da Aula: Conectando com o Mundo
+---
 
-Seu projeto agora vive na nuvem.
+## 🚀 Objetivo
+Conectar seu repositório local ao GitHub e realizar seu primeiro envio (Push).
 
-### Passo 1: Conferência
-1. Acesse o GitHub e entre no repositório `portfolio-dev` que você criou.
-2. Navegue pelos arquivos. Você consegue ler o conteúdo do `sobre.txt` direto no navegador?
-3. Veja o histórico de commits clicando em "Commits" (ícone de reloginho).
-4. Veja que suas mensagens de commit ("Adiciona arquivo sobre mim", "Cria arquivo de contato") estão todas lá, com as datas originais de quando você as fez no seu computador.
+### 📋 Passo a Passo
 
-### O que isso significa?
-Significa que seu **trabalho local está salvo**. Se seu computador pegar fogo hoje, seu código está seguro no GitHub.
-Isso é o poder do backup distribuído.
+#### 1. Criando o "Balde" Remoto
+1. No GitHub, clique no `+` (canto superior) -> **New repository**.
+2. Nome: `meu-portfolio-git`.
+3. Escolha **Public** e NÃO marque as opções de Inicializar (README, .gitignore).
+4. Clique em **Create repository**.
 
-Nas próximas aulas, vamos aprender como colaborar com outras pessoas nesse projeto.
+#### 2. A Ponte Digital
+Copie a URL do repositório (ex: `https://github.com/seu-usu/meu-portfolio-git.git`) e, no terminal da sua pasta local, digite:
+```bash
+git remote add origin SUA_URL_AQUI
+```
+
+#### 3. O Lançamento
+Envie seus commits para o servidor:
+```bash
+git push -u origin main
+```
+*(Se o terminal pedir login, siga as instruções para autenticar no navegador).*
+
+### 🏆 Conquista
+Atualize a página do seu repositório no navegador. **Mágica!** Seu código agora está disponível em qualquer lugar do mundo.

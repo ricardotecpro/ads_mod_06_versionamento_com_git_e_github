@@ -1,66 +1,62 @@
-# Aula 06 – Introdução ao GitHub
+# Aula 06 – Introdução ao GitHub: Sua Casa na Nuvem
 
 ## 🎯 Objetivos de Aprendizagem
-- Navegar pela interface do GitHub.
-- Configurar um perfil profissional.
-- Entender os principais conceitos da plataforma: Stars, Forks, Watch e Issues.
-- Diferenciar repositórios públicos e privados.
+- Navegar pela interface do GitHub e entender suas seções principais.
+- Configurar um perfil profissional atrativo para recrutadores.
+- Entender conceitos sociais: Stars, Forks, Watch e Issues.
+- Diferenciar repositórios públicos de privados.
+
+---
 
 ## 📚 Conteúdo
 
-### 1. O GitHub como Portfólio
-O GitHub não é apenas um lugar para guardar código; é a principal rede social profissional para desenvolvedores.
-- **Perfil**: Seu "currículo" vivo. Mostra seus projetos, tecnologias e frequência de trabalho.
-- **Gráfico de Contribuição (Heatmap)**: Aqueles quadradinhos verdes que mostram o quanto você está ativo.
+### 1. O GitHub como seu Currículo Vivo
+Diferente de um currículo em papel, o GitHub prova o que você sabe fazer através do código real.
 
-### 2. Explorando a Interface
-- **Dashboard**: Sua página inicial com novidades de quem você segue.
-- **Repositório**: A "casa" de um projeto. Contém o código, documentação (README), discussões (Issues) e propostas de mudança (Pull Requests).
+```mermaid
+graph LR
+    A[Perfil do Dev] --> B[Repositórios]
+    A --> C[Contribuições]
+    B --> D[Code]
+    B --> E[Issues/Projetos]
+    C --> F[Heatmap/Quadradinhos Verdes]
+```
 
-### 3. Conceitos Sociais
-- **Star (Estrela)**: É o "curtir" do GitHub. Salva o projeto nos seus favoritos.
-- **Watch (Observar)**: Você receberá notificações sobre tudo o que acontecer naquele projeto.
-- **Fork (Garfo/Bifurcação)**: Copia o projeto de outra pessoa para a SUA conta, para que você possa modificá-lo livremente sem afetar o original.
+!!! success "O Heatmap"
+    O gráfico de contribuições é um dos primeiros lugares onde recrutadores olham. Ele demonstra consistência e hábito de estudo.
 
-### 4. Issues (Problemas/Tarefas)
-Issues são usadas para:
-- Relatar bugs.
-- Pedir novas funcionalidades.
-- Discutir ideias.
-- Organizar tarefas (To-Do list).
+### 2. Conceitos de Interação Social
+O GitHub funciona como uma rede social para desenvolvedores. Domine estas ferramentas:
 
-## 📽 Roteiro de Slides
-- GitHub != Git (Revisão).
-- O Perfil do Desenvolvedor: Bio, Foto, Pinned Repos.
-- O Heatmap: Por que os recrutadores olham?
-- Anatomia de um Repositório: Code, Issues, PRs, Wiki.
-- Interações: Star vs Watch vs Fork.
-- Issues: A ferramenta de gestão de projetos embutida.
+*   **Star (Estrela)**: Salva o repositório como um favorito. Ajuda o projeto a ganhar visibilidade.
+*   **Watch (Observar)**: Deixa você "inscrito" no repositório para receber notificações de mudanças.
+*   **Fork (Bifurcação)**: Cria uma cópia exata do repositório de outra pessoa na sua conta. É o primeiro passo para contribuir com projetos famosos.
 
-## 📝 Quiz
-1. Para que serve o botão "Star" em um repositório?
-2. O que o "Fork" faz?
-3. O que são "Issues"?
-4. Onde vejo a frequência de contribuições de um usuário?
-5. Repositórios privados podem ser vistos por qualquer pessoa?
+### 3. Gestão com Issues
+Issues são muito mais do que "erros". Elas são a ferramenta oficial de gestão do GitHub.
 
-## Gabarito
-1: B
-2: A
-3: C
-4: D
-5: B
+!!! info "Para que usar Issues?"
+    - Relatar bugs (erros no código).
+    - Sugerir novas funcionalidades.
+    - Discutir ideias com outros desenvolvedores.
+    - Organizar sua própria lista de tarefas (To-Do list).
 
-## 🛠 Exercícios
-1. **Perfil**: Acesse seu perfil no GitHub. Adicione uma foto profissional e uma bio curta (ex: "Desenvolvedor em formação | Apaixonado por Tecnologia").
-2. **Exploração**: Procure por um projeto famoso (ex: `facebook/react`, `microsoft/vscode` ou `fastapi/fastapi`).
-3. **Interação**: Dê uma "Star" nesse projeto para tê-lo em sua lista de favoritos.
-4. **Follow**: Siga algum desenvolvedor relevante (pode ser o criador da linguagem que você estuda).
+### 4. Segurança e Profissionalismo
 
-## 🚀 Projeto da Aula
-No projeto `meu-portfolio-git` (local), não faremos nada técnico hoje.
-Mas, na próxima aula, vamos subir esse projeto para o GitHub!
-Por enquanto, garanta que sua conta no GitHub está bonita e organizada.
-- Verifique se seu nome de usuário é adequado.
-- Verifique se seu email está confirmado.
-- (Opcional) Ative a autenticação de dois fatores (2FA) para segurança.
+!!! warning "Segurança: 2FA"
+    Ative sempre a Autenticação de Dois Fatores (2FA) em sua conta. O GitHub é um alvo comum para hackers devido ao valor do código hospedado.
+
+!!! tip "Dica Profissional"
+    Mantenha sua Bio curta e direta. Use uma foto clara e amigável. Fixe (Pin) seus melhores projetos no topo do seu perfil para causar uma boa primeira impressão.
+
+---
+
+## 📝 Prática
+
+### Exercícios de Fixação
+Explore a interface e personalize seu perfil para o mercado.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 06](../exercicios/exercicio-06.md)
+
+### Mini-Projeto
+Preparação mental para a grande subida: na próxima aula, seu código ganha o mundo!
+[:octicons-arrow-right-24: Ver Projeto da Aula 06](../projetos/projeto-06.md)

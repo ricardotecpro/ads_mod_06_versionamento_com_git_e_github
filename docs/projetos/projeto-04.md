@@ -1,40 +1,41 @@
-# Projeto da Aula 04
+# Projeto 04 - Isolamento com Branches
 
-## 🚀 Projeto da Aula: Trabalhando com Branches
+---
 
-Vamos simular um fluxo real de trabalho no nosso portfólio.
+## 🚀 Objetivo
+Aprender a trabalhar em funcionalidades novas sem colocar a versão principal em risco.
 
-### Passo 1: Nova Funcionalidade
-Você quer adicionar seu email, mas não tem certeza se vai ficar bom. Vamos fazer em uma branch segura.
-1. No terminal do `meu-portfolio-git`:
-   ```bash
-   git branch contato
-   git switch contato
-   ```
-   (Ou use apenas `git switch -c contato`).
+### 📋 Passo a Passo
 
-### Passo 2: A Alteração
-1. Crie um novo arquivo chamado `contato.txt`.
-2. Escreva seu email dentro dele.
-3. Salve.
-4. Adicione e commite:
+#### 1. Criando a Nova Linha do Tempo
+No terminal do seu portfólio:
+```bash
+git switch -c feat-contato
+```
+*Este comando cria a branch e já muda você para ela.*
+
+#### 2. Adicionando Funcionalidade
+1. Crie o arquivo `contato.txt`.
+2. Escreva seu e-mail ou LinkedIn.
+3. Salve, prepare e commite:
    ```bash
    git add contato.txt
-   git commit -m "Adiciona email de contato"
+   git commit -m "feat: adiciona informações de contato"
    ```
 
-### Passo 3: A Validação
-1. Troque de volta para a branch principal (pode se chamar `master` ou `main`, verifique com `git branch` para saber qual é a correta):
+#### 3. O Teste do Desaparecimento
+1. Volte para a branch principal:
    ```bash
-   git switch master
+   git switch main
    ```
-   (Use `main` se for o caso).
-2. Olhe a pasta. O arquivo `contato.txt` **sumiu**. Isso prova que o trabalho estava isolado.
+   *(Ou `master`, dependendo da sua configuração).*
+2. **Olhe sua pasta**: O arquivo `contato.txt` desapareceu! Ele existe apenas no "multiverso" da branch `feat-contato`.
 
-### Passo 4: O Merge
-Você decidiu que a funcionalidade está boa e quer incorporá-la.
-1. Estando na branch principal, digite:
-   ```bash
-   git merge contato
-   ```
-2. O arquivo `contato.txt` reaparece magicamente. Agora ele faz parte da versão oficial do seu projeto!
+#### 4. A Fusão (Merge)
+Agora, traga a novidade para a versão oficial:
+```bash
+git merge feat-contato
+```
+
+### 🏆 Conquista
+O arquivo reapareceu na branch principal. Você acaba de realizar um fluxo de trabalho profissional de isolamento.

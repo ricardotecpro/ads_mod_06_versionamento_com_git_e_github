@@ -1,22 +1,37 @@
 # Exercícios da Aula 01
 
-## 🛠 Exercícios
+## 🛠 Praticando os Conceitos Iniciais
 
-1. **Verificação Inicial**:
-   - Abra seu terminal (Prompt de Comando, PowerShell ou Terminal do VS Code).
-   - Digite o comando `git --version`.
-   - Anote a versão que aparece (ex: `git version 2.40.0.windows.1`). Se der erro, não se preocupe, instalaremos na próxima aula.
+### Nível: Básico
 
-2. **Criação de Conta no GitHub**:
-   - Acesse [https://github.com](https://github.com).
-   - Clique em "Sign Up".
-   - Siga os passos para criar sua conta gratuita.
-   - **Dica**: Escolha um nome de usuário (username) profissional, pois ele será o endereço do seu portfólio (ex: `github.com/seunome`).
+1.  **Verificando a Identidade do Git**:
+    - No seu terminal (ou Git Bash), digite o comando para verificar se o Git está instalado.
+    - Se o comando retornar a versão, anote-a. Se não, prossiga para a próxima aula para aprender a instalar.
+    <!-- termynal -->
+    ```bash
+    $ git --version
+    ```
 
-3. **Simulação Manual de Versão**:
-   - Crie uma pasta na sua Área de Trabalho chamada `projeto-manual`.
-   - Crie um arquivo `texto.txt` dentro dela e escreva "Versão 1".
-   - Agora, suponha que você precisa mudar o texto mas quer guardar o original.
-   - Copie o arquivo e renomeie para `texto_v2.txt`.
-   - Edite o `texto_v2.txt` escrevendo "Versão 2".
-   - Reflita: Se você tivesse 100 arquivos e 50 versões, como seria gerenciar isso? Esse é o problema que o Git resolve.
+2.  **Preparação de Perfil Profissional**:
+    - Acesse [GitHub](https://github.com) e crie sua conta (se não possuir).
+    - Escolha um nome de usuário (username) curto e profissional. Evite apelidos informais em contextos de carreira.
+
+### Nível: Intermediário
+
+3.  **Simulação de Histórico Manual**:
+    - Crie uma pasta `aula01-manual` em seu computador.
+    - Crie um arquivo `documento.txt` com a frase: "Texto original".
+    - Agora, simule uma nova versão: faça uma cópia do arquivo chamada `documento_v2.txt` e mude o conteúdo para: "Texto alterado".
+    - Pergunte-se: Como você saberia qual foi a data exata da mudança e quem a fez apenas olhando para os nomes dos arquivos?
+
+4.  **Exploração de Diferenças (Diff)**:
+    - Compare visualmente os dois arquivos criados no exercício anterior. O que mudou? Como você descreveria essa mudança de forma técnica?
+
+### Nível: Desafio
+
+5.  **Pesquisa de Sistemas de Versionamento**:
+    - O Git é o sistema mais popular, mas não o único. Pesquise o nome de pelo menos dois outros sistemas de controle de versão (VCS) que existiam antes do Git ou que competem com ele hoje.
+
+---
+
+[:octicons-arrow-right-24: Ver Solução](solutions/solucao-01.md)

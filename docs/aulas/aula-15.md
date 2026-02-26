@@ -1,72 +1,71 @@
-# Aula 15 – Erros comuns e como resolver
+# Aula 15 – Troubleshooting: Erros Comuns e Soluções
 
 ## 🎯 Objetivos de Aprendizagem
-- Identificar e corrigir os erros mais frequentes do dia a dia.
-- Entender o que é um estado de **Detached HEAD**.
-- Resolver commits feitos na branch errada (`git reset`).
-- Recuperar arquivos deletados acidentalmente.
+- Identificar e corrigir os erros mais frequentes do dia a dia no Git.
+- Entender o estado de **Detached HEAD** e como sair dele com segurança.
+- Resolver situações de commits feitos na branch errada usando `git reset`.
+- Recuperar arquivos deletados acidentalmente através do `git restore`.
+
+---
 
 ## 📚 Conteúdo
 
-### 1. Detached HEAD (Cabeça Desconectada)
-Acontece quando você faz `git checkouk <HASH-DO-COMMIT>` em vez de nome de branch.
-Você viaja no tempo para ver aquele commit, mas não está "segurando" em nenhuma branch. Se commitar aqui, o commit ficará perdido no limbo quando você voltar para a `main`.
-**Solução**: `git switch main` (para voltar) ou `git switch -c nova-branch` (para salvar o estado atual em uma nova branch).
+### 1. Socorro, o Push foi Rejeitado!
+O erro `! [rejected] main -> main (fetch first)` acontece porque há commits no servidor que você não tem localmente.
 
-### 2. Push Rejected (Non-fast-forward)
-Erro: `! [rejected] main -> main (fetch first)`
-Causa: Alguém (ou você mesmo em outro PC) enviou commits para o servidor que você não tem.
-**Solução**: `git pull origin main` (Baixe primeiro, resolva conflitos se houver, depois envie).
+!!! success "Solução"
+    Basta sincronizar seu repositório local antes de tentar enviar novamente:
+    <!-- termynal -->
+    ```bash
+    $ git pull origin main
+    # Resolva conflitos se surgirem, e então:
+    $ git push origin main
+    ```
 
-### 3. Commitei na Branch Errada!
-Você estava na `main`, mas deveria estar na `feature-x`. E agora?
-**Solução (Reset Suave)**:
-1. `git reset --soft HEAD~1`: Desfaz o último commit, mas MANTÉM os arquivos modificados na sua área de stage (verde).
-2. `git switch -c feature-x`: Cria/Muda para a branch certa levando as mudanças junto.
-3. `git commit -m "mensagem"`: Commita de novo no lugar certo.
+### 2. Desfazendo Commits com Reset
+Errou a mensagem ou o conteúdo do último commit? O `reset` é sua ferramenta.
 
-## 📽 Roteiro de Slides
-- O Pânico do Iniciante.
-- "Socorro, perdi meu código!" (Spoiler: É difícil perder coisas no Git).
-- Detached HEAD: Você está no limbo. Como sair?
-- Reset: Soft vs Hard.
-  - Soft: "Oops, volte um passo mas guarde meu trabalho."
-  - Hard: "Delete tudo e volte para o passado (Perigoso!)."
-- O Reflog: A caixa preta do avião (Recuperando o irrecoverável).
+| Tipo de Reset | Comando | Resultado |
+| :--- | :--- | :--- |
+| **Soft** | `git reset --soft HEAD~1` | Desfaz o commit, mas mantém os arquivos no Stage (prontos para novo commit). |
+| **Mixed** | `git reset HEAD~1` | Desfaz o commit e tira do Stage, mas mantém as alterações nos arquivos. |
+| **Hard** | `git reset --hard HEAD~1` | **Apaga tudo!** Volta ao estado do commit anterior e deleta seu trabalho atual. |
 
-## 📝 Quiz
-1. O que significa estar em "Detached HEAD"?
-2. Qual comando desfaz o último commit mas mantém seus arquivos modificados prontos para commitar de novo?
-3. Se o `git push` for rejeitado por "non-fast-forward", o que você deve fazer?
-4. O comando `git reset --hard` é seguro para usar indiscriminadamente?
-5. Qual comando mostra um histórico de TUDO o que você fez no terminal (inclusive resets e checkouts)?
+!!! danger "Cuidado com o --hard"
+    O `reset --hard` é destrutivo. Use-o apenas se tiver certeza absoluta de que quer jogar seu trabalho atual fora.
 
-## Gabarito
-1: C ("Você não está em nenhuma branch, apenas visitando um commit específico")
-2: A ("git reset --soft HEAD~1")
-3: B ("Dar git pull primeiro")
-4: D ("Não, ele apaga as mudanças não commitadas permanentemente")
-5: C ("git reflog")
+### 3. Detached HEAD: O Limbo do Git
+Acontece quando você faz checkout em um commit específico (`hash`) em vez de uma branch. Você "viaja no tempo", mas não está em nenhuma linha ativa.
 
-## 🛠 Exercícios
-1. **Provocando Detached HEAD**:
-   - Dê `git log --oneline`. Copie o hash de um commit antigo.
-   - Dê `git checkout <HASH>`.
-   - Veja o Git avisar: "You are in 'detached HEAD' state".
-   - Crie um arquivo `fantasma.txt`. Commite.
-   - Volte para a main: `git switch main`.
-   - Veja que o `fantasma.txt` sumiu e o commit "se perdeu". (Ele pode ser recuperado com Reflog, mas isso é papo de sênior).
+```mermaid
+graph LR
+    A[Commit 1] --> B[Commit 2]
+    B --> C[Commit 3 - HEAD]
+    B -.-> D[Limbo / Detached HEAD]
+    style D fill:#f66,stroke:#333
+```
 
-2. **Salvando commit errado**:
-   - Faça uma mudança na `main` que deveria ser numa branch.
-   - Commite.
-   - Use `git reset --soft HEAD~1`.
-   - Veja que o arquivo voltou para o Staging (verde).
-   - Crie a branch certa e commite lá. Ufa!
+!!! tip "Como sair do Limbo"
+    - Para descartar o que viu e voltar ao normal: `git switch main`.
+    - Para salvar o que fez no limbo em uma nova branch: `git switch -c nova-branch-com-correcoes`.
 
-## 🚀 Projeto da Aula
-No seu `portfolio-dev`:
-1. Simule um erro. Delete o `index.html` sem querer.
-2. Dê `git status`. Ele diz `deleted: index.html`.
-3. Para recuperar: `git restore index.html` (ou `git checkout index.html`).
-4. Ufa, o arquivo voltou intacto. O Git é seu anjo da guarda.
+### 4. Recuperei, e agora? (git restore)
+Deletou um arquivo sem querer? O Git registrou a existência dele no último commit.
+
+<!-- termynal -->
+```bash
+# Traz o arquivo de volta do último commit para sua pasta
+$ git restore arquivo.txt
+```
+
+---
+
+## 📝 Prática
+
+### Exercícios de Fixação
+Simule erros propositais e aprenda a consertá-los sem pânico.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 15](../exercicios/exercicio-15.md)
+
+### Mini-Projeto
+Limpando e organizando seu portfólio após correções de emergência e simulações de erros.
+[:octicons-arrow-right-24: Ver Projeto da Aula 15](../projetos/projeto-15.md)

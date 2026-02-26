@@ -1,42 +1,51 @@
-# Roteiro de Slides - Aula 09
+# Aula 09 – Fluxo de Trabalho: GitHub Flow
 
 ---
 
-## Workflows: O Acordo de Cavalheiros
+## O Acordo de Cavalheiros
 
-- Git é flexível demais. Isso pode ser perigoso.
-- Um Workflow define **COMO** a equipe usa o Git.
-- O mais popular hoje: **GitHub Flow**.
-
----
-
-## As 6 Regras do GitHub Flow
-
-1. **Main é Sagrada**: Nada quebrado entra lá.
-2. **Branches**: Tudo acontece em branches novas.
-3. **Commits**: Faça commits frequentes na sua branch.
-4. **Pull Request**: Abra cedo para feedback.
-5. **Review**: Alguém valida seu código.
-6. **Deploy**: Mergear na main = Ir para o Ar.
+- Um **Workflow** (fluxo) é o conjunto de regras do time.
+- Sem regras, o repositório vira um caos de códigos quebrados.
+- **Regra de Ouro**: A branch `main` deve estar sempre estável.
 
 ---
 
-## Git Flow (O "Antigo")
+## Os 6 Passos do GitHub Flow
 
-- Branches: `master`, `develop`, `feature/*`, `release/*`, `hotfix/*`.
-- Complexo demais para a maioria dos projetos web modernos e CI/CD.
-- Útil se você lança versões de software (v1.0, v2.0).
-
----
-
-## Por que GitHub Flow?
-
-- **Simplicidade**: Fácil de entender e ensinar.
-- **Velocidade**: Favorece entregas rápidas e contínuas.
-- **Foco**: Uma coisa de cada vez.
+1. **Branch**: Crie a partir da `main`.
+2. **Commit**: Trabalhe e salve localmente.
+3. **Pull Request**: Abra para revisão.
+4. **Discussão**: Melhore o código com feedback.
+5. **Deploy**: Teste em ambiente temporário.
+6. **Merge**: Envie o código final para a `main`.
 
 ---
 
-## Ciclo de Vida da Branch
+## GitHub Flow vs. Git Flow
 
-Nasce da `main` -> Cresce com Commits -> Vira PR -> Volta para `main` (Merge) -> Morre (Delete).
+| GitHub Flow | Git Flow |
+| :--- | :--- |
+| **Simples** e ágil. | **Complexo** e burocrático. |
+| Entrega contínua (Web). | Lançamentos agendados. |
+| Poucas branches. | Muitas branches paralelas. |
+
+---
+
+## Vantagens da Rapidez
+
+- Menor tempo para o código ir ao ar.
+- Feedback rápido dos usuários.
+- Facilidade em ensinar novos membros do time.
+
+---
+
+## Executando o Fluxo
+
+```bash
+# Sincronize antes de começar
+git switch main
+git pull
+
+# Crie sua "bolha" de trabalho
+git switch -c feature-nova-funcao
+```

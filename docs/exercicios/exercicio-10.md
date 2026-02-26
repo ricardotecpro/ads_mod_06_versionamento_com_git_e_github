@@ -1,25 +1,35 @@
 # Exercícios da Aula 10
 
-## 🛠 Exercícios
+## 🛠 Gestão e Organização: Issues e Projetos
 
-1. **A Palavra Mágica**:
-   - Crie uma Issue de teste: "Corrigir erro de digitação". Anote o número dela (ex: #5).
-   - Vá no seu código, faça uma alteração boba, commite e dê push.
-   - Abra um PR.
-   - Na descrição do PR, escreva: `Fixes #5`.
-   - Faça o Merge do PR.
-   - Vá na aba Issues e veja que a #5 foi fechada e movida para "Done" (se configurado) sozinha!
+### Nível: Básico
 
-2. **Templates de Issue**:
-   - Vá em Settings > General > Features > Issues > Set up templates.
-   - O GitHub permite criar formulários padrão para que as pessoas reportem bugs do jeito certo (obrigando a colocar versão do SO, prints, etc).
-   - Tente criar um template simples de "Bug Report".
+1.  **Registrando Tarefas**:
+    - Vá até a aba **Issues** do seu repositório de portfólio.
+    - Crie uma nova Issue com o título: "Melhorar a descrição biográfica".
+    - Adicione uma etiqueta (label) do tipo `enhancement`. Como você fez para adicionar essa etiqueta?
 
-3. **Milestones**:
-   - Crie um Milestone chamado "v1.0 - Lançamento Oficial".
-   - Defina uma data de entrega (Due date) para daqui a 1 mês.
-   - Associe todas as suas issues abertas a esse Milestone.
-   - Acompanhe a barra de progresso verde crescendo conforme você fecha issues.
+2.  **Responsabilidade (Assignee)**:
+    - Atribua a Issue criada no exercício anterior a você mesmo (Assignee). O que muda visualmente na lista de issues após essa ação?
 
-## Dica
-Gerentes de Projeto adoram o GitHub Projects. Se você souber usar, ganha pontos extras na entrevista.
+### Nível: Intermediário
+
+3.  **Visualização em Quadro (Kanban)**:
+    - Acesse a aba **Projects** e crie um novo projeto do tipo "Board".
+    - Adicione a Issue anterior ao quadro.
+    - Mova o cartão da coluna "Todo" para a coluna "In Progress". Qual a vantagem de ver as tarefas nesse formato em vez de apenas uma lista?
+
+4.  **Marcos de Entrega (Milestones)**:
+    - Crie um **Milestone** chamado "Lançamento da V1".
+    - Associe sua Issue a este Milestone. Onde você consegue visualizar a barra de progresso do Milestone?
+
+### Nível: Desafio
+
+5.  **Automação com Palavras-Chave**:
+    - Crie uma nova branch para resolver a Issue "Melhorar a descrição biográfica".
+    - Na descrição do seu Pull Request, utilize a palavra-chave `Closes #X` (onde X é o número da sua issue).
+    - Após realizar o merge, verifique o que aconteceu com a Issue original. Ela ainda está aberta?
+
+---
+
+[:octicons-arrow-right-24: Ver Solução](solutions/solucao-10.md)

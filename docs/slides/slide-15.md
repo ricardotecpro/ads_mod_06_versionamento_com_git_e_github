@@ -1,41 +1,46 @@
-# Roteiro de Slides - Aula 15
+# Aula 15 – Troubleshooting: Erros Comuns
 
 ---
 
-## Todo mundo erra
+## Não Entre em Pânico!
 
-- Commitar na branch errada? ✅
-- Apagar arquivo errado? ✅
-- Perder o histórico? ✅
-- O Git tem ferramentas para consertar tudo isso.
-
----
-
-## O Comando Reset
-
-Imagine uma fita cassete rebobinada.
-- `--soft`: Rebobina a fita (Commit), mas deixa as roupas no chão (Arquivos modificados).
-- `--hard`: Rebobina a fita E limpa o quarto (Apaga modificações). **CUIDADO**.
+- Errar no Git é normal.
+- Quase tudo é reversível, desde que esteja no `.git`.
+- O Git tem uma "memória de elefante".
 
 ---
 
-## O Comando Restore
+## O Poder do Reset
 
-- "Desfazer (CTRL+Z)" do arquivo.
-- Se você não deu `add` ainda, `git restore arquivo` traz a versão do último commit.
-
----
-
-## O Comando Stash
-
-- "Esconder na gaveta".
-- Limpa sua mesa (Working Directory) para você atender uma urgência em outra branch.
-- Depois `git stash pop` traz tudo da gaveta de volta.
+- **`--soft`**: Rebobina o commit, mas mantém os arquivos prontos no Stage.
+- **`--hard`**: **Cuidado!** Apaga tudo e volta ao estado anterior limpo.
+- Use para consertar commits feitos na branch errada.
 
 ---
 
-## Reflog
+## Detached HEAD (Cabeça Desprendida)
 
-- O Diário Secreto do Git.
-- Registra cada movimento do HEAD.
-- Se você deletou um commit e quer ele de volta, o hash dele estará no `git reflog`.
+- Acontece quando você viaja para um commit específico (hash).
+- Você está no passado, mas sem trilhas (branches).
+- **Como sair?**
+  - Voltar ao presente: `git switch main`.
+  - Criar branch nova: `git switch -c nova-branch`.
+
+---
+
+## Recuperei! (git restore)
+
+- Deletou um arquivo sem querer?
+- Se ele estava no último commit:
+  ```bash
+  git restore arquivo.txt
+  ```
+- O Git traz ele de volta instantaneamente.
+
+---
+
+## reflog: O Plano de Emergência
+
+- `git reflog`
+- Mostra o diário secreto de todos os seus movimentos.
+- Se você "deletou" um commit com reset hard, o hash dele ainda estará aqui por algum tempo.

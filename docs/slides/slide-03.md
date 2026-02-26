@@ -1,51 +1,47 @@
-# Roteiro de Slides - Aula 03
+# Aula 03 – Repositórios, Commits e Histórico
 
 ---
 
-## O Fluxo de Trabalho do Git
+## git init
 
-- O Git não salva tudo automaticamente (como o Google Drive).
-- Você precisa ser **Intencional**.
-- Existem 3 "lugares" onde seu arquivo pode estar.
-
----
-
-## As 3 Áreas Mágicas
-
-1. **Working Directory**: Onde você trabalha. (Seus arquivos na pasta).
-2. **Staging Area**: Onde você prepara. (O palco antes do show).
-3. **Repository**: Onde você grava. (O álbum de fotos definitivo).
+- Transforma uma pasta comum em um **Repositório Git**.
+- Cria a pasta oculta `.git`.
+- **Aviso**: Nunca delete a pasta `.git` manualmente!
 
 ---
 
-## Comandos: init e status
+## As 3 Áreas Fundamentais
 
-- `git init`: "Git, comece a olhar para esta pasta agora."
-- `git status`: "Git, como estão as coisas?"
-  - Vermelho: Modificado/Novo (não preparado).
-  - Verde: Preparado (pronto para commit).
-
----
-
-## Comandos: add e commit
-
-- `git add arquivo.txt`: "Git, põe esse arquivo no palco." (Leva para Staging).
-- `git commit -m "mensagem"`: "Git, tira a foto agora!" (Grava no Repositório).
-- **Regra de Ouro**: A mensagem deve explicar O QUE foi feito e POR QUE.
+1. **Working Directory**: Seus arquivos (onde você edita).
+2. **Staging Area**: O "palco" (onde você prepara).
+3. **Repository**: O banco de dados (onde você grava).
 
 ---
 
-## O Histórico: git log
+## O Ciclo da Versão
 
-- Uma lista cronológica de tudo o que aconteceu.
-- Contém:
-  - Hash (ID único).
-  - Autor.
-  - Data.
-  - Mensagem.
+- **git status**: Diagnóstico constante.
+- **git add**: "Põe no palco" (prepara).
+- **git commit**: "Tira a foto" (grava).
+
+---
+
+## O Commit
+
+- Uma **foto (snapshot)** do projeto.
+- Possui um **ID (Hash)** único.
+- Exige uma mensagem explicativa.
+  - *Dica*: `git commit -m "Explicação"`
+
+---
+
+## Consultando o Passado
+
+- **git log**: Mostra a lista cronológica.
+- **Quem** fez? **Quando**? **O que** foi dito?
 
 ---
 
 ## Resumo Visual
 
-`Arquivo Novo` -> `Git Add` -> `Staging` -> `Git Commit` -> `Repositório`
+`Arquivo` -> `git add` -> `Staging` -> `git commit` -> `Histórico`

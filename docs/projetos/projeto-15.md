@@ -1,26 +1,32 @@
-# Projeto da Aula 15
+# Projeto 15 - Viajando no Tempo
 
-## 🚀 Projeto da Aula: O Salvamento
+---
 
-Hoje você vai ser o herói de si mesmo.
+## 🚀 Objetivo
+Praticar técnicas de recuperação de arquivos e reversão de commits para nunca mais ter medo de errar.
 
-### Passo 1: O "Desastre"
-1. No `portfolio-dev`, edite o `index.html`. Apague todo o conteúdo e escreva "OOPS DELETEI TUDO".
-2. Salve.
-3. Não commite!
+### 📋 Passo a Passo
 
-### Passo 2: O Arrependimento
-1. Olhe para o arquivo e perceba o erro.
-2. Use `git restore index.html` (ou `git checkout -- index.html` versão antiga).
-3. Abra o arquivo. A mágica aconteceu? O código original voltou?
+#### 1. A Recuperação (Restore)
+1. Edite seu arquivo `sobre.txt` e apague metade do conteúdo (sem querer!).
+2. Salve o arquivo.
+3. No terminal, use: `git restore sobre.txt`.
+4. Verifique que o conteúdo voltou ao normal!
 
-### Passo 3: O "Desastre" Maior (Reset)
-1. Crie um arquivo `lixo.txt`.
-2. `git add .` e `git commit -m "Commit inútil"`.
-3. Olhe o `git log`. O commit inútil está lá.
-4. Execute `git reset --hard HEAD~1` (Cuidado!).
-5. Olhe o `git log`. O commit sumiu.
-6. Olhe a pasta. O arquivo `lixo.txt` sumiu.
-   (Nota: `--hard` é destrutivo para arquivos novos não trackeados ou mudanças. Use com sabedoria).
+#### 2. A Reversão (Reset Soft)
+1. Faça uma pequena alteração e dê um commit com uma mensagem errada (ex: `git commit -m "asdjaslkd"`).
+2. Use o comando de rebobinar:
+   ```bash
+   git reset --soft HEAD~1
+   ```
+3. O commit "sumiu", mas o arquivo continua alterado e pronto para você commitar com a mensagem correta.
 
-**Parabéns!** Você aprendeu a controlar o tempo.
+#### 3. O Botão de Pânico (Reset Hard)
+1. Crie um arquivo `teste_erro.txt` e faça um commit.
+2. Agora, imagine que você quer deletar esse commit E o arquivo de uma só vez:
+   ```bash
+   git reset --hard HEAD~1
+   ```
+
+### 🏆 Conquista
+Você agora domina a "borracha" do Git. Erros não são mais permanentes, são apenas lições aprendidas.

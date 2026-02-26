@@ -1,27 +1,36 @@
 # Exercícios da Aula 15
 
-## 🛠 Exercícios
+## 🛠 Troubleshooting: Resolvendo Problemas com Calma
 
-1. **Git Reflog (O Salvador)**:
-   - Digite `git reflog`.
-   - Você verá uma lista de tudo o que fez, mesmo os commits deletados ou perdidos em resets.
-   - Se você fez um `git reset --hard` e se arrependeu, pode achar o hash anterior no reflog e voltar para ele.
-   - Pratique: `git reset --hard <HASH-ANTERIOR-DO-REFLOG>`.
+### Nível: Básico
 
-2. **Amend (Correção Rápida)**:
-   - Commite um arquivo.
-   - Lembre que esqueceu de adicionar outro arquivo nesse mesmo commit.
-   - Dê `git add arquivo-esquecido`.
-   - Dê `git commit --amend --no-edit` (o `--no-edit` mantém a mensagem original).
-   - Agora o commit tem os dois arquivos.
+1.  **Recuperação Imediata**:
+    - Delete propositalmente o arquivo `index.html` da sua pasta de projeto (deletar fisicamente, não via `git rm`).
+    - Use o comando `git status` para confirmar que o Git percebeu a ausência.
+    - Qual comando você deve usar para restaurar o arquivo exatamente como ele estava no último commit?
 
-3. **Stash (A Gaveta)**:
-   - Você está trabalhando na branch `feature`, arquivo todo bagunçado.
-   - Chefe pede: "Corrige um bug na main AGORA".
-   - Você não quer commitar código quebrado.
-   - Use `git stash`. O `git status` fica limpo.
-   - Vá na main, corrija, volte.
-   - Use `git stash pop` para trazer sua bagunça de volta.
+2.  **Corrigindo a Mensagem**:
+    - Realize um commit com a mensagem "errado". 
+    - Utilize o comando de emenda (`amend`) para trocar a mensagem para "feat: adiciona estrutura inicial".
 
-## Dica
-Aprender `reset`, `reflog` e `stash` te coloca no Top 10% dos usuários de Git. A maioria só sabe `add`, `commit` e `push`.
+### Nível: Intermediário
+
+3.  **O Poder do Reset Suave**:
+    - Realize um commit qualquer.
+    - Utilize o comando `git reset --soft HEAD~1`. 
+    - Após o comando, o que aconteceu com as suas alterações? Elas foram apagadas ou continuam na Staging Area (verde)?
+
+4.  **Saindo do Limbo (Detached HEAD)**:
+    - Utilize o `git log --oneline` e copie o hash de um commit anterior.
+    - Faça um `checkout` para esse hash. O Git avisará que você está em "detached HEAD".
+    - Qual o comando mais simples para sair desse estado e voltar para a sua branch principal (`main`)?
+
+### Nível: Desafio
+
+5.  **A Gaveta de Emergência (Stash)**:
+    - Imagine que você está no meio de uma alteração complexa, mas precisa mudar de branch para corrigir um bug urgente e não quer commitar o código incompleto.
+    - Pesquise e utilize o comando `git stash` para "guardar" suas mudanças temporariamente. Como você faz para "recuperar" essas mudanças depois de voltar para a branch original?
+
+---
+
+[:octicons-arrow-right-24: Ver Solução](solutions/solucao-15.md)

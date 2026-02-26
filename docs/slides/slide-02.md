@@ -1,53 +1,52 @@
-# Roteiro de Slides - Aula 02
+# Aula 02 – Instalando e Configurando o Git
 
 ---
 
-## Onde baixar o Git?
+## Onde baixar?
 
-- **Site Oficial**: [git-scm.com](https://git-scm.com)
-- É gratuito e Open Source.
+- **[git-scm.com](https://git-scm.com)**
 - Versões para:
-  - Windows
-  - macOS
-  - Linux / Unix
+  - Windows (Git Bash incluído)
+  - macOS (brew install git)
+  - Linux (apt-get install git)
 
 ---
 
-## Processo de Instalação
+## Configuração Obrigatória
 
-- **Windows**:
-  - Baixar `.exe`
-  - Instalar (Next, Next, Next...)
-  - **Atenção**: Escolher o editor padrão (Vim é difícil, VS Code é recomendado).
-- **Mac/Linux**:
-  - Geralmente via linha de comando (`brew install git` ou `apt install git`).
-
----
-
-## O Git Bash (Windows)
-
-- O Windows não tinha um terminal "estilo Linux" nativo antigamente.
-- O Git Bash traz comandos poderosos (`ls`, `cd`, `mkdir`) para o Windows.
-- Recomendamos usar o Git Bash para este curso.
-
----
-
-## Configurando sua Identidade
-
-- O Git exige saber **QUEM** está fazendo as mudanças.
-- Comandos obrigatórios:
+- O Git precisa de uma **Identidade**.
+- Sem ela, os commits são bloqueados.
+- Comandos:
   ```bash
+  # Nome Profissional
   git config --global user.name "Seu Nome"
+
+  # Email (mesmo do GitHub)
   git config --global user.email "seu@email.com"
   ```
-- Isso ficará gravado para sempre no histórico do projeto.
 
 ---
 
-## Verificando
+## Onde fica salvo?
 
-- Para conferir se está tudo certo:
+- No arquivo `.gitconfig` (pasta HOME).
+- Você pode ver as configurações com:
   ```bash
   git config --list
   ```
-- Se aparecer seu nome e email, você está pronto para começar!
+
+---
+
+## Dica: Editor Padrão
+
+- O Git usa o **Vim** por padrão (difícil para iniciantes).
+- Se preferir o VS Code:
+  ```bash
+  git config --global core.editor "code --wait"
+  ```
+
+---
+
+## Validando!
+
+Se `git config user.name` retornar seu nome, você está oficialmente pronto para versionar!

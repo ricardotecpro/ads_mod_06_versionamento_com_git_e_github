@@ -1,77 +1,59 @@
-# Aula 08 – Pull Requests e Code Review
+# Aula 08 – Pull Requests e Code Review: O Coração da Colaboração
 
 ## 🎯 Objetivos de Aprendizagem
-- Entender o fluxo de Pull Request (PR).
-- Aprender como sugerir mudanças em projetos.
-- Realizar um Code Review básico.
-- Finalizar (Merge) um PR pela interface do GitHub.
+- Entender o fluxo de Pull Request (PR) como pedido de inclusão de código.
+- Aprender como sugerir mudanças em projetos de forma organizada.
+- Realizar um Code Review básico focado em qualidade e aprendizado.
+- Finalizar (Merge) um PR através da interface do GitHub.
+
+---
 
 ## 📚 Conteúdo
 
 ### 1. O que é um Pull Request (PR)?
-Se você trabalha em branches isoladas (como aprendemos na Aula 04), como você avisa sua equipe que terminou e que suas mudanças estão prontas para entrar na `main`?
-Você cria um **Pull Request**.
-Traduzindo: "Por favor, **puxe** (pull) minhas alterações".
+Se você trabalha em branches isoladas, como avisa sua equipe que sua tarefa está pronta para entrar na branch principal (`main`)? Você cria um **Pull Request**.
+
+!!! info "Tradução"
+    Pull Request significa, literalmente, "Pedido de Puxada". Você está pedindo para os administradores do projeto "puxarem" suas alterações para o código oficial.
 
 ### 2. O Ciclo de Vida do PR
-1. **Push**: Você envia sua branch para o GitHub.
-2. **Open PR**: No site, você clica em "Compare & pull request".
-3. **Review**: Seus colegas leem seu código, comentam e sugerem melhorias.
-4. **Approve**: Se tudo estiver ok, um colega aprova.
-5. **Merge**: O código é fundido à branch principal.
+
+```mermaid
+sequenceDiagram
+    participant D as Desenvolvedor
+    participant G as GitHub (Server)
+    participant R as Revisor (Time)
+    D->>G: git push (nova-branch)
+    D->>G: Open Pull Request
+    G->>R: Notifica Revisor
+    R->>G: Faz Comentários / Sugestões
+    D->>G: Ajusta Código (se necessário)
+    R->>G: Approve PR
+    G->>G: Merge to main
+```
 
 ### 3. Code Review (Revisão de Código)
-É a prática de ler o código do outro antes de aceitar.
-- **Não é crítica pessoal**: É sobre a qualidade do código.
-- **Benefícios**:
-  - Encontra bugs antes de ir para produção.
-  - O time todo aprende novas formas de resolver problemas.
-  - Mantém o padrão de qualidade.
+É a prática de ler o código de outra pessoa antes de aceitá-lo.
 
-### 4. Merge via GitHub
-Diferente do `git merge` no terminal (que é local), o merge do PR acontece no servidor do GitHub. Depois, todos do time fazem `git pull` para baixar a novidade.
+!!! success "Benefícios do Review"
+    - **Qualidade**: Encontra bugs antes que cheguem ao usuário final.
+    - **Aprendizado**: O time discute melhores formas de resolver problemas.
+    - **Padrão**: Mantém o código do projeto uniforme e legível.
 
-## 📽 Roteiro de Slides
-- O Coração da Colaboração: Pull Requests.
-- Fluxo: Branch -> Push -> PR -> Review -> Merge.
-- A Interface do PR no GitHub:
-  - Aba "Conversation": Discussão geral.
-  - Aba "Files changed": Onde o review acontece linha a linha.
-- Code Review: Como ser educado e eficiente.
-- Tipos de Merge no GitHub:
-  - Create a merge commit (Padrão).
-  - Squash and merge (Junta tudo em um só).
-  - Rebase and merge (Avançado).
+!!! tip "Ética no Review"
+    Lembre-se: você está revisando o **código**, não a pessoa. Seja educado, construtivo e elogie boas soluções!
 
-## 📝 Quiz
-1. Qual o primeiro passo para criar um Pull Request?
-2. Para que serve a aba "Files changed" em um PR?
-3. O que é Code Review?
-4. Quem deve fazer o merge de um PR idealmente?
-5. Após o merge no GitHub, o que os outros desenvolvedores devem fazer?
+### 4. Merge via Interface do GitHub
+Diferente do merge local, o merge de um PR acontece no servidor do GitHub através de um botão. Após o merge, todos os outros desenvolvedores devem fazer um `git pull` localmente para receberem as novidades.
 
-## Gabarito
-1: B ("Push da branch")
-2: A
-3: C
-4: D (Outra pessoa, após aprovar)
-5: B (`git pull`)
+---
 
-## 🛠 Exercícios
-1. **Prepare**: Crie uma branch `feature-pr` no seu repo de teste.
-2. **Mude**: Adicione um arquivo `pr.txt`.
-3. **Envie**: `git push -u origin feature-pr`.
-4. **GitHub**: Vá ao repo no navegador. Você verá um botão amarelo "Compare & pull request". Clique.
-5. **PR**: Escreva um título e descrição. Clique em "Create pull request".
-6. **Simule Review**: Vá em "Files changed", clique no `+` ao lado de uma linha e adicione um comentário para você mesmo.
-7. **Merge**: Volte para "Conversation", clique em "Merge pull request" e depois "Confirm merge".
+## 📝 Prática
 
-## 🚀 Projeto da Aula
-No `portfolio-dev`:
-1. Crie uma branch chamada `melhoria-readme`.
-2. Edite o arquivo `sobre.txt` (ou crie um `README.md` se quiser adiantar) adicionando mais skills.
-3. Envie para o GitHub: `git push -u origin melhoria-readme`.
-4. Abra o PR no GitHub.
-5. Como você não tem um time, você mesmo vai revisar e "Mergear".
-6. Veja como a branch `melhoria-readme` foi deletada (opcional) e a `main` agora tem suas mudanças.
-7. **Importante**: No seu terminal local, volte para a `main` e digite `git pull` para baixar essas mudanças que agora estão na nuvem!
+### Exercícios de Fixação
+Simule a abertura e a revisão de um pedido de alteração.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 08](../exercicios/exercicio-08.md)
+
+### Mini-Projeto
+Integrando novas melhorias ao seu portfólio seguindo o fluxo profissional de PR.
+[:octicons-arrow-right-24: Ver Projeto da Aula 08](../projetos/projeto-08.md)

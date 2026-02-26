@@ -1,29 +1,31 @@
 # Configuração do Ambiente
 
-Bem-vindo à seção de configuração! Aqui você encontra guias para instalar e configurar o Git no seu sistema.
+Prepare seu computador para desenvolver o curso. Siga o guia específico para o seu sistema operacional para garantir que todas as ferramentas funcionem corretamente.
 
+## 💻 Sistemas Operacionais
 <div class="grid cards" markdown>
 
--   :material-microsoft-windows: **Windows**
-    
-    - [Setup Windows](setup-01.md)
-    - Instalação do Git
-    - Git Bash
-    - Configuração de SSH (Opcional)
+-   :material-microsoft-windows: [**Windows**](setup-01.md)
+    ---
+    Instalação do Git for Windows e Git Bash.
 
--   :material-linux: **Linux**
-    
-    - [Setup Linux](setup-02.md)
-    - Instalação via apt/dnf
-    - Configuração de Terminal
-    - Credenciais
+-   :material-linux: [**Linux**](setup-02.md)
+    ---
+    Configuração via terminal para distribuições Ubuntu/Debian e outras.
+
+-   :material-apple: [**MacOSX**](setup-03.md)
+    ---
+    Instalação via Homebrew ou Xcode no Mac.
 
 </div>
 
 ## 📋 Próximos Passos
-
-Após configurar seu ambiente:
-
-1. ✅ **Teste a instalação**: `git --version`
-2. 📚 **Comece as aulas**: [Aula 01](../aulas/aula-01.md)
-3. 🚀 **Configure sua identidade**: `git config --global user.name`
+Após configurar o Git, verifique sua instalação com o comando:
+```bash
+git --version
+```
+E não esqueça de configurar sua identidade global:
+```bash
+git config --global user.name "Seu Nome"
+git config --global user.email "seu@email.com"
+```

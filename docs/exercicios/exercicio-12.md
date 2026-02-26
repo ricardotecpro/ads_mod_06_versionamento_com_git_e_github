@@ -1,30 +1,32 @@
 # Exercícios da Aula 12
 
-## 🛠 Exercícios
+## 🛠 Documentação: Markdown e README Profissional
 
-1. **Emojis**:
-   - O Markdown suporta emojis nativamente.
-   - Tente usar `:rocket:`, `:tada:`, `:computer:` no seu README.
-   - Veja a lista em [gitmoji.dev](https://gitmoji.dev) ou [emoji-cheat-sheet.com](https://www.webfx.com/tools/emoji-cheat-sheet/).
+### Nível: Básico
 
-2. **Tabelas**:
-   - Tabelas em Markdown são chatas de fazer na mão, mas úteis.
-   - Tente criar uma:
-     ```markdown
-     | Projeto | Status |
-     | :--- | :---: |
-     | Portfólio | ✅ Concluído |
-     | E-commerce | 🚧 Em breve |
-     ```
+1.  **Sintaxe de Títulos**:
+    - No seu editor de texto, crie um arquivo chamado `rascunho.md`. 
+    - Utilize a sintaxe de Markdown para criar títulos do nível 1 ao nível 3. Como os tamanhos mudam visualmente?
 
-3. **Checklists**:
-   - Crie uma lista de tarefas interativa no README:
-     ```markdown
-     - [x] Aprender Git
-     - [x] Criar GitHub
-     - [ ] Conseguir emprego
-     ```
-   - O GitHub renderiza isso como caixinhas clicáveis!
+2.  **Links e Ênfase**:
+    - No rascunho anterior, escreva uma frase contendo uma palavra em **negrito** e um link para o seu perfil do GitHub.
 
-## Dica
-Existem geradores de README online (como `readme.so`) que ajudam a montar a estrutura visualmente. Use e abuse!
+### Nível: Intermediário
+
+3.  **Listas e Itens**:
+    - Crie uma lista com marcadores (bullet points) contendo 3 tecnologias que você aprendeu neste curso. 
+    - Em seguida, transforme essa lista em uma **Checklist** (com caixas de seleção [x]).
+
+4.  **Blocos de Código**:
+    - Adicione um bloco de código ao seu arquivo Markdown que contenha o comando para clonar um repositório. Use a "coloração de sintaxe" (syntax highlighting) para a linguagem Bash.
+    - Como você indicou para o Markdown que aquele bloco era de código?
+
+### Nível: Desafio
+
+5.  **Tabelas e Organização**:
+    - Crie uma tabela com duas colunas: "Comando" e "Função". 
+    - Preencha com pelo menos 3 linhas (ex: `git init`, `git commit`, `git push`). Pesquise como alinhar o texto de uma coluna à direita.
+
+---
+
+[:octicons-arrow-right-24: Ver Solução](solutions/solucao-12.md)

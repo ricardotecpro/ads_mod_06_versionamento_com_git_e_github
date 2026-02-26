@@ -1,109 +1,60 @@
-# Aula 14 – GitHub Pages e Portfólio
+# Aula 14 – GitHub Pages: Seu Portfólio Online
 
 ## 🎯 Objetivos de Aprendizagem
-- Entender o que é o recurso **GitHub Pages**.
-- Transformar um repositório de código em um site publicado na internet.
-- Compreender as limitações (apenas sites estáticos).
-- Publicar seu portfólio para o mundo.
+- Entender o conceito de hospedagem gratuita com o **GitHub Pages**.
+- Transformar um repositório de código em um site acessível por qualquer pessoa.
+- Compreender as limitações técnicas de sites estáticos.
+- Publicar seu projeto de Portfólio na web.
+
+---
 
 ## 📚 Conteúdo
 
-### 1. Seu Código na Web
-Até agora, seu portfólio é apenas uma pasta de arquivos.
-O **GitHub Pages** é um serviço de hospedagem gratutita que pega seus arquivos HTML, CSS e JS e os publica em um endereço como `seu-usuario.github.io/seu-projeto`.
+### 1. Do Código à Web
+Até agora, seu projeto vive apenas em pastas. O **GitHub Pages** é o serviço que permite "ligar" seus arquivos HTML, CSS e JS em um endereço real (URL).
 
-### 2. O que é "Estático"?
-O Pages serve sites estáticos.
-- **Funciona**: HTML, CSS, JavaScript, Imagens, React (buildados), Vue, Angular.
-- **Não Funciona**: PHP, Python (Django/Flask), Node.js (backend), Banco de Dados (MySQL).
-Para portfólios, blogs e documentações, ele é perfeito.
+```mermaid
+graph LR
+    A[Código Local] -- "Push" --> B[GitHub Repo]
+    B -- "Settings > Pages" --> C[GitHub Actions]
+    C -- "Deploy" --> D[https://usuario.github.io]
+```
 
-### 3. Configuração
-Basta ir em **Settings > Pages**.
-Em "Build and deployment", escolha "Deploy from a branch".
-Selecione a branch `main` e a pasta `/ (root)`.
-Clique em Save.
+### 2. O que é um Site Estático?
+O GitHub Pages é focado em performance e segurança, por isso ele suporta apenas conteúdo estático.
 
-### 4. O Arquivo index.html
-Para que o site funcione, a primeira página DEVE se chamar `index.html`. Se não existir, o GitHub mostrará o README (se configurado) ou um erro 404.
+| ✅ Suportado (Static) | ❌ Não Suportado (Dynamic/Backend) |
+| :--- | :--- |
+| HTML5 / CSS3 / JavaScript | PHP / Python (Django/Flask) |
+| Frameworks (React, Vue, Vite) | Node.js (Servidor) |
+| Imagens / Vídeos / SVGs | Bancos de Dados (MySQL, MongoDB) |
 
----
+!!! info "Endereço Padrão"
+    Seu site ficará disponível no formato: `https://SEU-USUARIO.github.io/NOME-DO-REPO/`.
 
-## 📦 Limites do GitHub Pages (GitHub)
+### 3. Requisito Vital: index.html
+O servidor do GitHub busca automaticamente por um arquivo chamado `index.html` na raiz do seu projeto. Se ele não existir, seu site não carregará corretamente.
 
-* **Tamanho máximo do repositório:** 1 GB
-* **Tamanho recomendado do site publicado:** até 1 GB
-* **Tamanho máximo por arquivo:** 100 MB
-* **Limite de build (GitHub Pages build):** 10 builds por hora
-* **Largura de banda:** não é oficialmente especificada, mas uso excessivo pode gerar bloqueio temporário
+!!! warning "Atenção ao Case-Sensitive"
+    O nome do arquivo deve ser exatamente `index.html` (minúsculo). Em servidores Linux (como os do GitHub), `Index.html` ou `INDEX.HTML` são arquivos diferentes e podem causar erro 404.
 
----
+### 4. Limites de Uso
+O serviço é generoso, mas possui limites para evitar abusos:
+- **Tamanho do Site**: Recomendado até 1GB.
+- **Largura de Banda**: 100GB por mês.
+- **Builds**: Limite de 10 deploys por hora.
 
-### 💡 Observações importantes
-
-* Ideal para **sites estáticos** (HTML, CSS, JS).
-* Não suporta backend (PHP, Node.js, banco de dados etc.).
-* Perfeito para:
-
-  * Portfólios
-  * Landing pages
-  * Documentação
-  * Projetos front-end
+!!! tip "Dica de Sucesso"
+    Use o GitHub Pages para hospedar documentações de seus projetos, landing pages e, claro, seu portfólio de desenvolvedor. É a vitrine oficial do seu trabalho!
 
 ---
 
-## 📽 Roteiro de Slides
-- O sonho do site próprio (Grátis!).
-- Diferença entre Repositório (Código) e Site (Produto Final).
-- Limitações: Sem Backend (PHP, SQL).
-- O passo a passo da ativação.
-- O endereço mágico: `username.github.io`.
-- Personalização: Temas automáticos (Jekyll).
+## 📝 Prática
 
-## 📝 Quiz
-1. O GitHub Pages é um serviço gratuito?
-2. Posso hospedar um site feito em PHP com banco de dados MySQL no GitHub Pages?
-3. Qual é o nome obrigatório do arquivo principal para que a página inicial carregue?
-4. Em qual menu do repositório ativamos o GitHub Pages?
-5. Quanto tempo demora para o site ir ao ar após o push?
+### Exercícios de Fixação
+Ative seu primeiro site gratuito e teste a visualização em diferentes dispositivos.
+[:octicons-arrow-right-24: Ver Exercícios da Aula 14](../exercicios/exercicio-14.md)
 
-## Gabarito
-1: A ("Sim, para repos públicos e privados selecionados")
-2: B ("Não, ele só aceita conteúdo estático")
-3: C ("index.html")
-4: D ("Settings > Pages")
-5: B ("Alguns segundos ou poucos minutos")
-
-## 🛠 Exercícios
-1. **Hello World**: Crie um arquivo `index.html` básico no seu repo de teste, com `<h1>Olá Mundo</h1>`.
-2. **Ativação**: Vá nas configurações desse repo e ative o Pages.
-3. **Acesso**: Aguarde a bolinha ficar verde na aba "Actions" ou recarregue a página de configurações para ver o link. Clique e veja seu site no ar!
-
-## 🚀 Projeto da Aula
-Vamos transformar o `portfolio-dev` em um site de verdade.
-
-1. **Delete** o arquivo `sobre.txt` (se ainda existir). O `README.md` vamos manter.
-2. **Crie** um arquivo `index.html` na raiz do projeto.
-3. Cole este código (ou faça o seu melhor):
-   ```html
-   <!DOCTYPE html>
-   <html>
-   <head>
-       <title>Portfólio Dev</title>
-       <style>
-           body { font-family: sans-serif; text-align: center; padding: 50px; }
-           h1 { color: #2c3e50; }
-           p { color: #7f8c8d; }
-       </style>
-   </head>
-   <body>
-       <h1>Olá, eu sou [Seu Nome]</h1>
-       <p>Desenvolvedor apaixonado por Git e GitHub.</p>
-       <a href="https://github.com/seu-usuario">Meu GitHub</a>
-   </body>
-   </html>
-   ```
-4. Commite e Push (`feat: adiciona site do portfólio`).
-5. Vá no GitHub, Settings > Pages, Ative na `main`.
-6. Aguarde alguns instantes e acesse o link gerado.
-7. **Parabéns!** Você tem um site profissional. Mande o link para seus amigos!
+### Mini-Projeto
+Publicando a versão final do seu portfólio para o mundo ver.
+[:octicons-arrow-right-24: Ver Projeto da Aula 14](../projetos/projeto-14.md)

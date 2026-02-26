@@ -1,24 +1,33 @@
 # Exercícios da Aula 06
 
-## 🛠 Exercícios
+## 🛠 Entrando na Rede: GitHub e Perfil Profissional
 
-1. **Configurando o Perfil**:
-   - Vá em "Settings" > "Profile".
-   - Upload de uma foto (avatar).
-   - Preencha o campo "Bio".
-   - Se tiver, coloque o link do seu LinkedIn no campo URL.
+### Nível: Básico
 
-2. **Caça ao Tesouro**:
-   - Use a barra de busca do GitHub.
-   - Digite "awesome-python" (ou sua linguagem de preferência).
-   - Encontre um repositório que seja uma lista de recursos (normalmente tem "awesome" no nome).
-   - Dê uma Star.
+1.  **Otimização de Perfil**:
+    - Acesse as configurações de perfil no seu GitHub.
+    - Adicione uma foto de rosto clara (avatar) e preencha a "Bio" com suas principais tecnologias de interesse.
+    - Adicione o link do seu LinkedIn no campo apropriado.
 
-3. **Entendendo Issues**:
-   - Vá no repositório `microsoft/vscode` (ou outro grande).
-   - Clique na aba "Issues".
-   - Leia alguns títulos para entender que tipos de problemas são reportados (Bugs, Feature Requests).
-   - Não comente nada! Apenas observe.
+2.  **Favoritando o Futuro**:
+    - Use a barra de busca e encontre um repositório famoso (ex: `facebook/react`).
+    - Clique no botão **Star** para adicioná-lo aos seus favoritos. Onde você pode ver a lista de todos os repositórios que você deu "Star"?
 
-## Dica
-Manter um perfil ativo e organizado é essencial para quem busca emprego na área. O GitHub é seu portfólio vivo.
+### Nível: Intermediário
+
+3.  **Explorando Comunidades**:
+    - Pesquise por um projeto Open Source que utilize a etiqueta (label) `good first issue`. 
+    - Encontre pelo menos uma "Issue" aberta que pareça amigável para iniciantes. Qual o título dessa issue?
+
+4.  **A Cópia Pessoal (Fork)**:
+    - Realize um **Fork** de um repositório público qualquer para a sua própria conta.
+    - O que mudou na URL do repositório após o Fork?
+
+### Nível: Desafio
+
+5.  **Entendendo o Heatmap**:
+    - Observe o seu gráfico de contribuições (o "paredão verde"). Descubra quais tipos de ações no GitHub (commits, PRs, Issues) fazem os quadradinhos ficarem verdes.
+
+---
+
+[:octicons-arrow-right-24: Ver Solução](solutions/solucao-06.md)
