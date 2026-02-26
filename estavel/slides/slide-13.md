@@ -1,47 +1,47 @@
-# Roteiro de Slides - Aula 13
+# Aula 13 – Trabalho em Equipe
 
 ---
 
-## Git é Multijogador
+## Níveis de Permissão
 
-- Um jogo cooperativo, não competitivo.
-- Objetivo: Construir o software juntos sem quebrar nada.
-
----
-
-## Papéis no GitHub
-
-- **Owner**: O Deus do repo. Pode deletar, arquivar, transferir.
-- **Admin**: Gerencia acessos.
-- **Write (Colaborador)**: O desenvolvedor padrão. Lê, escreve, cria branches.
-- **Read**: Só pode ver (repos privados).
-- **Sem acesso (Público)**: Qualquer um na internet (pode ver e fazer fork).
+- **Read**: Apenas leitura e Issues.
+- **Write**: Pode dar `push` direto (Colaborador).
+- **Admin**: Gerencia tudo (Membros, Configurações).
+- **Owner**: Dono supremo do projeto.
 
 ---
 
-## O Fluxo de Trabalho (Revisão)
+## Colaborador vs. Contribuidor
 
-1. `git pull` (Café da manhã dos campeões).
-2. `git switch -c feature`.
-3. Code, Code, Code.
-4. `git push`.
-5. PR & Review.
+- **Colaborador (Interno)**:
+  - Tem permissão de escrita.
+  - Dá `push` direto na branch do projeto.
+- **Contribuidor (Externo)**:
+  - Não tem permissão direta.
+  - Precisa fazer **Fork** e enviar um **Pull Request**.
 
 ---
 
-## O Pesadelo "Rejected"
+## A Regra: Pull antes do Push
 
-`! [rejected] main -> main (fetch first)`
-- Significa: "Alguém chegou na sua frente".
-- O servidor tem commits que você não tem.
-- Você não pode sobrescrever o histórico deles.
-- Solução: Baixe (`pull`), misture (`merge/rebase`), depois suba (`push`).
+- Se o servidor tem novidades, seu `push` será rejeitado.
+- O Git faz isso para você não apagar o histórico alheio.
+- **Solução**: `git pull origin main` -> Resolva conflitos -> `git push`.
+
+---
+
+## Gestão de Membros
+
+- Vá em `Settings > Collaborators`.
+- Convide pelo usuário ou e-mail.
+- **Dica**: Escolha sempre o nível mínimo de acesso necessário por segurança.
 
 ---
 
 ## Branch Protection
 
-- Trava de segurança no gatilho.
-- Impede `git push origin main`.
-- Obriga Code Review.
-- Essencial em empresas sérias.
+- Em empresas, ninguém dá `push` na `main`.
+- A branch é protegida e exige:
+  - Pull Request.
+  - Aprovação de revisores.
+  - Testes passando.

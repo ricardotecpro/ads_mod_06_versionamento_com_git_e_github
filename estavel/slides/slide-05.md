@@ -1,12 +1,12 @@
-# Roteiro de Slides - Aula 05
+# Aula 05 – Resolução de Conflitos
 
 ---
 
-## O Temido "Conflict"
+## O que é um Conflito?
 
-- Acontece nas melhores famílias (e equipes).
-- Não é um erro grave, é apenas uma **pergunta do Git**:
-  - "Ei, vocês dois mexeram na mesma linha. Qual eu devo manter?"
+- O Git une arquivos automaticamente... exceto se:
+- **Duas pessoas alterarem a mesma linha** de formas diferentes.
+- O Git entra em modo de segurança e pede ajuda humana.
 
 ---
 
@@ -14,38 +14,34 @@
 
 ```text
 <<<<<<< HEAD
-Eu gosto de café.
+Meu título é Vermelho! (Sua versão)
 =======
-Eu gosto de chá.
->>>>>>> nova-branch
+Este título é Azul! (Versão que vem do merge)
+>>>>>>> feature-cores
 ```
-- **HEAD (Topo)**: Onde você estava (branch atual).
-- **Separator (===)**: A fronteira.
-- **Botton (>>>)**: O que está chegando (branch vindo do merge).
+- **HEAD**: Onde você está agora.
+- **=======**: O divisor de águas.
+- **>>>>>>>**: A origem da mudança externa.
 
 ---
 
-## Como Resolver?
+## Como Resolver: 3 Etapas
 
-1. **Mantenha a Calma**.
-2. Abra o arquivo em um editor de texto.
-3. Escolha: Cafe? Chá? Ou "Eu gosto de café e chá"?
-4. **Apague os marcadores**. O arquivo final deve ser código limpo.
-5. Salve.
-6. `git add arquivo` (Diz que está pronto).
-7. `git commit` (Finaliza).
+1. **Editar**: Escolha o código final e **apague os marcadores**.
+2. **Add**: `git add [arquivo]` (Marca como resolvido).
+3. **Commit**: `git commit` (Finaliza a fusão).
 
 ---
 
-## Como Evitar?
+## Dica: Ferramentas Visuais
 
-- Commits pequenos e frequentes.
-- Puxe as mudanças dos colegas (`git pull`) com frequência.
-- Evite arquivos gigantes ("God Classes").
-- Comunique-se: "Ei, vou mexer no Header, ok?"
+- O VS Code destaca o conflito com cores.
+- Botões: *Accept Current*, *Accept Incoming* ou *Accept Both*.
+- Use a ferramenta para ganhar tempo!
 
 ---
 
-## Resumo
+## Regra de Ouro da Equipe
 
-Conflito não é bug. É o Git protegendo seu código de ser sobrescrito sem querer.
+- Conflito não é erro, é **comunicação**.
+- Se estiver na dúvida, chame o colega e discutam qual versão é a melhor para o projeto.

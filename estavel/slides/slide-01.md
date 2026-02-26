@@ -1,4 +1,4 @@
-# Roteiro de Slides - Aula 01
+# Aula 01 – O que é Controle de Versão?
 
 ---
 
@@ -6,55 +6,60 @@
 
 - Quem nunca?
   - `trabalho.doc`
-  - `trabalho_final.doc`
-  - `trabalho_agora_vai.doc`
+  - `trabalho_v2.doc`
+  - `trabalho_FINAL_agora_vai.doc`
 - **Problemas**:
-  - Qual é a versão real?
-  - O que mudou entre a v1 e a v2?
-  - E se eu apagar algo importante por engano?
+  - Difícil saber a versão real.
+  - O que mudou entre os arquivos?
+  - Risco de apagar algo importante.
 
 ---
 
-## O que é VCS?
+## O que é um VCS?
 
 - **V**ersion **C**ontrol **S**ystem
-- "Uma máquina do tempo para seus arquivos"
-- Registra quem mudou, o que mudou e quando mudou.
-- Permite voltar ao passado a qualquer momento.
+- Funciona como uma **"Máquina do Tempo"**.
+- Registra:
+  - **Quem** mudou?
+  - **O que** mudou?
+  - **Quando** mudou?
 
 ---
 
-## Por que usar Git?
+## Centralizado vs. Distribuído
 
-- **Padrão de Mercado**: Usado por 90%+ das empresas.
-- **Velocidade**: Extremamente rápido.
-- **Segurança**: Criptografia para garantir integridade.
-- **Distribuído**: Você não depende de um servidor central para trabalhar.
+- **Centralizado (ex: SVN)**:
+  - Único servidor central.
+  - Se o servidor cair, o trabalho para.
+- **Distribuído (ex: Git)**:
+  - Cada PC tem uma **cópia completa** do histórico.
+  - Segurança e velocidade.
+  - Funciona offline.
 
 ---
 
-## Git vs GitHub
+## Git vs. GitHub
 
 | Git | GitHub |
 | :--- | :--- |
-| Software (Ferramenta) | Plataforma (Site) |
-| Instalado no seu PC | Na Nuvem (Internet) |
-| Linha de Comando (CLI) | Interface Gráfica (Web) |
-| Uso Local | Uso Compartilhado |
+| **Software** (Ferramenta) | **Plataforma** (Site) |
+| Instalado no seu PC. | Na nuvem (Internet). |
+| Motor do versionamento. | Facilita a colaboração. |
 
 ---
 
-## Estrutura do Curso
+## Por que o Git?
 
-- **Módulo 1**: Fundamentos (Aulas 1-4)
-- **Módulo 2**: GitHub Essencial (Aulas 5-8)
-- **Módulo 3**: Fluxos de Trabalho (Aulas 9-12)
-- **Módulo 4**: Profissionalização (Aulas 13-16)
+- **Padrão industrial**: 90%+ das empresas usam.
+- **Branches leves**: Troque de contexto instantaneamente.
+- **Grátis e Open Source**.
 
 ---
 
-## Próximos Passos
+## Verificação
 
-- Instalar o Git.
-- Configurar usuário e email.
-- Dar os primeiros comandos!
+No terminal:
+```bash
+git --version
+```
+> Se aparecer um número (ex: 2.45), você está pronto!
