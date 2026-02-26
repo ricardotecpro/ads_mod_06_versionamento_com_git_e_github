@@ -28,9 +28,9 @@ def check_lesson_content(lesson_path: Path) -> dict:
         return None
 
     # Caminhos esperados
-    slide_path = Path(f"docs/slides/{lesson_str}-slides.md")
+    slide_path = Path(f"docs/slides/slide-{lesson_str}.md")
     quiz_path = Path(f"docs/quizzes/quiz-{lesson_str}.md")
-    exercise_path = Path(f"docs/exercicios/exercicios-{lesson_str}.md")
+    exercise_path = Path(f"docs/exercicios/exercicio-{lesson_str}.md")
     project_path = Path(f"docs/projetos/projeto-{lesson_str}.md")
     
     report = {
@@ -49,17 +49,15 @@ def check_lesson_content(lesson_path: Path) -> dict:
     # Verificar Slides
     if report["slides_exists"]:
         slide_content = slide_path.read_text(encoding='utf-8')
-        # Verifica se tem 'layout: revealjs' no frontmatter OU se é usado pelo gerador
-        # O gerador novo usa um template HTML, então a presença do arquivo MD na pasta correta já é um bom sinal
-        # Mas vamos verificar se tem conteúdo
+        # Verifica se tem conteúdo
         if len(slide_content) > 100: 
              report["slides_revealjs"] = True
 
     # Verificar Quiz
     if report["quiz_exists"]:
         quiz_content = quiz_path.read_text(encoding='utf-8')
-        # Conta questões (busca por div com classe quiz-question)
-        questions = re.findall(r'class="quiz-question"', quiz_content)
+        # Conta questões (busca por data-correct ou quiz-option)
+        questions = re.findall(r'class="quiz-option"', quiz_content)
         report["quiz_questions"] = len(questions)
 
     # Verificar Projeto
@@ -76,8 +74,8 @@ def check_lesson_content(lesson_path: Path) -> dict:
 def main():
     console.print("\n[bold blue]🔍 Iniciando Auditoria de Conteúdo...[/bold blue]\n")
     
-    # Encontrar todas as aulas em docs/*.md (assumindo que são arquivos numéricos 01.md, 02.md etc)
-    lesson_files = sorted(glob.glob("docs/[0-9][0-9].md"))
+    # Encontrar todas as aulas em docs/aulas/aula-[0-9][0-9].md
+    lesson_files = sorted(glob.glob("docs/aulas/aula-[0-9][0-9].md"))
     
     if not lesson_files:
         console.print("[red]❌ Nenhuma aula encontrada em docs/![/red]")

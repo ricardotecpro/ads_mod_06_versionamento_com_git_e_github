@@ -3,32 +3,33 @@ from pathlib import Path
 
 # --- Configuration ---
 SYLLABUS = [
-    # Módulo 1 – Fundamentos
-    {"id": 1, "module": "Módulo 1 – Fundamentos", "title": "Introdução à Computação e Python"},
-    {"id": 2, "module": "Módulo 1 – Fundamentos", "title": "Variáveis, Tipos de Dados e Operadores"},
-    {"id": 3, "module": "Módulo 1 – Fundamentos", "title": "Entrada e Saída de Dados (I/O)"},
+    # Módulo 1 – Conceitos Básicos
+    {"id": 1, "module": "Módulo 1 – Conceitos Básicos", "title": "Introdução ao Controle de Versão"},
+    {"id": 2, "module": "Módulo 1 – Conceitos Básicos", "title": "Instalação e Configuração Inicial"},
+    {"id": 3, "module": "Módulo 1 – Conceitos Básicos", "title": "Configuração de Identidade e Editores"},
     
-    # Módulo 2 – Estruturas de Controle e Dados
-    {"id": 4, "module": "Módulo 2 – Estruturas de Dados", "title": "Estruturas Condicionais (if/elif/else)"},
-    {"id": 5, "module": "Módulo 2 – Estruturas de Dados", "title": "Estruturas de Repetição (for/while)"},
-    {"id": 6, "module": "Módulo 2 – Estruturas de Dados", "title": "Listas e Tuplas"},
+    # Módulo 2 – Trabalhando Localmente
+    {"id": 4, "module": "Módulo 2 – Trabalhando Localmente", "title": "Criando Repositórios e o comando init"},
+    {"id": 5, "module": "Módulo 2 – Trabalhando Localmente", "title": "O Ciclo de Vida dos Arquivos (add/commit)"},
+    {"id": 6, "module": "Módulo 2 – Trabalhando Localmente", "title": "Visualizando o Histórico (git log)"},
     
-    # Módulo 3 – Funções e Dicionários
-    {"id": 7, "module": "Módulo 3 – Funções", "title": "Dicionários e Sets"},
-    {"id": 8, "module": "Módulo 3 – Funções", "title": "Funções (Parte 1: Básico)"},
-    {"id": 9, "module": "Módulo 3 – Funções", "title": "Funções (Parte 2: Parâmetros, Return, Escopo)"},
+    # Módulo 3 – Operações Intermediárias
+    {"id": 7, "module": "Módulo 3 – Operações Intermediárias", "title": "Desfazendo Alterações (checkout/reset/revert)"},
+    {"id": 8, "module": "Módulo 3 – Operações Intermediárias", "title": ".gitignore – Ignorando Arquivos Corretamente"},
     
-    # Módulo 4 – Arquivos e Exceções
-    {"id": 10, "module": "Módulo 4 – Arquivos", "title": "Manipulação de Arquivos e JSON"},
-    {"id": 11, "module": "Módulo 4 – Arquivos", "title": "Tratamento de Exceções e Debugging"},
+    # Módulo 4 – Branches e Organização
+    {"id": 9, "module": "Módulo 4 – Branches e Organização", "title": "Trabalhando com Branches e o comando branch"},
+    {"id": 10, "module": "Módulo 4 – Branches e Organização", "title": "Integrando Alterações (merge)"},
+    {"id": 11, "module": "Módulo 4 – Branches e Organização", "title": "Resolvendo Conflitos de Merge"},
     
-    # Módulo 5 – POO
-    {"id": 12, "module": "Módulo 5 – POO", "title": "Introdução a Classes e Objetos"},
-    {"id": 13, "module": "Módulo 5 – POO", "title": "Herança e Polimorfismo"},
+    # Módulo 5 – Git Remoto e GitHub
+    {"id": 12, "module": "Módulo 5 – Git Remoto e GitHub", "title": "Trabalhando com Repositórios Remotos"},
+    {"id": 13, "module": "Módulo 5 – Git Remoto e GitHub", "title": "GitHub – Introdução e Pull Requests"},
+    {"id": 14, "module": "Módulo 5 – Git Remoto e GitHub", "title": "Colaboração em Equipe (fork/clone)"},
     
-    # Módulo 6 – Ecossistema
-    {"id": 14, "module": "Módulo 6 – Ecossistema", "title": "Bancos de Dados (SQLite) e APIs"},
-    {"id": 15, "module": "Módulo 6 – Ecossistema", "title": "Projeto Final e Próximos Passos"},
+    # Módulo 6 – Fluxos Avançados
+    {"id": 15, "module": "Módulo 6 – Fluxos Avançados", "title": "Fluxos de Trabalho (Git Flow vs GitHub Flow)"},
+    {"id": 16, "module": "Módulo 6 – Fluxos Avançados", "title": "Boas Práticas e Convenções de Commit"},
 ]
 
 DIRS = [
@@ -52,20 +53,22 @@ TEMPLATE_AULA = """# {title}
 ### Introdução
 O comando abaixo mostra como iniciar...
 
-```python
-print("Olá Mundo")
+```bash
+# Exemplo de comando Git
+git init
 ```
 
 ```termynal-exec
-python app.py
-Olá Mundo
+git status
+# On branch main
+# nothing to commit
 ```
 
 !!! tip "Dica Importante"
     Este é um bloco de dica.
 
 !!! failure "Erro Comum"
-    Cuidado com indentation error!
+    Cuidado com conflitos de merge!
 
 ## Em Prática
 Vamos praticar o conceito aprendendo...
@@ -115,9 +118,8 @@ Conteúdo do tópico...
 
 ## Exemplo de Código
 
-```python
-def hello():
-    print("Mundo")
+```bash
+git commit -m "feat: add new feature"
 ```
 
 ---
@@ -136,18 +138,16 @@ TEMPLATE_QUIZ = """# Quiz {id:02d}: {title}
 
 **Teste seus conhecimentos.**
 
-1. Qual a saída do código abaixo?
-    ```python
-    x = 10
-    print(x * 2)
+    ```bash
+    git init
     ```
-    - ( ) 10
-    - (x) 20
-    - ( ) 100
+    - (x) Inicia um novo repositório
+    - ( ) Deleta o repositório
+    - ( ) Instala o Git
 
-2. Python é uma linguagem compilada?
-    - ( ) Verdadeiro
-    - (x) Falso
+2. Git é o mesmo que GitHub?
+    - ( ) Sim
+    - (x) Não
 """
 
 TEMPLATE_EXERCICIO = """# Exercícios Aula {id:02d}
@@ -175,7 +175,7 @@ Desenvolva uma ferramenta que...
 Tente adicionar uma funcionalidade extra de...
 """
 
-TEMPLATE_INDEX = """# Bem-vindo ao Curso de Python Backend
+TEMPLATE_INDEX = """# Bem-vindo ao Curso de Git e GitHub
 
 ## O Curso
 Este curso foi desenhado para te levar do zero ao profissional.

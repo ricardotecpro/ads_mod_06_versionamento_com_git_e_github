@@ -5,7 +5,7 @@ import shutil
 import yaml
 from pathlib import Path
 
-PROJECT_ROOT = Path("d:/SourceCode/REPOS/github.io/ads_spec_backend_com_python")
+PROJECT_ROOT = Path(__file__).parent.parent
 DOCS_DIR = PROJECT_ROOT / "docs"
 UNUSED_DIR = PROJECT_ROOT / "unused_files_review"
 

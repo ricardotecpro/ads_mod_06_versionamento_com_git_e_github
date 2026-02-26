@@ -134,6 +134,8 @@ extra:
       link: https://ricardotecpro.github.io/
     - icon: fontawesome/brands/youtube
       link: https://www.youtube.com/@ricardotecpro
+    - icon: fontawesome/brands/x-twitter
+      link: https://twitter.com/ricardotecpro
 
   version:
     provider: mike
