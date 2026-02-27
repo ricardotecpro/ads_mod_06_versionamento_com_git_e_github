@@ -86,21 +86,21 @@ plugins:
   - social:
       cards: false
   - tags:
-  - mkdocs-revealjs
+#  - mkdocs-revealjs
   - search:
       lang: pt
   - mkdocs-jupyter
   - glightbox
   - awesome-pages
-  - git-authors:
-      show_contribution: true
-      show_line_count: true
-      count_empty_lines: false
-      fallback_to_empty: false
-      sort_authors_by: contribution
-      authorship_threshold_percent: 10
-      exclude:
-        - index.md
+#  - git-authors:
+#      show_contribution: true
+#      show_line_count: true
+#      count_empty_lines: false
+#      fallback_to_empty: false
+#      sort_authors_by: contribution
+#      authorship_threshold_percent: 10
+#      exclude:
+#        - index.md
   - git-revision-date-localized:
       enable_creation_date: true
       type: datetime
