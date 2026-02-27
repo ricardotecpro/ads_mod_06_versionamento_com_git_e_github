@@ -161,9 +161,7 @@ extra:
     - icon: fontawesome/brands/x-twitter
       link: https://twitter.com/ricardotecpro
 
-  version:
-    provider: mike
-    default: estavel
+# Removed mike versioning config
 
 nav:
   - Informações:
