@@ -54,16 +54,8 @@ jobs:
           # Build site to trigger hooks (copies slides to site/)
           poetry run mkdocs build
           
-          # Start MkDocs server in background for tests
-          poetry run mkdocs serve &
-          PID=$!
-          sleep 10  # Wait for server to start
-          
-          # Run tests to ensure quality
+          # Run tests to ensure quality (tests will start their own server)
           poetry run task test
-          
-          # Kill server
-          kill $PID
           
           # Clean local gh-pages to ensure fresh fetch/deploy
           # Clean local gh-pages to ensure fresh fetch/deploy

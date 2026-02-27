@@ -46,12 +46,14 @@ def copy_slides(config, **kwargs):
         md_copied += 1
     
     if html_copied > 0:
-        print(f"[green]+ {html_copied} slide(s) HTML copiados[/green]")
+        print(f"[green]✔ {html_copied} slide(s) HTML copiados[/green]")
     if md_copied > 0:
-        print(f"[green]+ {md_copied} slide(s) Markdown copiados[/green]")
+        print(f"[green]✔ {md_copied} slide(s) Markdown copiados[/green]")
     
     if html_copied == 0 and md_copied == 0:
         print("[yellow]! Nenhum slide encontrado em docs/slides/[/yellow]")
+    
+    print("[green]✔ Processo de sincronização de slides concluído.[/green]")
 
 
 def on_post_build(config):

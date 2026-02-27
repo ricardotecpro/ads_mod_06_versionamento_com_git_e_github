@@ -231,6 +231,23 @@ nav:
       - 'Exercício 14': exercicios/exercicio-14.md
       - 'Exercício 15': exercicios/exercicio-15.md
       - 'Exercício 16': exercicios/exercicio-16.md
+        - Soluções:
+          - 'Solução 01': exercicios/solutions/solucao-01.md
+          - 'Solução 02': exercicios/solutions/solucao-02.md
+          - 'Solução 03': exercicios/solutions/solucao-03.md
+          - 'Solução 04': exercicios/solutions/solucao-04.md
+          - 'Solução 05': exercicios/solutions/solucao-05.md
+          - 'Solução 06': exercicios/solutions/solucao-06.md
+          - 'Solução 07': exercicios/solutions/solucao-07.md
+          - 'Solução 08': exercicios/solutions/solucao-08.md
+          - 'Solução 09': exercicios/solutions/solucao-09.md
+          - 'Solução 10': exercicios/solutions/solucao-10.md
+          - 'Solução 11': exercicios/solutions/solucao-11.md
+          - 'Solução 12': exercicios/solutions/solucao-12.md
+          - 'Solução 13': exercicios/solutions/solucao-13.md
+          - 'Solução 14': exercicios/solutions/solucao-14.md
+          - 'Solução 15': exercicios/solutions/solucao-15.md
+          - 'Solução 16': exercicios/solutions/solucao-16.md
     - Quizzes:
       - quizzes/index.md
       - 'Quiz 01': quizzes/quiz-01.md

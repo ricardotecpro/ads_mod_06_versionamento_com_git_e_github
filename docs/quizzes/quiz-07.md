@@ -22,7 +22,7 @@
 
 <div class="quiz-container">
   <div class="quiz-question">3. Qual comando cria uma cópia local completa de um repositório existente no GitHub?</div>
-  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! git clone baixa o histórico e os arquivos do projeto.">git clone [URL]</div>
+  <div class="quiz-option" data-correct="true" data-feedback="✅ Correto! git clone baixa o histórico e os arquivos do projeto.">git clone `[URL]`</div>
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. O Git não possui o comando copy.">git copy</div>
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. Use o termo técnico 'clone' no Git.">git download</div>
   <div class="quiz-option" data-correct="false" data-feedback="Incorreto. git init cria um repo novo vazio localmente.">git init --remote</div>

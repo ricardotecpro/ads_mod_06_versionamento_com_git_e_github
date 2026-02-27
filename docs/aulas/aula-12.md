@@ -25,8 +25,8 @@ O Markdown (`.md`) é uma linguagem de marcação leve que permite formatar text
 | :--- | :--- | :--- |
 | Títulos | `# H1` até `###### H6` | Cabeçalhos de vários tamanhos. |
 | Negrito | `**Texto**` | **Texto** |
-| Links | `[Nome](URL)` | [Nome](URL) |
-| Código | `` `inline` `` ou ` ```bloco``` ` | Formatação monospace. |
+| Links | `[Nome](URL)` | `[Nome](URL)` |
+| Código | `inline` ou ` ```bloco``` ` | Formatação monospace. |
 | Itens | `- Item` ou `* Item` | Listas com marcadores. |
 
 ### 3. Estrutura de Documentação "Gold Standard"
