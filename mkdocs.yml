@@ -231,7 +231,7 @@ nav:
       - 'Exercício 14': exercicios/exercicio-14.md
       - 'Exercício 15': exercicios/exercicio-15.md
       - 'Exercício 16': exercicios/exercicio-16.md
-        - Soluções:
+      - Soluções:
           - 'Solução 01': exercicios/solutions/solucao-01.md
           - 'Solução 02': exercicios/solutions/solucao-02.md
           - 'Solução 03': exercicios/solutions/solucao-03.md
